@@ -7,7 +7,7 @@
 class Life_Settings {
 /* Logging and Security Settings*/
     /* Security Settings */
-    spyGlass_toggle = true; //Spyglass On/Off Toggle --> True = On & False = Off
+    spyGlass_toggle = false; //Spyglass On/Off Toggle --> True = On & False = Off
 
     /* Data Logging Settings */
     battlEye_friendlyLogging = false; //False [default] - Read the logs from the server.rpt. True - Read the logs from the publicVariable.log. NOTE: Due to how diag_log works it will log to both files either way and the setting is merely for beautification purposes.
@@ -20,19 +20,19 @@ class Life_Settings {
     save_virtualItems = true; //Save Virtual items (all sides)?
     saved_virtualItems[] = { "pickaxe","fuelEmpty","fuelFull", "spikeStrip", "lockpick", "defuseKit","storageSmall","storageBig","redgull","coffee","waterBottle","apple","peach","tbacon","donuts","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","defibrillator","toolkit" }; //Array of virtual items that can be saved on your player.
     save_playerStats = true; //Save food, water and damage (all sides)?
-    save_civilian_weapons = false; //Allow civilians to save weapons on them?
-    save_civilian_position = false; //Save civilian location?
+    save_civilian_weapons = true; //Allow civilians to save weapons on them?
+    save_civilian_position = true; //Save civilian location?
     save_civilian_position_restart = false; //Save civilian location only between restarts. After a server restart you'll have to spawn again.
     /* !!!TO SAVE POSITION BETWEEN RESTARTS save_civilian_position MUST BE TRUE!!! */
     save_civilian_positionStrict = false; //Strip the player if possible combat-log?  WARNING: Server crashes and lack of reliable syncing can trigger this.
 
     /* Vehicle Data Saving */
-    save_vehicle_virtualItems = false; //Save virtual items inside the vehicle (all sides)(-- See defined items on next line --)
+    save_vehicle_virtualItems = true; //Save virtual items inside the vehicle (all sides)(-- See defined items on next line --)
     save_vehicle_items[] = { "pickaxe","fuelEmpty","fuelFull", "spikeStrip", "lockpick", "defuseKit","storageSmall","storageBig","redgull","coffee","waterBottle","apple","peach","tbacon","donuts","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","defibrillator","toolkit" };
-    save_vehicle_inventory = false; //Save Arma inventory of vehicle to the database
-    save_vehicle_fuel = false; //Save vehicle fuel level to the database (Impounded/Garaged).
-    save_vehicle_damage = false; //Save vehicle damage to the database.
-    save_vehicle_illegal = false; //This will allow cops to be advised when a vehicle, with illegal items in it, is impounded. This will also save illegal items as proof of crime, and needs "save_vehicle_virtualItems" set as true. Illegal items don't need to be set in save_vehicle_items[] for being saved, if it's enabled.
+    save_vehicle_inventory = true; //Save Arma inventory of vehicle to the database
+    save_vehicle_fuel = true; //Save vehicle fuel level to the database (Impounded/Garaged).
+    save_vehicle_damage = true; //Save vehicle damage to the database.
+    save_vehicle_illegal = true; //This will allow cops to be advised when a vehicle, with illegal items in it, is impounded. This will also save illegal items as proof of crime, and needs "save_vehicle_virtualItems" set as true. Illegal items don't need to be set in save_vehicle_items[] for being saved, if it's enabled.
 
 
 /* System Settings */
@@ -48,7 +48,7 @@ class Life_Settings {
     donor_level = false; //Enable the donor level set in database (var = life_donorlevel; levels = 0,1,2,3,4,5). ATTENTION! Before enabling, read: https://www.bistudio.com/community/game-content-usage-rules & https://www.bistudio.com/monetization
     enable_fatigue = true; //Set to false to disable the ARMA 3 fatigue system.
     total_maxWeight = 24; //Static variable for the maximum weight allowed without having a backpack
-    respawn_timer = 30; //How many seconds a player should wait, before being able to respawn. Minimum 5 seconds.
+    respawn_timer = 15; //How many seconds a player should wait, before being able to respawn. Minimum 5 seconds.
 
     /* Channel 7 News Station Configurations */
     news_broadcast_cost = 150000; //Cost for a player to send a news station broadcast.
@@ -68,9 +68,9 @@ class Life_Settings {
     escapeMenu_displayText = "Thanks for playing!"; //Text displayed in the escape menu. Make it short.. around 20 characters.
 
     /* Fuel System Configurations */
-    pump_service = false; //Allow users to use pump service on the map. Default = false
-    fuel_cost = 80; //Cost of fuel per liter at fuel stations (if not defined for the vehicle already).
-    service_chopper = 1000; //Cost to service chopper at chopper service station(Repair/Refuel).
+    pump_service = true; //Allow users to use pump service on the map. Default = false
+    fuel_cost = 200; //Cost of fuel per liter at fuel stations (if not defined for the vehicle already).
+    service_chopper = 2500; //Cost to service chopper at chopper service station(Repair/Refuel).
     fuelCan_refuel = 250; //Cost to refuel an empty fuel canister at the fuel station pumps. (Be wary of your buy/sell prices on fuel cans to prevent exploits...)
 
     /* Gang System Configurations */
@@ -91,7 +91,7 @@ class Life_Settings {
     /* Item-related Restrictions */
     restrict_medic_weapons = true; //Set to false to allow medics to use any weapon --true will remove ANY weapon they attempt to use (primary,secondary,launcher)
     restrict_clothingPickup = true; //Set to false to allow civilians to pickup/take any uniform (ground/crates/vehicles)
-    restrict_weaponPickup = false; //Set to false to allow civilians to pickup/take any weapon (ground/crates/vehicles)
+    restrict_weaponPickup = true; //Set to false to allow civilians to pickup/take any weapon (ground/crates/vehicles)
     restricted_uniforms[] = { "U_Rangemaster", "U_B_CombatUniform_mcam_tshirt", "U_B_CombatUniform_mcam_worn", "U_B_survival_uniform" };
     restricted_weapons[] = { "hgun_P07_snds_F", "arifle_MX_F", "arifle_MXC_F" };
 
@@ -110,13 +110,13 @@ class Life_Settings {
     hospital_heal_fee = 100; //Fee to heal at a hospital NPC
 
     /* Paycheck & Bank System Configurations */
-    bank_cop = 7000; //Amount of cash in bank for new cops
-    bank_civ = 3000; //Amount of cash in bank for new civillians
-    bank_med = 6500; //Amount of cash in bank for new medics
+    bank_cop = 1000000; //Amount of cash in bank for new cops
+    bank_civ = 1000000; //Amount of cash in bank for new civillians
+    bank_med = 1000000; //Amount of cash in bank for new medics
 
-    paycheck_cop = 500; //Payment for cops
-    paycheck_civ = 350; //Payment for civillians
-    paycheck_med = 450; //Payment for medics
+    paycheck_cop = 2500; //Payment for cops
+    paycheck_civ = 1000; //Payment for civillians
+    paycheck_med = 2750; //Payment for medics
 
     paycheck_period = 5; //Scaled in minutes
     bank_transferTax = .05; //Tax that player pays when transferring money from ATM. Tax = Amount * multiplier
@@ -130,13 +130,13 @@ class Life_Settings {
     seize_uniform[] = { "U_Rangemaster" }; //Any specific uniforms you want to be seized from players
     seize_vest[] = { "V_TacVest_blk_POLICE" }; //Any specific vests you want to be seized from players
     seize_headgear[] = { "H_Cap_police" }; //Any hats or helmets you want seized from players
-    seize_minimum_rank = 2; //Required minimum CopLevel to be able to seize items from players
+    seize_minimum_rank = 1; //Required minimum CopLevel to be able to seize items from players
 
     /* Vehicle System Configurations */
     chopShop_vehicles[] = { "Car", "Air" }; //Vehicles that can be chopped. (Can add: "Ship" and possibly more -> look at the BI wiki...)
-    vehicle_infiniteRepair[] = {false, false, true, false}; //Set to true for unlimited repairs with 1 toolkit. False will remove toolkit upon use. civilian, west, independent, east
+    vehicle_infiniteRepair[] = {false, true, true, false}; //Set to true for unlimited repairs with 1 toolkit. False will remove toolkit upon use. civilian, west, independent, east
     vehicleShop_rentalOnly[] = { "B_MRAP_01_hmg_F", "B_G_Offroad_01_armed_F", "B_Boat_Armed_01_minigun_F" }; //Vehicles that can only be rented and not purchased. (Last only for the session)
-    vehicleShop_3D = false; //Add preview 3D inside Shop vehicle.       Default : False
+    vehicleShop_3D = true; //Add preview 3D inside Shop vehicle.       Default : False
 
     /* Vehicle Purchase Prices */
     vehicle_purchase_multiplier_CIVILIAN = 1; //Civilian Vehicle Buy Price = Config_Vehicle price * multiplier

@@ -35,21 +35,42 @@ switch (playerSide) do {
         };
     };
 
-    case west: {
-        if (uniform player isEqualTo "U_Rangemaster") then {
-            _skinName = "textures\cop_uniform.jpg";
-            if (LIFE_SETTINGS(getNumber,"cop_extendedSkins") isEqualTo 1) then {
-                if (FETCH_CONST(life_coplevel) >= 1) then {
-                    _skinName = ["textures\cop_uniform_",(FETCH_CONST(life_coplevel)),".jpg"] joinString "";
-                };
-            };
-            player setObjectTextureGlobal [0, _skinName];
-        };
-    };
+	case west: {
+			if(uniform player == "U_Rangemaster") then {
+				player setObjectTextureGlobal [0, "textures\cop_uniform.jpg"];
+			};
+			if ((FETCH_CONST(life_coplevel) >= 1) && ((uniform player) == "U_Rangemaster")) then {
+				player setObjectTextureGlobal [0, "textures\COPS\uni\cdt.jpg"];
+			};
+			if ((FETCH_CONST(life_coplevel) >= 2) && ((uniform player) == "U_Rangemaster")) then {
+				player setObjectTextureGlobal [0, "textures\COPS\uni\po.jpg"];
+			};
+			if ((FETCH_CONST(life_coplevel) >= 3) && ((uniform player) == "U_Rangemaster")) then {
+				player setObjectTextureGlobal [0, "textures\COPS\uni\cpl.jpg"];
+			};
+			if ((FETCH_CONST(life_coplevel) >= 4) && ((uniform player) == "U_Rangemaster")) then {
+				player setObjectTextureGlobal [0, "textures\COPS\uni\sgt.jpg"];
+			};
+			if ((FETCH_CONST(life_coplevel) >= 5) && ((uniform player) == "U_Rangemaster")) then {
+				player setObjectTextureGlobal [0, "textures\COPS\uni\lt.jpg"];
+			};
+			if ((FETCH_CONST(life_coplevel) >= 6) && ((uniform player) == "U_Rangemaster")) then {
+				player setObjectTextureGlobal [0, "textures\COPS\uni\cpt.jpg"];
+			};
+			if ((FETCH_CONST(life_coplevel) >= 7) && ((uniform player) == "U_Rangemaster")) then {
+				player setObjectTextureGlobal [0, "textures\COPS\uni\chf.jpg"];
+			};						
+			if ((backpack player) == "B_Carryall_cbr") then {
+			    (unitbackpack player) setObjectTextureGlobal [0,""];
+			};
+		};
 
     case independent: {
         if (uniform player isEqualTo "U_Rangemaster") then {
             player setObjectTextureGlobal [0, "textures\medic_uniform.jpg"];
         };
+		if ((backpack player) == "B_Carryall_cbr") then {
+		    (unitbackpack player) setObjectTextureGlobal [0,""];
+		};
     };
 };

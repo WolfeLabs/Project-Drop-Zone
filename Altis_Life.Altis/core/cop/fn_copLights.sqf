@@ -19,7 +19,7 @@ private _lightBlue = [0.1, 0.1, 20];
 private _lightLeft = "#lightpoint" createVehicleLocal getPos _vehicle;
 sleep 0.2;
 _lightLeft setLightColor _lightRed;
-_lightLeft setLightBrightness 0.2;
+_lightLeft setLightBrightness 1;
 _lightLeft setLightAmbient [0.1,0.1,1];
 
 //Format: [[left position], [right position]]
@@ -63,7 +63,7 @@ _lightLeft setLightUseFlare true;
 private _lightRight = "#lightpoint" createVehicleLocal getPos _vehicle;
 sleep 0.2;
 _lightRight setLightColor _lightBlue;
-_lightRight setLightBrightness 0.2;
+_lightRight setLightBrightness 1;
 _lightRight setLightAmbient [0.1,0.1,1];
 
 _lightRight lightAttachObject [_vehicle, _rightOffset];

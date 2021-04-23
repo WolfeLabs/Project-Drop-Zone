@@ -181,7 +181,7 @@ class Clothing {
             { "B_AssaultPack_cbr", "", 700, "" },
             { "B_Kitbag_cbr", "", 800, "" },
             { "B_Bergen_sgg", "", 2500, "" },
-            { "B_Carryall_cbr", "", 3500, "" }
+            { "B_Carryall_cbr", "Invisible Carryall", 3500, "" }
         };
     };
 
@@ -274,7 +274,8 @@ class Clothing {
         };
         backpacks[] = {
             { "NONE", $STR_C_Remove_backpacks, 0, "" },
-            { "B_FieldPack_oli", $STR_C_EMS_backpacks, 3000, "" }
+            { "B_FieldPack_oli", $STR_C_EMS_backpacks, 3000, "" },
+			{ "B_Carryall_cbr", "Invisible Carryall", 3000, "" }
         };
     };
 

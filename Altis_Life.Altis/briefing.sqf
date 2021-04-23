@@ -25,9 +25,9 @@ TEXT HERE<br/><br/>
 
     player createDiaryRecord ["credits",
         [
-            "AsYetUntitled",
+            "Project Drop Zone Staff",
                 "
-AsYetUntitled (formerly ArmaLife) is a GitHub project which aims to update and keep adding new features to the original 'Altis Life RPG' by Tonic.<br/><br/>
+Just a couple a gamers looking to have a good time.<br/><br/>
                 "
         ]
     ];
@@ -37,27 +37,9 @@ AsYetUntitled (formerly ArmaLife) is a GitHub project which aims to update and k
             "Altis Life Changelog",
                 "
 The full changelog can be found on the AsYetUntitled/Framework repository on GitHub. https://github.com/AsYetUntitled/Framework/<br/><br/>
-v4.4 release 3!<br/>
-By: danielstuart14<br/>
-Date: 31. May 2016<br/><br/>
-v4.4 release 2!<br/>
-By: danielstuart14<br/>
-Date: 20. March 2016<br/><br/>
-v4.4 release 1!<br/>
-By: danielstuart14<br/>
-Date: 12. February 2016<br/><br/>
-v4.3 release 4!<br/>
-By: danielstuart14<br/>
-Date: 31. January 2016<br/><br/>
-v4.3 release 3!<br/>
-By: danielstuart14<br/>
-Date: Not released<br/><br/>
-v4.3 release 2!<br/>
-By: danielstuart14<br/>
-Date: 22. January 2016<br/><br/>
-v4.3 release 1!<br/>
-By: danielstuart14<br/>
-Date: 19. January 2016<br/><br/>
+v5.0.0<br/>
+By: AsYetUntitled<br/>
+Date: 25. December 2019<br/><br/>
                 "
         ]
     ];
@@ -90,6 +72,7 @@ These are considered exploits, and you will not be kicked, but banned.<br/><br/>
             "Safe Zones",
                 "
 If bombing (bombing can be intentionally exploding a vehicle), robbing, or killing occurs around these or in these areas it is punishable by ban.<br/><br/>
+Kavala Square<br/>
 Any vehicle spawn (shop or garage)<br/>
 Any weapon shop<br/>
 All Police HQs<br/>
@@ -106,7 +89,8 @@ Consider this your one and only warning.<br/><br/>
 1. Hacking<br/>
 2. Cheating<br/>
 3. Exploiting (See 'Exploits')<br/>
-4. Being kicked 3 or more times.<br/><br/>
+4. Being kicked 3 or more times.<br/>
+Staff Members reserve the right to ban any player at their discretion.<br/><br/>
                 "
         ]
     ];
