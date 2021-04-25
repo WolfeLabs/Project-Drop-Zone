@@ -54,7 +54,9 @@ if ((uiNamespace getVariable ["Weapon_Shop_Filter",0]) isEqualTo 1) then {
 
                 //Accessories Menu
                 if (isClass (configFile >> "CfgWeapons" >> _item >> "WeaponSlotsInfo")) then {
-                    private ["_slotArray"];
+                    /*
+
+                     private ["_slotArray"];
                     _itemArray = [];
                     if (isArray (configFile >> "CfgWeapons" >> _item >> "WeaponSlotsInfo" >> "CowsSlot" >> "compatibleItems")) then {
                         _slotArray = FETCH_CONFIG3(getArray,"CfgWeapons",_item,"WeaponSlotsInfo","CowsSlot","compatibleItems");
@@ -79,8 +81,10 @@ if ((uiNamespace getVariable ["Weapon_Shop_Filter",0]) isEqualTo 1) then {
                         {
                             _itemArray pushBack _x;
                         } forEach _slotArray;
-                    };
-
+                    }; 
+                    
+                    */
+                    _itemArray = [_item] call BIS_fnc_compatibleItems;
                     _bool = false;
                     {
                         _var = _x select 0;
