@@ -40,25 +40,25 @@ switch (playerSide) do {
 				player setObjectTextureGlobal [0, "textures\cop_uniform.jpg"];
 			};
 			if ((FETCH_CONST(life_coplevel) >= 1) && ((uniform player) == "U_Rangemaster")) then {
-				player setObjectTextureGlobal [0, "textures\COPS\uni\cdt.jpg"];
+				player setObjectTextureGlobal [0, "textures\COPS\unis\cdt.jpg"];
 			};
 			if ((FETCH_CONST(life_coplevel) >= 2) && ((uniform player) == "U_Rangemaster")) then {
-				player setObjectTextureGlobal [0, "textures\COPS\uni\po.jpg"];
+				player setObjectTextureGlobal [0, "textures\COPS\unis\po.jpg"];
 			};
 			if ((FETCH_CONST(life_coplevel) >= 3) && ((uniform player) == "U_Rangemaster")) then {
-				player setObjectTextureGlobal [0, "textures\COPS\uni\cpl.jpg"];
+				player setObjectTextureGlobal [0, "textures\COPS\unis\sgt.jpg"];
 			};
 			if ((FETCH_CONST(life_coplevel) >= 4) && ((uniform player) == "U_Rangemaster")) then {
-				player setObjectTextureGlobal [0, "textures\COPS\uni\sgt.jpg"];
+				player setObjectTextureGlobal [0, "textures\COPS\unis\lt.jpg"];
 			};
 			if ((FETCH_CONST(life_coplevel) >= 5) && ((uniform player) == "U_Rangemaster")) then {
-				player setObjectTextureGlobal [0, "textures\COPS\uni\lt.jpg"];
+				player setObjectTextureGlobal [0, "textures\COPS\unis\cpt.jpg"];
 			};
 			if ((FETCH_CONST(life_coplevel) >= 6) && ((uniform player) == "U_Rangemaster")) then {
-				player setObjectTextureGlobal [0, "textures\COPS\uni\cpt.jpg"];
+				player setObjectTextureGlobal [0, "textures\COPS\unis\dchf.jpg"];
 			};
 			if ((FETCH_CONST(life_coplevel) >= 7) && ((uniform player) == "U_Rangemaster")) then {
-				player setObjectTextureGlobal [0, "textures\COPS\uni\chf.jpg"];
+				player setObjectTextureGlobal [0, "textures\COPS\unis\chf.jpg"];
 			};						
 			if ((backpack player) == "B_Carryall_cbr") then {
 			    (unitbackpack player) setObjectTextureGlobal [0,""];
