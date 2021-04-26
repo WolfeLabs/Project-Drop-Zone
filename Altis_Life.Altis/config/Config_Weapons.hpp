@@ -188,7 +188,7 @@ class WeaponShops {
             { "11Rnd_45ACP_Mag", "", 150, 75, "" },//4-five
             { "30Rnd_65x39_caseless_black_mag", "", 200, 100, "" },//mx black 30rnd
             { "100Rnd_65x39_caseless_black_mag", "", 300, 150, "" },//mx black 100rnd
-            { "30Rnd_9x21_Mag", "", 150, 75, "" },//sting mag
+            { "30Rnd_9x21_Mag_SMG_02", "", 150, 75, "" },//sting mag
             { "9Rnd_45ACP_Mag", "", 150, 75, "" },//1911
             { "30Rnd_45ACP_Mag_SMG_01", "", 200, 100, "" },//vermin mag
             { "30Rnd_556x45_Stanag", "", 200, 100, "" },//5.56 30 rnd
