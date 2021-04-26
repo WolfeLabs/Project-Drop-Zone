@@ -154,27 +154,54 @@ class WeaponShops {
             { "Binocular", "", 150, 75, "" },
             { "ItemGPS", "", 100, 50, "" },
             { "FirstAidKit", "", 150, 75, "" },
-            { "NVGoggles", "", 2000, 1000, "" },
-            { "HandGrenade_Stone", $STR_W_items_Flashbang, 1700, 850, "call life_coplevel >= 1" },
-            { "hgun_P07_snds_F", $STR_W_items_StunPistol, 2000, 1000, "" },
-            { "arifle_SDAR_F", $STR_W_items_TaserRifle, 20000, 10000, "call life_coplevel >= 1" },
-            { "hgun_P07_F", "", 7500, 3750, "call life_coplevel >= 1" },
-            { "hgun_P07_khk_F", "", 7500, 3750, "call life_coplevel >= 1" }, //Apex DLC
-            { "hgun_Pistol_heavy_01_F", "", 9500, 4750, "call life_coplevel >= 3" },
-            { "SMG_02_ACO_F", "", 30000, 15000, "call life_coplevel >= 2" },
-            { "arifle_MX_F", "", 35000, 17500, "call life_coplevel >= 3" },
-            { "hgun_ACPC2_F", "", 17500, 8750, "call life_coplevel >= 3" },
-            { "arifle_MXC_F", "", 30000, 15000, "call life_coplevel >= 3" },
-            { "srifle_DMR_07_blk_F", "", 32000, 16000, "call life_coplevel >= 4" } //Apex DLC Sniper
-        };
+            { "NVGoggles", "", 1000, 500, "" },
+            { "HandGrenade_Stone", $STR_W_items_Flashbang, 600, 300, "call life_coplevel >= 1" },//flashbang
+            { "hgun_P07_snds_F", $STR_W_items_StunPistol, 100, 50, "" },//taser
+            { "arifle_SDAR_F", $STR_W_items_TaserRifle, 1500, 750, "call life_coplevel >= 1" },//taser rifle
+            { "SMG_01_F","",1000,500,"call life_coplevel >= 2" },//vermin
+            { "SMG_02_F","",1000,500,"call life_coplevel >= 2" },//sting
+            { "arifle_MX_Black_F","",2500,1250,"call life_coplevel >= 2" }, //basic black mx    
+            { "arifle_SPAR_01_blk_F","",1500,750,"call life_coplevel >= 2" }, //spar 16
+            { "arifle_MXC_Black_F","",2500,1250,"call life_coplevel >= 3" },//MXC black
+            { "arifle_MXM_Black_F","",2500,1250,"call life_coplevel >= 3" },  //MXM Black
+            { "arifle_MX_SW_Black_F","",2750,1375,"call life_coplevel >= 3" },//MXSW Black
+            { "SMG_03_TR_black","",2000,1000,"call life_coplevel >= 3" },//p90
+            { "SMG_03C_TR_black","",2000,1000,"call life_coplevel >= 3" },//p90
+            { "SMG_03_black","",2000,1000,"call life_coplevel >= 3" },//p90
+            { "SMG_03C_black","",2000,1000,"call life_coplevel >= 3" },//p90
+            { "arifle_SPAR_03_blk_F","",3500,1750,"call life_coplevel >= 3" },//spar 17
+            { "srifle_DMR_07_blk_F","",3500,1750,"call life_coplevel >= 4" }, //CMR-76 6.5
+            { "srifle_EBR_F","",3500,1750,"call life_coplevel >= 4" }, //mk14 ebr
+            { "srifle_DMR_02_F","",3500,1750,"call life_coplevel >= 4" },//mar-10
+            { "srifle_DMR_03_F","",3000,1500,"call life_coplevel >= 4" },//mk1 emr
+            { "hgun_ACPC2_F","",1000,500,"call life_coplevel >= 4" },//1911
+            { "hgun_Pistol_heavy_01_F","",1500,750,"call life_coplevel >= 5" },//4-five
+            { "srifle_DMR_04_F","",5000,2500,"call life_coplevel >= 5" },//asp-1 kir 12.7
+            { "srifle_DMR_05_blk_F","",5000,2500,"call life_coplevel >= 5" },//cyrus 9.3
+            { "LMG_Mk200_F","",4000,2000,"call life_coplevel >= 5" },//mk200 lmg 6.5
+            { "srifle_LRR_F","",6000,3000,"call life_coplevel >= 5" },//.408
+            { "srifle_GM6_F","",8000,4000,"call life_coplevel >= 6" }//lynx
+        };  
         mags[] = {
-            { "16Rnd_9x21_Mag", "", 125, 60, "" },
-            { "20Rnd_556x45_UW_mag", $STR_W_mags_TaserRifle, 125, 60, "" },
-            { "11Rnd_45ACP_Mag", "", 130, 65, "call life_coplevel >= 1" },
-            { "30Rnd_65x39_caseless_mag", "", 130, 65, "call life_coplevel >= 2" },
-            { "30Rnd_9x21_Mag", "", 250, 125, "call life_coplevel >= 2" },
-            { "9Rnd_45ACP_Mag", "", 200, 100, "call life_coplevel >= 3" },
-            { "20Rnd_650x39_Cased_Mag_F", "", 200, 100, "call life_coplevel >= 3" } //Apex DLC
+            { "16Rnd_9x21_Mag", "", 100, 50, "" },//16rnd 9mm(taser)
+            { "20Rnd_556x45_UW_mag", $STR_W_mags_TaserRifle, 100, 50, "" },//taser rifle
+            { "11Rnd_45ACP_Mag", "", 150, 75, "" },//4-five
+            { "30Rnd_65x39_caseless_black_mag", "", 200, 100, "" },//mx black 30rnd
+            { "100Rnd_65x39_caseless_black_mag", "", 300, 150, "" },//mx black 100rnd
+            { "30Rnd_9x21_Mag", "", 150, 75, "" },//sting mag
+            { "9Rnd_45ACP_Mag", "", 150, 75, "" },//1911
+            { "30Rnd_45ACP_Mag_SMG_01", "", 200, 100, "" },//vermin mag
+            { "30Rnd_556x45_Stanag", "", 200, 100, "" },//5.56 30 rnd
+            { "50Rnd_570x28_SMG_03", "", 200, 100, "" },//p90 mag
+            { "20Rnd_762x51_Mag", "", 300, 150, "" },//20rnd 7.62
+            { "10Rnd_338_Mag", "", 350, 175, "" },//mar-10
+            { "10Rnd_127x54_Mag", "", 350, 175, "" },//asp-1 kir 12.7
+            { "10Rnd_93x64_DMR_05_Mag", "", 350, 175, "" },//cyrus 9.3
+            { "200Rnd_65x39_cased_Box", "", 400, 200, "" },//mk200
+            { "7Rnd_408_Mag", "", 500, 250, "" },//.408
+            { "5Rnd_127x108_Mag", "", 500, 250, "" },//lynx
+            { "5Rnd_127x108_APDS_Mag", "", 750, 375, "" },//lynx apds
+            { "20Rnd_650x39_Cased_Mag_F", "", 200, 100, "" } //cmr-76 6.5
         };
         accs[] = {
             { "muzzle_snds_L", "", 650, 325, "" },
