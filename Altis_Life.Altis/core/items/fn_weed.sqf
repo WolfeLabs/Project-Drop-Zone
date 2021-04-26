@@ -34,6 +34,7 @@ for "_i" from 0 to 20 do
     "radialBlur" ppEffectCommit 1;
     addcamShake[random 3, 1, random 3];
     life_hunger = life_hunger - 2;
+    [] call life_fnc_hudUpdate;
     sleep 1;
 };
 
