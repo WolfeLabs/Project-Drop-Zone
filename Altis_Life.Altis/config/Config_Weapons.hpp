@@ -160,6 +160,8 @@ class WeaponShops {
             { "arifle_SDAR_F", $STR_W_items_TaserRifle, 1500, 750, "call life_coplevel >= 1" },//taser rifle
             { "SMG_01_F","",1000,500,"call life_coplevel >= 2" },//vermin
             { "SMG_02_F","",1000,500,"call life_coplevel >= 2" },//sting
+            { "hgun_ACPC2_F","",1000,500,"call life_coplevel >= 4" },//1911
+            { "hgun_Pistol_heavy_01_F","",1500,750,"call life_coplevel >= 5" },//4-five
             { "arifle_MX_Black_F","",2500,1250,"call life_coplevel >= 2" }, //basic black mx    
             { "arifle_SPAR_01_blk_F","",1500,750,"call life_coplevel >= 2" }, //spar 16
             { "arifle_MXC_Black_F","",2500,1250,"call life_coplevel >= 3" },//MXC black
@@ -174,8 +176,6 @@ class WeaponShops {
             { "srifle_EBR_F","",3500,1750,"call life_coplevel >= 4" }, //mk14 ebr
             { "srifle_DMR_02_F","",3500,1750,"call life_coplevel >= 4" },//mar-10
             { "srifle_DMR_03_F","",3000,1500,"call life_coplevel >= 4" },//mk1 emr
-            { "hgun_ACPC2_F","",1000,500,"call life_coplevel >= 4" },//1911
-            { "hgun_Pistol_heavy_01_F","",1500,750,"call life_coplevel >= 5" },//4-five
             { "srifle_DMR_04_F","",5000,2500,"call life_coplevel >= 5" },//asp-1 kir 12.7
             { "srifle_DMR_05_blk_F","",5000,2500,"call life_coplevel >= 5" },//cyrus 9.3
             { "LMG_Mk200_F","",4000,2000,"call life_coplevel >= 5" },//mk200 lmg 6.5
