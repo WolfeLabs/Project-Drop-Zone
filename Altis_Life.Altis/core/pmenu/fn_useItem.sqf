@@ -54,8 +54,8 @@ switch (_item) do {
     case "cocaine_processed": {
            if (LIFE_SETTINGS(getNumber,"enable_fatigue") isEqualTo 1) then {player setFatigue 0;};
              if (_item isEqualTo "cocaine_processed" && {LIFE_SETTINGS(getNumber,"enable_fatigue") isEqualTo 1}) then {
-                closeDialog 0;
                 if ([false, _item, 1] call life_fnc_handleInv) then {
+                    [] spawn life_fnc_cocaine;
                     [] spawn {
                         life_cocaine_effect = time;
                         titleText[localize "STR_ISTR_CocaineEffect","PLAIN"];
@@ -132,6 +132,10 @@ switch (_item) do {
             closeDialog 0;
         }; 
     }; 
+
+ /*    case "cocaine_processed":{
+        
+    } */
 
 
 
