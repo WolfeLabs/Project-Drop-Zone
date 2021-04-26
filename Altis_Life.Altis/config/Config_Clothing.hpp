@@ -172,8 +172,7 @@ class Clothing {
             { "NONE", $STR_C_Remove_vests, 0, "" },
             { "V_Rangemaster_belt", "", 800, "" },
             { "V_TacVest_blk_POLICE", "", 1000, "call life_coplevel >= 1" },
-            { "V_TacVest_gen_F", "", 1000, "call life_coplevel >= 1" }, //Apex DLC
-            { "V_PlateCarrier2_rgr", "", 1500, "call life_coplevel >= 2" }
+            { "V_PlateCarrier2_blk", "", 1000, "call life_coplevel >= 2" },
         };
         backpacks[] = {
             { "NONE", $STR_C_Remove_backpacks, 0, "" },

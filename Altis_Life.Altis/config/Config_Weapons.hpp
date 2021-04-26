@@ -213,10 +213,10 @@ class WeaponShops {
             { "muzzle_snds_338_black", "", 650, 325, "" },//mar-10 supp
             { "muzzle_snds_93mmg", "", 650, 325, "" },//9.3 supp
             { "muzzle_snds_570", "", 650, 325, "" },//p90 supp
-            { "acc_flashlight", "", 650, 325, "" },
-            { "acc_flashlight_smg_01", "", 650, 325, "" },
-            { "acc_flashlight_pistol", "", 650, 325, "" },
-            { "acc_pointer_IR", "", 650, 325, "" },
+            { "acc_flashlight", "", 650, 325, "" },//flashlight
+            { "acc_flashlight_smg_01", "", 650, 325, "" },//smg flashlight
+            { "acc_flashlight_pistol", "", 650, 325, "" },//pistol light
+            { "acc_pointer_IR", "", 650, 325, "" },//IR laser
             { "optic_MRD", "", 650, 325, "" },//4-five RDS
             { "optic_Arco_blk_F", "", 650, 325, "" },//black arco
             { "optic_Hamr", "", 650, 325, "" },//hamr scope
