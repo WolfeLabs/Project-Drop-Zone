@@ -204,13 +204,37 @@ class WeaponShops {
             { "20Rnd_650x39_Cased_Mag_F", "", 200, 100, "" } //cmr-76 6.5
         };
         accs[] = {
-            { "muzzle_snds_L", "", 650, 325, "" },
-            { "optic_MRD", "", 2750, 1375, "call life_coplevel >= 1" },
-            { "acc_flashlight_pistol", "", 250, 125, "call life_coplevel >= 1" },//Pistol Flashlight
-            { "acc_flashlight", "", 750, 375, "call life_coplevel >= 2" },
-            { "optic_Holosight", "", 1200, 600, "call life_coplevel >= 2" },
-            { "optic_Arco", "", 2500, 1250, "call life_coplevel >= 2" },
-            { "muzzle_snds_H", "", 2750, 1375, "call life_coplevel >= 2" }
+            { "muzzle_snds_L", "", 650, 325, "" },//9mm supp
+            { "muzzle_snds_acp", "", 650, 325, "" },//45 acp supp
+            { "muzzle_snds_M", "", 650, 325, "" },//5.56 supp
+            { "muzzle_snds_H", "", 650, 325, "" },//6.5 reg supp
+            { "muzzle_snds_H_MG", "", 650, 325, "" },//6.5 lmg supp
+            { "muzzle_snds_B", "", 650, 325, "" },//7.62 supp
+            { "muzzle_snds_338_black", "", 650, 325, "" },//mar-10 supp
+            { "muzzle_snds_93mmg", "", 650, 325, "" },//9.3 supp
+            { "muzzle_snds_570", "", 650, 325, "" },//p90 supp
+            { "acc_flashlight", "", 650, 325, "" },
+            { "acc_flashlight_smg_01", "", 650, 325, "" },
+            { "acc_flashlight_pistol", "", 650, 325, "" },
+            { "acc_pointer_IR", "", 650, 325, "" },
+            { "optic_MRD", "", 650, 325, "" },//4-five RDS
+            { "optic_Arco_blk_F", "", 650, 325, "" },//black arco
+            { "optic_Hamr", "", 650, 325, "" },//hamr scope
+            { "optic_ERCO_blk_F", "", 650, 325, "" },//balck erco
+            { "optic_Aco", "", 650, 325, "" },//aco 
+            { "optic_ACO_grn", "", 650, 325, "" },//grn aco
+            { "optic_Aco_smg", "", 650, 325, "" },//smg aco
+            { "optic_ACO_grn_smg", "", 650, 325, "" },//grn smg aco
+            { "optic_Holosight", "", 650, 325, "" },//holo
+            { "optic_Holosight_smg", "", 650, 325, "" },//smg holo
+            { "optic_SOS", "", 650, 325, "" },//MOS scope
+            { "optic_MRCO", "", 650, 325, "" },//MRCO
+            { "optic_Nightstalker", "", 650, 325, "" },//nightstalker
+            { "optic_DMS", "", 650, 325, "" },//DMS Scope
+            { "optic_LRPS", "", 650, 325, "" },//LRPS
+            { "optic_AMS", "", 650, 325, "" },//AMS Scope
+            { "optic_KHS_blk", "", 650, 325, "" },//Khalia Scope
+            { "bipod_02_F_blk", "", 650, 325, "" }//Bipod                                                
         };
     };
 
