@@ -60,17 +60,11 @@ switch (playerSide) do {
 			if ((FETCH_CONST(life_coplevel) >= 7) && ((uniform player) == "U_Rangemaster")) then {
 				player setObjectTextureGlobal [0, "textures\COPS\unis\chf.jpg"];
 			};						
-			if ((backpack player) == "B_Carryall_cbr") then {
-			    (unitbackpack player) setObjectTextureGlobal [0,""];
-			};
 		};
 
     case independent: {
         if (uniform player isEqualTo "U_Rangemaster") then {
             player setObjectTextureGlobal [0, "textures\medic_uniform.jpg"];
         };
-		if ((backpack player) == "B_Carryall_cbr") then {
-		    (unitbackpack player) setObjectTextureGlobal [0,""];
-		};
     };
 };
