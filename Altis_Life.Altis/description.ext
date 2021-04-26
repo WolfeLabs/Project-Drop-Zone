@@ -17,13 +17,16 @@ class CfgServer {
     */
 };
 
+#include "maverick\maverick_master.cpp"
 class RscTitles {
     #include "dialog\progress.hpp"
     #include "dialog\hud_nameTags.hpp"
     #include "dialog\hud_stats.hpp"
+    #include "maverick\maverick_titles_master.cpp"
 };
 
 class CfgFunctions {
+    #include "maverick\maverick_functions_master.cpp"
     #include "Functions.hpp"
 };
 
