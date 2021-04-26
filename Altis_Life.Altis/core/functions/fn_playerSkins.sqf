@@ -59,7 +59,10 @@ switch (playerSide) do {
 			};
 			if ((FETCH_CONST(life_coplevel) >= 7) && ((uniform player) == "U_Rangemaster")) then {
 				player setObjectTextureGlobal [0, "textures\COPS\unis\chf.jpg"];
-			};						
+			};	
+            if (backpack player isEqualTo "B_Carryall_cbr") then {
+             [unitBackpack player] remoteExecCall ["life_fnc_hideObj",-2];
+            };					
 		};
 
     case independent: {
