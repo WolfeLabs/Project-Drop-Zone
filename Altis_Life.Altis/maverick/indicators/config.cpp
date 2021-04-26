@@ -10,7 +10,7 @@ class Maverick_Indicators
 	// Base configuration
 	class IndicatorVehicle_Base
 	{
-		blinkInterval = 0.8;
+		blinkInterval = 0.5;
 	};
 
 	// Vehicle configuration
