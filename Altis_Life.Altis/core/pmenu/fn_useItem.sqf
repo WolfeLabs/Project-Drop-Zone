@@ -51,20 +51,22 @@ if (_edible > -1 || _drinkable > -1) exitWith {
 
 switch (_item) do {
 
-      case(_item in ["cocaine_processed"]): {
-        if ([false,_item,1] call life_fnc_handleInv) then{
+    case "cocaine_processed": {
            if (LIFE_SETTINGS(getNumber,"enable_fatigue") isEqualTo 1) then {player setFatigue 0;};
              if (_item isEqualTo "cocaine_processed" && {LIFE_SETTINGS(getNumber,"enable_fatigue") isEqualTo 1}) then {
-                [] spawn {
-                    life_cocaine_effect = time;
-                    titleText[localize "STR_ISTR_CocaineEffect","PLAIN"];
-                    player enableFatigue false;
-                    waitUntil {!alive player || ((time - life_cocaine_effect) > (10 * 60))};
-                    player enableFatigue true;
+                closeDialog 0;
+                if ([false, _item, 1] call life_fnc_handleInv) then {
+                    [] spawn {
+                        life_cocaine_effect = time;
+                        titleText[localize "STR_ISTR_CocaineEffect","PLAIN"];
+                        player enableFatigue false;
+                        waitUntil {!alive player || ((time - life_cocaine_effect) > (10 * 60))};
+                        player enableFatigue true;
+                    };
                 };
              };
         };
-    };
+    
 
 
     case "boltcutter": {
@@ -117,29 +119,21 @@ switch (_item) do {
     };
 
 
-    case (_item == "marijuana"): 
-    { 
-        if(([false,_item,1] call life_fnc_handleInv)) then 
-        { 
-            [] spawn life_fnc_weed; 
+    case "marijuana": { 
+        if ([false, _item, 1] call life_fnc_handleInv) then {
+            [] spawn life_fnc_weed;
+            closeDialog 0;
+        };
+    }; 
+
+    case "heroin_processed":{ 
+        if ([false, _item, 1] call life_fnc_handleInv) then {
+            [] spawn life_fnc_heroin;
+            closeDialog 0;
         }; 
     }; 
 
-    case (_item == "heroin_processed"): 
-    { 
-        if(([false,_item,1] call life_fnc_handleInv)) then 
-        { 
-        [] spawn life_fnc_heroin; 
-        }; 
-    }; 
 
-  case (_item == "cocaine_processed"): 
-  { 
-    if(([false,_item,1] call life_fnc_handleInv)) then 
-    { 
-      [] spawn life_fnc_cocaine; 
-    }; 
-  }; 
 
     default {
         hint localize "STR_ISTR_NotUsable";

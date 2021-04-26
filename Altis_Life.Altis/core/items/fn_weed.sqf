@@ -33,6 +33,7 @@ for "_i" from 0 to 20 do
     "radialBlur" ppEffectAdjust  [random 0.02,random 0.02,0.15,0.15];
     "radialBlur" ppEffectCommit 1;
     addcamShake[random 3, 1, random 3];
+    life_hunger = life_hunger - 2;
     sleep 1;
 };
 
