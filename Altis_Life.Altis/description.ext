@@ -19,10 +19,10 @@ class CfgServer {
 
 #include "maverick\maverick_master.cpp"
 class RscTitles {
-    #include "maverick\maverick_titles_master.cpp"
     #include "dialog\progress.hpp"
     #include "dialog\hud_nameTags.hpp"
     #include "dialog\hud_stats.hpp"
+    #include "maverick\maverick_titles_master.cpp"
 };
 
 class CfgFunctions {
