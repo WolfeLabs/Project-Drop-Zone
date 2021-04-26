@@ -25284,7 +25284,7 @@ class Mission
 					{
 						skill=0.60000002;
 						name="cop_1";
-						description="WhiteListed -  Cop 20";
+						description="WhiteListed -  Cop 1";
 						isPlayable=1;
 					};
 					id=769;
@@ -25304,7 +25304,7 @@ class Mission
 					{
 						skill=0.60000002;
 						name="cop_2";
-						description="WhiteListed -  Cop 21";
+						description="WhiteListed -  Cop 2";
 						isPlayable=1;
 					};
 					id=770;
@@ -25324,7 +25324,7 @@ class Mission
 					{
 						skill=0.60000002;
 						name="cop_3";
-						description="WhiteListed -  Cop 22";
+						description="WhiteListed -  Cop 3";
 						isPlayable=1;
 					};
 					id=771;
@@ -25344,7 +25344,7 @@ class Mission
 					{
 						skill=0.60000002;
 						name="cop_4";
-						description="WhiteListed -  Cop 23";
+						description="WhiteListed -  Cop 4";
 						isPlayable=1;
 					};
 					id=772;
