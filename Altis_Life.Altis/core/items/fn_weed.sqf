@@ -25,7 +25,7 @@ if (vehicle player != player) then
         _smoke attachTo [player, [0,-0.1,1.5]];
     };
     [player,"weedhit"] remoteExec ["life_fnc_say3D",RANY];
-//Let's go for 45secs of effetcs
+//Let's go for 20 secs of effetcs
 for "_i" from 0 to 20 do
 {
     "chromAberration" ppEffectAdjust [random 0.25,random 0.25,true];
