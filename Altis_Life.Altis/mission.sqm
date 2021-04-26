@@ -261,7 +261,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="Project Drop Zone Altis Life RPG v5.0";
+		briefingName="Project Drop Zone Altis Life";
 		startWeather=0.099999994;
 		startWind=0.29999998;
 		startWindDir=20;
