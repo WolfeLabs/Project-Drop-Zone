@@ -25,8 +25,8 @@ _textSpoiler = _display displayCtrl 1101;
 _text2 = _display displayCtrl 1102;
 
 _message = "";
-_message = _message + "<t align='center' size='8' shadow='0'>Project Drop Zone</t><br /><br />";
-//_message = _message + "AsYetUntitled, formerly Altis Life RPG and ARMARPGLIFE is a roleplay framework for ArmA III originally made by TAW_Tonic.<br /><br />";
+_message = _message + "<t align='center' size='7' shadow='0'>Project Drop Zone</t><br /><br />";
+_message = _message + "<t align='center' size='8' shadow='0'><img image='textures\advert_images\DropZone.jpg' /></t><br /><br />";
 _message = _message + "Useful links if you're new:<br /><br />";
 _message = _message + "<a color='#00DFFF'>•</a> Discord: <a href='https://discord.gg/Qdp5VywJXs' color='#56BDD6'>https://discord.gg/Qdp5VywJXs</a><br />";
 _message = _message + "<a color='#00DFFF'>•</a> Teamspeak: <a href='placeholder' color='#56BDD6'> Link Placeholder</a><br />";
