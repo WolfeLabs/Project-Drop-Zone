@@ -11,24 +11,29 @@ closeDialog 0;
 hint "Lets Do This"; 
 
 //Activate ppEffects we need 
-"colorCorrections" ppEffectEnable true; 
-"colorCorrections" ppEffectAdjust [1, 1, 0, [0,0,0,0.5], [random 5 - random 5,random 5 - random 5,random 5 - random 5,random 1], [random 5 - random 5,random 5 - random 5,random 5 - random 5, random 1]]; 
-"colorCorrections" ppEffectCommit 1; 
 "chromAberration" ppEffectEnable true; 
-"chromAberration" ppEffectAdjust [0.01,0.01,true]; 
-"chromAberration" ppEffectCommit 1; 
-sleep 2.25; 
+"radialBlur" ppEffectEnable true; 
+enableCamShake true; 
 
-private["_force"]; 
-for "_i" from 0 to 26 do 
+//Let's go for 45secs of effetcs 
+for "_i" from 0 to 45 do 
 { 
-
-        "colorCorrections" ppEffectEnable true; 
-        "colorCorrections" ppEffectAdjust [1, 1, 0, [0,0,0,0.5], [random 5 - random 5,random 5 - random 5,random 5 - random 5,random 1], [random 5 - random 5,random 5 - random 5,random 5 - random 5, random 1]]; 
-        "colorCorrections" ppEffectCommit 1; 
-        sleep 2.25; 
+    "chromAberration" ppEffectAdjust [random 0.25,random 0.25,true]; 
+    "chromAberration" ppEffectCommit 1; 
+    "radialBlur" ppEffectAdjust  [random 0.9,random 0.9,0.2,0.2]; 
+    "radialBlur" ppEffectCommit 1; 
+    addcamShake[random 3, 1, random 3]; 
+    sleep 1; 
 }; 
 
-"chromAberration" ppEffectEnable false; 
-"colorCorrections" ppEffectEnable false;
+//Stop effects 
+"chromAberration" ppEffectAdjust [0,0,true]; 
+"chromAberration" ppEffectCommit 5; 
+"radialBlur" ppEffectAdjust  [0,0,0,0]; 
+"radialBlur" ppEffectCommit 5; 
+sleep 6; 
 
+//Deactivate ppEffects 
+"chromAberration" ppEffectEnable false; 
+"radialBlur" ppEffectEnable false; 
+resetCamShake; 
