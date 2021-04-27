@@ -119,6 +119,7 @@ if (life_HC_isActive) then {
     [getPlayerUID player, player getVariable ["realname", name player]] remoteExec ["life_fnc_wantedProfUpdate", RSERV];
 };
 
+[] execVM "core\scripts\fn_statusBar.sqf";
 [] call life_fnc_hudSetup;
 
 diag_log "----------------------------------------------------------------------------------------------------";
