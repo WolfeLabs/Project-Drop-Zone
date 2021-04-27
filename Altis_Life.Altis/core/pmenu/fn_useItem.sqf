@@ -50,6 +50,25 @@ if (_edible > -1 || _drinkable > -1) exitWith {
 };
 
 switch (_item) do {
+
+    case "cocaine_processed": {
+           if (LIFE_SETTINGS(getNumber,"enable_fatigue") isEqualTo 1) then {player setFatigue 0;};
+             if (_item isEqualTo "cocaine_processed" && {LIFE_SETTINGS(getNumber,"enable_fatigue") isEqualTo 1}) then {
+                if ([false, _item, 1] call life_fnc_handleInv) then {
+                    [] spawn life_fnc_cocaine;
+                    [] spawn {
+                        life_cocaine_effect = time;
+                        titleText[localize "STR_ISTR_CocaineEffect","PLAIN"];
+                        player enableFatigue false;
+                        waitUntil {!alive player || ((time - life_cocaine_effect) > (10 * 60))};
+                        player enableFatigue true;
+                    };
+                };
+             };
+        };
+    
+
+
     case "boltcutter": {
         [cursorObject] spawn life_fnc_boltcutter;
         closeDialog 0;
@@ -98,6 +117,27 @@ switch (_item) do {
         [] spawn life_fnc_lockpick;
         closeDialog 0;
     };
+
+
+    case "marijuana": { 
+        if ([false, _item, 1] call life_fnc_handleInv) then {
+            [] spawn life_fnc_weed;
+            closeDialog 0;
+        };
+    }; 
+
+    case "heroin_processed":{ 
+        if ([false, _item, 1] call life_fnc_handleInv) then {
+            [] spawn life_fnc_heroin;
+            closeDialog 0;
+        }; 
+    }; 
+
+ /*    case "cocaine_processed":{
+        
+    } */
+
+
 
     default {
         hint localize "STR_ISTR_NotUsable";
