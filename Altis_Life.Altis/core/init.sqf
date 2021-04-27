@@ -120,7 +120,7 @@ if (life_HC_isActive) then {
 };
 
 [] execVM "core\scripts\fn_statusBar.sqf";
-//[] call life_fnc_hudSetup;
+[] call life_fnc_hudSetup;
 
 diag_log "----------------------------------------------------------------------------------------------------";
 diag_log format ["               End of Altis Life Client Init :: Total Execution Time %1 seconds ",(diag_tickTime - _timeStamp)];
