@@ -167,9 +167,9 @@ randomSeed=2639488;
 class ScenarioData
 {
 	author="Tonic";
-	overViewPicture="textures\armalife.jpg";
-	overViewPictureLocked="textures\armalife.jpg";
-	loadScreen="textures\armalife.jpg";
+	overViewPicture="textures\advert_images\DropZone.jpg";
+	overViewPictureLocked="textures\advert_images\DropZone.jpg";
+	loadScreen="textures\advert_images\DropZone.jpg";
 	saving=0;
 	respawnDialog=0;
 	disabledAI=1;
@@ -261,7 +261,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="Altis Life RPG v5.0.0";
+		briefingName="Project Drop Zone Altis Life";
 		startWeather=0.099999994;
 		startWind=0.29999998;
 		startWindDir=20;
