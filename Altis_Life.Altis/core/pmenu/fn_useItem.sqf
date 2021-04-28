@@ -126,9 +126,9 @@ switch (_item) do {
         };
     };
 
-     case "medmarijuana": { 
+    case "medmarijuana": { 
         if ([false, _item, 1] call life_fnc_handleInv) then {
-            [] spawn life_fnc_weed;
+            [] spawn life_fnc_medmarijuana;
             closeDialog 0;
         };
     };
