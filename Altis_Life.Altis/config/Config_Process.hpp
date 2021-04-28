@@ -92,7 +92,7 @@ class ProcessAction {
 class meth {
         MaterialsReq[] = {{"methi",1}}; // Material that will be processed (we will loose them)
         MaterialsGive[] = {{"methp",1}}; // Material that will be generated (we will get them)
-        Text = "STR_Process_Methp"; // Text that you show on Processing NPC - We already set it up on stringtables.xml
+        Text = "STR_Process_Meth"; // Text that you show on Processing NPC - We already set it up on stringtables.xml
         //ScrollText = "Process Ecstasy";
         NoLicenseCost = 2000; // Price that will costs if the player don't have the license to process it.
 };
