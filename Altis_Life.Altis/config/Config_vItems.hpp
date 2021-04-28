@@ -26,7 +26,7 @@ class VirtualShops {
    class medmarijuana {
         name = "STR_Shops_Marijuana";
         side = "civ";
-        conditions = "medmarijuana";
+        conditions = "license_civ_medmarijuana";
         items[] = { "medmarijuana" };
     };
 
