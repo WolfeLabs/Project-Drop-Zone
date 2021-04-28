@@ -271,7 +271,7 @@ class Life_Client_Core {
         class spikeStrip {};
         class storageBox {};
         class weed {};
-        class MedWeed {};        
+        class fkndrugs {};        
         class cocaine {};
         class Heroin {};
     };

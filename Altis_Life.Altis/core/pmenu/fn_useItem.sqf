@@ -126,13 +126,20 @@ switch (_item) do {
         };
     };
 
-    case "MedWeed": { 
+    case (_item isEqualTo "MedWeed"): {
+		if ([false,_item,1] call life_fnc_handleInv) then {
+			[] spawn life_fnc_fkndrugs;
+			closeDialog 0;
+		};
+    }
+
+
+  /*   case "MedWeed": { 
         if ([false, _item, 1] call life_fnc_handleInv) then {
-            hint "i run the code here";
-            [] spawn life_fnc_MedWeed;
+            [] spawn life_fnc_fkndrugs;
             closeDialog 0;
         };
-    };
+    }; */
 
     case "heroin_processed":{ 
         if ([false, _item, 1] call life_fnc_handleInv) then {

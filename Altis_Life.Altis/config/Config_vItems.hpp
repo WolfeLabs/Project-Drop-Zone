@@ -537,6 +537,7 @@ class VirtualItems {
         sellPrice = -1;
         illegal = false;
         edible = -1;
+        drinkable = -1;
         icon = "icons\ico_marijuana.paa";
     };
 
