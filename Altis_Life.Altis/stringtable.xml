@@ -7662,10 +7662,10 @@
             <Polish>Oczyszczona kokaina</Polish>
 			<Chinesesimp>可卡因</Chinesesimp>
         </Key>
-        <Key ID=“STR_Item_Methi”>
+        <Key ID="STR_Item_Methi">
             <Original>Meth impure</Original>
             </Key>
-        <Key ID=“STR_Item_Methp”>
+        <Key ID="STR_Item_Methp">
             <Original>Meth Pure</Original>
         </Key>
         <Key ID="STR_Item_MDMAEcstasy">
@@ -7740,7 +7740,7 @@
             <Polish>Wytwarzanie Heroiny</Polish>
 			<Chinesesimp>海洛因加工证</Chinesesimp>
         </Key>
-        <Key ID=“STR_License_Meth”>
+        <Key ID="STR_License_Meth">
             <Original>Meth Training</Original>
         </Key>
         <Key ID="STR_License_Ecstasy">
@@ -8604,7 +8604,7 @@
             <Polish>Oczyszczanie kokainy</Polish>
 			<Chinesesimp>加工可卡因</Chinesesimp>
         </Key>
-        <Key ID=“STR_Process_Meth”>
+        <Key ID="STR_Process_Meth">
             <Original>Meth Mixing</Original>
         </Key>
         <Key ID="STR_Process_Ecstasy">
