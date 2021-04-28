@@ -57966,7 +57966,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this allowDamage false; " \n "this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""medmarijuana"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""medmarijuana"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""medmarijuana"",0,false,false,"""",' !license_civ_medmarijuana && playerSide isEqualTo civilian ']; this addAction[localize""STR_Shops_Marijuana"",life_fnc_virt_menu,""medmarijuana"",1.5,true,true,"""",""true"",5]; " \n "";
+						init="this allowDamage false; " \n "this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""MedWeed"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""MedWeed"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""MedWeed"",0,false,false,"""",' !license_civ_MedWeed && playerSide isEqualTo civilian ']; this addAction[localize""STR_Shops_Marijuana"",life_fnc_virt_menu,""MedWeed"",1.5,true,true,"""",""true"",5]; " \n "";
 						disableSimulation=1;
 						class Inventory
 						{

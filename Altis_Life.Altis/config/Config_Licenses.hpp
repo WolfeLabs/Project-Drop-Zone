@@ -189,8 +189,8 @@ class Licenses {
         side = "med";
     };
 
-     class medmarijuana {
-        variable = "medmarijuana";
+     class MedWeed {
+        variable = "MedWeed";
         displayName = "STR_License_Marijuana";
         price = 50000;
         illegal = false;

@@ -6858,7 +6858,7 @@
             <Polish>Konopie</Polish>
 			<Chinesesimp>大麻叶</Chinesesimp>
         </Key>
-        <Key ID="STR_Item_MedMarijuana">
+        <Key ID="STR_Item_MedWeed">
             <Original>Medical Marijuana</Original>
         </Key>
         <Key ID="STR_Item_Apple">
@@ -7940,7 +7940,7 @@
             <Polish>Wytwórca cementu</Polish>
 			<Chinesesimp>水泥制造证</Chinesesimp>
         </Key>
-        <Key ID="STR_License_Medmarijuana">
+        <Key ID="STR_License_MedWeed">
             <Original>Medical Marijuana License</Original>
             <Czech>Medical Marihuana Licence</Czech>
             <Spanish>Licencia de Marihuana Medicinal</Spanish>

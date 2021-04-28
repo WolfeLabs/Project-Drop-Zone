@@ -23,11 +23,11 @@ class VirtualShops {
         items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "toolkit", "fuelFull", "peach", "defibrillator" };
     };
 
-   class medmarijuana {
+   class MedWeed {
         name = "STR_Shops_Marijuana";
         side = "civ";
-        conditions = "license_civ_medmarijuana";
-        items[] = { "medmarijuana" };
+        conditions = "license_civ_MedWeed";
+        items[] = { "MedWeed" };
     };
 
     class rebel {
@@ -529,9 +529,9 @@ class VirtualItems {
         icon = "icons\ico_marijuana.paa";
     };
 
-    class medmarijuana {
-        variable = "medmarijuana";
-        displayName = "STR_Item_MedMarijuana";
+    class MedWeed {
+        variable = "MedWeed";
+        displayName = "STR_Item_MedWeed";
         weight = 3;
         buyPrice = 6000;
         sellPrice = -1;
