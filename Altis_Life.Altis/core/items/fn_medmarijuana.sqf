@@ -35,7 +35,7 @@ for "_i" from 0 to 20 do
     addcamShake[random 3, 1, random 3];
     life_hunger = life_hunger - 2;
     [] call life_fnc_hudUpdate;
-    player setDamage (Damage player - 0.025) 
+    player setDamage (Damage player - 0.025);
     sleep 1;
 };
 
