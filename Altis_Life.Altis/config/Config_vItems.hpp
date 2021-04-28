@@ -23,8 +23,8 @@ class VirtualShops {
         items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "toolkit", "fuelFull", "peach", "defibrillator" };
     };
 
-    class medmarijuana {
-        name = "STR_Shops_Pharmacy";
+   class medmarijuana {
+        name = "STR_Shops_Marijuana";
         side = "civ";
         conditions = "medmarijuana";
         items[] = { "medmarijuana" };
