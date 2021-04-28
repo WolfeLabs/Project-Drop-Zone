@@ -154,6 +154,14 @@ class Licenses {
         side = "civ";
     };
 
+    class meth {  
+        variable = "meth";  
+        displayName = "STR_License_Meth";  
+        price = 40000;  
+        illegal = true;  
+        side = "civ";  
+    };  
+
     class rebel {
         variable = "rebel";
         displayName = "STR_License_Rebel";
@@ -187,4 +195,17 @@ class Licenses {
         illegal = false;
         side = "med";
     };
+
+     class medmarijuana {
+        variable = "medmarijuana";
+        displayName = "STR_License_Marijuana";
+        price = 50000;
+        illegal = false;
+        side = "civ";
+    };	
+
+    
+
+
+    //EOF
 };

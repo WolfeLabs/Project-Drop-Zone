@@ -23,6 +23,13 @@ class VirtualShops {
         items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "toolkit", "fuelFull", "peach", "defibrillator" };
     };
 
+    class medmarijuana {
+        name = "STR_Shops_Pharmacy";
+        side = "civ";
+        conditions = "medmarijuana";
+        items[] = { "medmarijuana" };
+    };
+
     class rebel {
         name = "STR_Shops_Rebel";
         side = "civ";
@@ -62,7 +69,7 @@ class VirtualShops {
         name = "STR_Shops_DrugDealer";
         side = "civ";
         conditions = "";
-        items[] = { "cocaine_processed", "heroin_processed", "marijuana" };
+        items[] = { "cocaine_processed", "heroin_processed", "marijuana","ecstasy", "methp"};
     };
 
     class oil {
@@ -522,6 +529,17 @@ class VirtualItems {
         icon = "icons\ico_marijuana.paa";
     };
 
+    class medmarijuana {
+        variable = "medmarijuana";
+        displayName = "STR_Item_MedMarijuana";
+        weight = 3;
+        buyPrice = 6000;
+        sellPrice = -1;
+        illegal = false;
+        edible = -1;
+        icon = "icons\ico_marijuana.paa";
+    };
+
     class cocaine_unprocessed {
         variable = "cocaineUnprocessed";
         displayName = "STR_Item_CocaineU";
@@ -546,6 +564,53 @@ class VirtualItems {
         drinkable = -1;
         icon = "icons\ico_cocaineProcessed.paa";
     };
+
+    class mdma_ecstasy { // Unprocessed - MDMA
+            variable = "mdmaEcstasy"; // You will need this to config your Processing NPC.
+            displayName = "STR_Item_MDMAEcstasy"; // This is the Display Name for the item. We will set it on another file. Just change the _MDMAEcstasy for _AnotherResourse to add other.
+            weight = 6; // Weight of the item in bag.
+            buyPrice = -1; // Price to buy it. -1 means that you will never buy it, because in this guide, its a resource that the players will mine to get.
+            sellPrice = -1; // Price to sell. Same above.
+            illegal = true; // This item is illegal. If not, set it to false;
+            edible = -1; // I think that it's how much it will increases your food/water if it was a food or drink.
+            icon = "icons\ico_mdma.paa"; // Icon that will show.
+            processedItem = "ecstasy"; // Item that you receive after processing it.
+        };
+
+        class ecstasy { // Processed
+            variable = "ecstasy"; // Same as above
+            displayName = "STR_Item_Ecstasy"; // Same as above
+            weight = 4; // Same as above
+            buyPrice = -1; // Same as above
+            sellPrice = 6200; // Same as above. But now it will be the price that you sell for the npcs.
+            illegal = true; // Same as above
+            edible = -1; // Same as above
+            icon = "icons\ico_ecstasy.paa"; // Same as above
+        };
+
+        class Methi	{  
+                variable = "Methi";  
+                displayName = "STR_Item_Methi";  
+                weight = 6;  
+                buyPrice = -1;  
+                sellPrice = -1;  
+                illegal = true;  
+                edible = -1;  
+                icon = "icons\ico_Methi.paa";  
+                processedItem = "meth";  
+            };  
+        class Methp {  
+            variable = "Methp";  
+            displayName = "STR_Item_Methp";  
+            weight = 4;  
+            buyPrice = 4200;  
+            sellPrice = 4000;  
+            illegal = true;  
+            edible = -1;  
+            icon = "icons\ico_Methp.paa";  
+        }; 
+
+
 
     //Drink
     class redgull {
