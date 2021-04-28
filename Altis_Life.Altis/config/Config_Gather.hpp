@@ -139,7 +139,7 @@ Example 2:
             zones[] = { "ecstasy_1"}; // Create mark with this name and put it on map using editor. If want more than one place, just place.
             item = ""; // No idea what it means =( Don't change it.
             mined[] = {"mdma_ecstasy"};
-            
+            zoneSize = 30;
 };  
 
         //end of mining
