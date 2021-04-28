@@ -8,7 +8,7 @@
 closeDialog 0;
 
 //Little hint then wait a litle before starting drugs effects
-hint "Puff Puff Pass !";
+hint "Puff Puff Pass but Medically !";
 sleep 3;
 
 //Activate ppEffects we need
