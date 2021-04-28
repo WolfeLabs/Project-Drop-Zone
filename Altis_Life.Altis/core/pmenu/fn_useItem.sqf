@@ -124,7 +124,14 @@ switch (_item) do {
             [] spawn life_fnc_weed;
             closeDialog 0;
         };
-    }; 
+    };
+
+     case "medmarijuana": { 
+        if ([false, _item, 1] call life_fnc_handleInv) then {
+            [] spawn life_fnc_weed;
+            closeDialog 0;
+        };
+    };
 
     case "heroin_processed":{ 
         if ([false, _item, 1] call life_fnc_handleInv) then {
