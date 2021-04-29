@@ -69,6 +69,9 @@ player setVariable ["restrained", false, true];
 player setVariable ["Escorting", false, true];
 player setVariable ["transporting", false, true];
 player setVariable ["playerSurrender", false, true];
+player setVariable ["ziptied",false,true];
+player setVariable ["blindfolded",false,true];
+player setVariable ["gagged",false,true];
 player setVariable ["realname", profileName, true];
 
 diag_log "[Life Client] Past Settings Init";
