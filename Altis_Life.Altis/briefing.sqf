@@ -156,8 +156,8 @@ Items on this list may result in your removal from the server and/or ban, based 
 Items on this list may result in your removal from the server and/or ban, based on the admins discretion.<br/><br/>
 1. Side Chat may not be used to play music or otherwise micspam.<br/>
 2. Spamming any chat channel will result in your removal.<br/>
-4. Teamspeak channels are split up into areas for a reason. Cops must be in the cop channels at all times.<br/>
-5. Civilians cannot be in any cop channels on teamspeak in order to gather information on their location or movements. Civs caught doing this will be removed the channel. Repeat offenders can be kicked or banned from both the game and teamspeak.<br/><br/>
+4. Discord channels are split up into areas for a reason. Cops must be in the cop channels at all times.<br/>
+5. Civilians cannot be in any cop channels on Discord in order to gather information on their location or movements. Civs caught doing this will be removed the channel. Repeat offenders can be kicked or banned from both the game and Discord.<br/><br/>
                 "
         ]
     ];
@@ -266,8 +266,7 @@ Small towns: An appropriate location may be chosen. This is to be judged by offi
             "Patrolling",
                 "
 1. Police may patrol the island's roads and towns searching for abandoned vehicles and criminal activity.<br/>
-2. Patrols can be done on foot inside of a town, or in a vehicle when outside.<br/>
-3. Patrols do not include illegal areas. See Raiding/Camping.<br/><br/>
+2. Patrols do not include illegal areas. See Raiding/Camping.<br/><br/>
                 "
         ]
     ];
@@ -332,9 +331,8 @@ Main roads: 110km/h<br/><br/>
 1. Officers may patrol major cities - Kavala, Athira, Pyrgos and Sofia.<br/>
 2. Officers may stop by the car shop to make sure there are no cars that need to be impounded.<br/>
 3. Officers may not stand around or loiter in the centre of town.<br/>
-4. Officers may enter the town in a large number should a rebellious act occur. After the area is clear, they need to leave the town again.<br/>
-5. Martial law may not be declared at any time.<br/>
-6. The Police HQ buildings are illegal for civilians to enter without authorization, however it is NOT illegal for civilians to be nearby unless they are causing a nuisance.<br/><br/>
+4. Martial law may only be declared by a Captain or Higher.<br/>
+5. The Police HQ buildings are illegal for civilians to enter without authorization, however it is NOT illegal for civilians to be nearby unless they are causing a nuisance.<br/><br/>
                 "
         ]
     ];
@@ -351,7 +349,7 @@ Ticketing a civilian is considered a warning for the civilian. If they break a l
 1. Tickets must be a reasonable price.<br/>
 2. Ticket prices should be based off of the crimes committed.<br/>
 3. Refusal to pay a legit ticket is grounds for arrest.<br/>
-4. Giving a civilian and illegitimate ticket, such as $100k for speeding, etc., is not allowed and will result in your removal from the police department.<br/><br/>
+4. Giving a civilian an illegitimate ticket, such as $100k for speeding, etc., is not allowed and will result in your removal from the police department.<br/><br/>
 A complete list of all crimes and the appropriate punishments should be given to officers during training. If in doubt, or if you have not been trained, ask a higher ranking officer what to do.<br/><br/>
                 "
         ]
@@ -363,12 +361,7 @@ A complete list of all crimes and the appropriate punishments should be given to
                 "
 A cop is NEVER allowed to supply civilians with weapons. This will get you banned from the server and removed from being a cop.<br/><br/>
 Legal Weapons for Civilians to carry with a permit:<br/>
-1. P07<br/>
-2. Rook<br/>
-3. ACP-C2<br/>
-4. Zubr<br/>
-5. 4-five<br/>
-6. PDW2000<br/><br/>
+Any Weapons Purchased At Gun Store <br/><br/>
 Any other weapon (Including Silenced P07 [Considered a Police Weapon]) is illegal.<br/><br/>
 1. Civilians are not allowed to have a weapon out within the town limits.<br/>
 2. Civilians may have a gun out when they are not in the town. However they should submit to a license search if confronted by an officer and should have the gun lowered (Press Ctrl Twice).<br/><br/>
@@ -415,16 +408,13 @@ Camping is defined as the prolong stay of an officer in an area.<br/><br/>
                 "
 The highest ranking officer on duty is in charge of the police force outside of admins currently online. The high ranking officer is expected to follow the rules and guidelines of his/her rank, and must report to the admin in case any action need be taken.<br/><br/>
 Police Chain of Command:<br/>
-1. Chief<br/>
-2. Deputy Chief<br/>
-3. Superintendent<br/>
-4. Captain<br/>
-5. Lieutenant<br/>
-6. Sergeant<br/>
-7. Senior Patrol Officer<br/>
-8. Patrol Officer<br/>
-9. Cadet<br/><br/>
-Cops in game who are not enrolled/accepted into the SPD are the lowest tier and have no say in police operations.<br/><br/>
+7. Chief<br/>
+6. Deputy Chief<br/>
+5. Captain<br/>
+4. Lieutenant<br/>
+3. Sergeant<br/>
+2. Patrol Officer<br/>
+1. Cadet<br/><br/>
                 "
         ]
     ];
@@ -442,10 +432,10 @@ Cops in game who are not enrolled/accepted into the SPD are the lowest tier and 
 
     player createDiaryRecord ["policerules",
         [
-            "TeamSpeak Rule",
+            "Discord Rule",
                 "
-1. All cops must be on TeamSpeak 3 in a designated cop channel. Failure to be on TeamSpeak during an admin check will result in your immediate dismissal from the server.<br/>
-2. Please join TeamSpeak BEFORE you spawn in as a cop, heck, join TeamSpeak before you even join the server.<br/><br/>
+1. All cops must be on Discord in a designated cop channel. Failure to be on Discord during an admin check will result in your immediate dismissal from the server.<br/>
+2. Please join Discord BEFORE you spawn in as a cop, heck, join Discord before you even join the server.<br/><br/>
                 "
         ]
     ];
@@ -487,7 +477,7 @@ A civilian in control of the following prohibited vehicles is subject to the con
 1. Ifrit<br/>
 2. Speedboat<br/>
 3. Hunter<br/>
-4. Police Offroad<br/><br/>
+4. Police Vehicles<br/><br/>
                 "
         ]
     ];
@@ -497,15 +487,7 @@ A civilian in control of the following prohibited vehicles is subject to the con
             "Illegal Weapons",
                 "
 A civilian in possession of the following is subject to the consequences as defined in the illegal possession of a firearm law.<br/><br/>
-1. MX Series<br/>
-2. Katiba Series<br/>
-3. TRG Series<br/>
-4. Mk.20 Series<br/>
-5. Mk.18 ABR<br/>
-6. SDAR Rifle<br/>
-7. Sting SMG<br/>
-8. Silenced P07 (Taser)<br/>
-9. Any explosives<br/><br/>
+Any Weapon Not Purchasable At The Gun Store<br/><br/>
                 "
         ]
     ];
@@ -519,7 +501,11 @@ The following items are illegal to posses:<br/><br/>
 2. Cocaine<br/>
 3. Heroin<br/>
 4. Cannabis<br/>
-5. Marijuana<br/><br/>
+5. Ecstasy/MDMA<br/>
+6. Marijuana<br/>
+7. Medical Marijuana(Without License)<br/>
+8. Meth<br/>
+9. Breaching Charge<br/><br/>
                 "
         ]
     ];
@@ -558,6 +544,9 @@ Left Windows: Main interaction key. Used for interacting with objects like vehic
 Left Shift + H: Holsters the weapon in your hands.<br/>
 Left Ctrl + H: Revert holster action.<br/>
 Shift + Spacebar: Jump.<br/>
+Q(In Vehicle): Left Turn Signal.<br/>
+E(In Vehicle): Right Turn Signal.<br/>
+G(In Vehicle): Caution Lights.<br/>
 Left Shift + O: (un)fade sound (ear plugs).<br/><br/>
                 "
         ]
