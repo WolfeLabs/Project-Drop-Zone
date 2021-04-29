@@ -7,23 +7,40 @@
 class Maverick_Shipwrecks {
 
     //How often (in seconds) should a shipwreck spawn, if no wreck is on the map?
-    ShipwreckInterval = 60; //1800 = 30min
+    ShipwreckInterval = 3600; //1800 = 30min
 
     //Define the possible locations for your shipwrecks.
     //getPosATL format -> Get the position via: diag_log(getPosATL player) -> replace the [] with {}
 	Positions[] = {
-		{23606,18198.6,0}
+		{8560.86,9079.11,0},
+        {13825,14027.3,0},
+        {12472.9,10307.5,0},
+        {22343.4,12477.7,0},
+        {23374.7,15375.3,0},
+        {22960.5,14187.9,0},
+        {21433.2,20477.8,0},
+        {18687.8,19150.8,0},
+        {2625.82,10861.1,0},
+        {2555.3,13775,0}
 	};
 
     //Define the radius, in which the wreck randomly spawns around the given center position
     Radius = 250;
 
+    //Random number Gen Diamond
+    Drandom = floor (random [20, 50,100]);
+    //Random number Gen GoldBars
+    Grandom = floor (random [2, 8, 18]);
+
     //Define the possible sets of virtual items the user can loot from the wreck.
+    //{ { "itemname1", amount }, { "itemname2", amount }, { "itemname3", amount } }
 	ShipLoot[] = {
-		//{ { "itemname1", amount }, { "itemname2", amount }, { "itemname3", amount } }
-        { { "tbacon", 5 }, { "apple", 2 } },
-        { { "tbacon", 7 } },
-        { { "goldbar", 2 } }
+        { { "cocaineProcessed", 12 }, { "Methp", 14 } },
+        { { "ecstasy", 20 },{"marijuana",10 } },
+        { { "goldbar", 6 } },
+        { { "diamondCut", Drandom  } },
+        { { "goldbar", Grandom  } }
+
 	};
 
 	//What shall be displayed as text to gather the items from the ship? (The text of the addAction ingame)
@@ -44,14 +61,14 @@ class Maverick_Shipwrecks {
 
 
 /*
-[8560.86,9079.11,0]
-[13825,14027.3,0]
-[12472.9,10307.5,0]
-[22343.4,12477.7,0]
-[23374.7,15375.3,0]
-[22960.5,14187.9,0]
-[21433.2,20477.8,0]
-[18687.8,19150.8,0]
-[2625.82,10861.1,0]
-[2555.3,13775,0]
+ {8560.86,9079.11,0},
+ {13825,14027.3,0},
+ {12472.9,10307.5,0},
+ {22343.4,12477.7,0},
+ {23374.7,15375.3,0},
+ {22960.5,14187.9,0},
+ {21433.2,20477.8,0},
+ {18687.8,19150.8,0},
+ {2625.82,10861.1,0},
+ {2555.3,13775,0}
 */
