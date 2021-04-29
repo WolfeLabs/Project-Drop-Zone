@@ -60,6 +60,9 @@ switch (playerSide) do {
         [] call life_fnc_initMedic;
     };
 };
+waitUntil {(missionNamespace getVariable ["life_perksInitialized", true])};
+life_paycheck = life_paycheck * (missionNamespace getVariable ["mav_ttm_var_paycheckMultiplier", 1]);
+
 CONSTVAR(life_paycheck);
 
 player setVariable ["restrained", false, true];
