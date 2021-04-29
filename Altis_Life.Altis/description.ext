@@ -24,6 +24,8 @@ class RscTitles {
     #include "dialog\hud_stats.hpp"
     #include "dialog\statusBar.hpp"
     #include "maverick\maverick_titles_master.cpp"
+    #include "maverick\talent-tree-modular\gui\_masterTitles.cpp"
+
 };
 
 class CfgFunctions {
