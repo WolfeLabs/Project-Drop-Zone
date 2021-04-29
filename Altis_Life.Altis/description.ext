@@ -1,7 +1,7 @@
 //--- Control Chat - Format: {channelID<number>, disableChat<bool>, disableVoice<bool>}
 disableChannels[] = {
 	{0, true, true}, //--- Global Chat
-	{1, true, true}, //--- Side Chat
+	{1, false, true}, //--- Side Chat
 	{2, true, true}, //--- Command Chat
 	{3, false, false}, //--- Group Chat
 	{4, false, false}, //--- Vehicle Chat
