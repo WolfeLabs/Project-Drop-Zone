@@ -36,10 +36,10 @@ class Maverick_Shipwrecks {
     //Define the possible sets of virtual items the user can loot from the wreck.
     //{ { "itemname1", amount }, { "itemname2", amount }, { "itemname3", amount } }
 	ShipLoot[] = {
-        { { "cocaine_processed", 12 }, { "Methp", 14 } },
+        { { "cocaineProcessed", 12 }, { "Methp", 14 } },
         { { "ecstasy", 20 },{"marijuana",10 } },
-        { { "goldbar", 6 } }, 
-        { { "diamond_uncut", 75 } },
+        { { "goldbar", 6 } },
+        { { "diamondCut", 75 } },
         { { "goldbar", 12 } }
 
 	};

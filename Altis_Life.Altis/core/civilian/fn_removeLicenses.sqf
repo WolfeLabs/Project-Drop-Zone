@@ -17,7 +17,6 @@ switch (_state) do {
         missionNamespace setVariable [LICENSE_VARNAME("heroin","civ"),false];
         missionNamespace setVariable [LICENSE_VARNAME("marijuana","civ"),false];
         missionNamespace setVariable [LICENSE_VARNAME("cocaine","civ"),false];
-        missionNamespace setVariable [LICENSE_VARNAME("meth","civ"),false];
         //more work here
     };
 
