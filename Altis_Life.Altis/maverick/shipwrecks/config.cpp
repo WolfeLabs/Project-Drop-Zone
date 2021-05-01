@@ -7,7 +7,8 @@
 class Maverick_Shipwrecks {
 
     //How often (in seconds) should a shipwreck spawn, if no wreck is on the map?
-    ShipwreckInterval = 3600; //1800 = 30min
+    ShipwreckInterval = 240; //1800 = 30min 3600 - 1 hour
+
 
     //Define the possible locations for your shipwrecks.
     //getPosATL format -> Get the position via: diag_log(getPosATL player) -> replace the [] with {}
@@ -28,18 +29,18 @@ class Maverick_Shipwrecks {
     Radius = 250;
 
     //Random number Gen Diamond
-    Drandom = floor (random [20, 50,100]);
+    //Drandom = floor (random [20, 50,100]);
     //Random number Gen GoldBars
-    Grandom = floor (random [2, 8, 18]);
+    //Grandom = floor (random [2, 8, 18]);
 
     //Define the possible sets of virtual items the user can loot from the wreck.
     //{ { "itemname1", amount }, { "itemname2", amount }, { "itemname3", amount } }
 	ShipLoot[] = {
-        { { "cocaineProcessed", 12 }, { "Methp", 14 } },
+        { { "cocaine_processed", 12 }, { "Methp", 14 } },
         { { "ecstasy", 20 },{"marijuana",10 } },
-        { { "goldbar", 6 } },
-        { { "diamondCut", Drandom  } },
-        { { "goldbar", Grandom  } }
+        { { "goldbar", 6 } }, 
+        { { "diamond_uncut", 75 } },
+        { { "goldbar", 12 } }
 
 	};
 
