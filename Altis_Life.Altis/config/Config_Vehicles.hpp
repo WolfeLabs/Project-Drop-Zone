@@ -704,9 +704,15 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Police", "cop", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_02_co.paa"
             }, "" },
-			{ "Police 1", "cop", {
-                "textures\COPS\veh\police_suv.paa"
-            }, "" }
+			{ "Kavala PD", "cop", {
+                "textures\COPS\veh\police_suvK.paa"
+            }, "" },
+			{ "Athira PD", "cop", {
+                "textures\COPS\veh\police_suvA.paa"
+            }, "" },
+			{ "Pyrgos PD", "cop", {
+                "textures\COPS\veh\police_suvP.paa"
+            }, "" }                        
         };
     };
 
