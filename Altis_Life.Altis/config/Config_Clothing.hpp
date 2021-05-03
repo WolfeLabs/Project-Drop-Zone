@@ -45,31 +45,31 @@ class Clothing {
             { "U_C_man_sport_1_F", "", 5000, "" }, //Apex DLC
             { "U_C_man_sport_2_F", "", 5000, "" }, //Apex DLC
             { "U_C_man_sport_3_F", "", 5000, "" }, //Apex DLC
-            { "Item_U_C_IDAP_Man_cargo_F", "", 5000, "" }, //IDAP Shit
-            { "Item_U_C_IDAP_Man_jeans_F", "", 5000, "" }, //IDAP Shit
-            { "Item_U_C_IDAP_Man_Casual_F", "", 5000, "" }, //IDAP Shit
-            { "Item_U_C_IDAP_Man_shorts_F", "", 5000, "" }, //IDAP Shit
-            { "Item_U_C_IDAP_Man_tee_F", "", 5000, "" }, //IDAP Shit
-            { "Item_U_C_IDAP_Man_teeshorts_F", "", 5000, "" }, //IDAP Shit
-            { "Item_U_C_ArtTShirt_01_v6_F", "", 5000, "" }, //Art of war shit
-            { "Item_U_C_ArtTShirt_01_v1_F", "", 5000, "" }, //Art of war shit
-            { "Item_U_C_ArtTShirt_01_v2_F", "", 5000, "" }, //Art of war shit
-            { "Item_U_C_ArtTShirt_01_v4_F", "", 5000, "" }, //Art of war shit
-            { "Item_U_C_ArtTShirt_01_v5_F", "", 5000, "" }, //Art of war shit
-            { "Item_U_C_ArtTShirt_01_v3_F", "", 5000, "" }, //Art of war shit
-            { "Item_U_C_FormalSuit_01_black_F", "", 10000, "" }, //Art of war shit
-            { "Item_U_C_FormalSuit_01_blue_F", "", 10000, "" }, //Art of war shit
-            { "Item_U_C_FormalSuit_01_gray_F", "", 10000, "" }, //Art of war shit
-            { "Item_U_C_FormalSuit_01_khaki_F", "", 10000, "" }, //Art of war shit
-            { "Item_U_C_FormalSuit_01_tshirt_black_F", "", 10000, "" }, //Art of war shit
-            { "Item_U_C_FormalSuit_01_tshirt_gray_F", "", 10000, "" }, //Art of war shit
+            { "U_C_IDAP_Man_cargo_F", "", 5000, "" }, //IDAP Shit
+            { "U_C_IDAP_Man_jeans_F", "", 5000, "" }, //IDAP Shit
+            { "U_C_IDAP_Man_Casual_F", "", 5000, "" }, //IDAP Shit
+            { "U_C_IDAP_Man_shorts_F", "", 5000, "" }, //IDAP Shit
+            { "U_C_IDAP_Man_tee_F", "", 5000, "" }, //IDAP Shit
+            { "U_C_IDAP_Man_teeshorts_F", "", 5000, "" }, //IDAP Shit
+            { "U_C_ArtTShirt_01_v6_F", "", 5000, "" }, //Art of war shit
+            { "U_C_ArtTShirt_01_v1_F", "", 5000, "" }, //Art of war shit
+            { "U_C_ArtTShirt_01_v2_F", "", 5000, "" }, //Art of war shit
+            { "U_C_ArtTShirt_01_v4_F", "", 5000, "" }, //Art of war shit
+            { "U_C_ArtTShirt_01_v5_F", "", 5000, "" }, //Art of war shit
+            { "U_C_ArtTShirt_01_v3_F", "", 5000, "" }, //Art of war shit
+            { "U_C_FormalSuit_01_black_F", "", 10000, "" }, //Art of war shit
+            { "U_C_FormalSuit_01_blue_F", "", 10000, "" }, //Art of war shit
+            { "U_C_FormalSuit_01_gray_F", "", 10000, "" }, //Art of war shit
+            { "U_C_FormalSuit_01_khaki_F", "", 10000, "" }, //Art of war shit
+            { "U_C_FormalSuit_01_tshirt_black_F", "", 10000, "" }, //Art of war shit
+            { "U_C_FormalSuit_01_tshirt_gray_F", "", 10000, "" }, //Art of war shit
             { "U_C_Uniform_Scientist_01_formal_F", "", 5000, "" }, //Art of war shit
             { "U_C_Uniform_Scientist_02_F", "", 5000, "" }, //Art of war shit
             { "U_C_Uniform_Scientist_02_formal_F", "", 5000, "" }, //Art of war shit
             { "U_C_Uniform_Farmer_01_F", "", 5000, "" }, //Art of war farm simulator 2035
-            { "Item_U_C_ConstructionCoverall_Black_F", "", 4000, "" }, //Construction clothes?
-            { "Item_U_C_ConstructionCoverall_Blue_F", "", 4000, "" }, //Construction clothes?
-            { "Item_U_C_ConstructionCoverall_Red_F", "", 4000, "" } //Construction clothes?
+            { "U_C_ConstructionCoverall_Black_F", "", 4000, "" }, //Construction clothes?
+            { "U_C_ConstructionCoverall_Blue_F", "", 4000, "" }, //Construction clothes?
+            { "U_C_ConstructionCoverall_Red_F", "", 4000, "" } //Construction clothes?
         };    
         headgear[] = {
             { "NONE", $STR_C_Remove_headgear, 0, "" },
@@ -378,24 +378,24 @@ class Clothing {
             { "U_I_C_Soldier_Bandit_4_F", "", 50020, "" }, //Apex DLC
             { "U_I_C_Soldier_Bandit_5_F", "", 50020, "" }, //Apex DLC
             { "U_I_C_Soldier_Camo_F", "", 52000, "" }, //Apex DLC
-            { "Item_U_C_CBRN_Suit_01_Blue_F", "", 5000, "" },
-            { "Item_U_C_CBRN_Suit_01_White_F", "", 5000, "" },
-            { "Item_U_B_CBRN_Suit_01_Tropic_F", "", 5000, "" },
-            { "Item_U_I_CBRN_Suit_01_AAF_F", "", 5000, "" },
-            { "Item_U_I_E_Uniform_01_officer_F", "", 5000, "" },
-            { "Item_U_I_E_Uniform_01_shortsleeve_F", "", 5000, "" },
-            { "Item_U_I_E_Uniform_01_F", "", 5000, "" },
-            { "Item_U_I_CombatUniform_shortsleeve", "", 5000, "" },
-            { "Item_U_I_L_Uniform_01_camo_F", "", 5000, "" },
-            { "Item_U_I_L_Uniform_01_deserter_F", "", 5000, "" },
-            { "Item_U_O_R_Gorka_01_F", "", 5000, "" },
-            { "Item_U_O_R_Gorka_01_brown_F", "", 5000, "" },
-            { "Item_U_O_R_Gorka_01_camo_F", "", 5000, "" },
-            { "Item_U_I_C_Soldier_Camo_F", "", 5000, "" },
-            { "Item_U_O_R_Gorka_01_black_F", "", 5000, "" },
-            { "Item_U_Tank_green_F", "", 5000, "" },
-            { "Item_U_O_V_Soldier_Viper_F", "", 2500000, "" },
-            { "Item_U_O_V_Soldier_Viper_hex_F", "", 2500000, "" }
+            { "U_C_CBRN_Suit_01_Blue_F", "", 5000, "" },
+            { "U_C_CBRN_Suit_01_White_F", "", 5000, "" },
+            { "U_B_CBRN_Suit_01_Tropic_F", "", 5000, "" },
+            { "U_I_CBRN_Suit_01_AAF_F", "", 5000, "" },
+            { "U_I_E_Uniform_01_officer_F", "", 5000, "" },
+            { "U_I_E_Uniform_01_shortsleeve_F", "", 5000, "" },
+            { "U_I_E_Uniform_01_F", "", 5000, "" },
+            { "U_I_CombatUniform_shortsleeve", "", 5000, "" },
+            { "U_I_L_Uniform_01_camo_F", "", 5000, "" },
+            { "U_I_L_Uniform_01_deserter_F", "", 5000, "" },
+            { "U_O_R_Gorka_01_F", "", 5000, "" },
+            { "U_O_R_Gorka_01_brown_F", "", 5000, "" },
+            { "U_O_R_Gorka_01_camo_F", "", 5000, "" },
+            { "U_I_C_Soldier_Camo_F", "", 5000, "" },
+            { "U_O_R_Gorka_01_black_F", "", 5000, "" },
+            { "U_Tank_green_F", "", 5000, "" },
+            { "U_O_V_Soldier_Viper_F", "", 2500000, "" },
+            { "U_O_V_Soldier_Viper_hex_F", "", 2500000, "" }
         };
         headgear[] = {
             { "NONE", $STR_C_Remove_headgear, 0, "" },
