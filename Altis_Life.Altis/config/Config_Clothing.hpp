@@ -69,8 +69,8 @@ class Clothing {
             { "U_C_Uniform_Farmer_01_F", "", 5000, "" }, //Art of war farm simulator 2035
             { "Item_U_C_ConstructionCoverall_Black_F", "", 4000, "" }, //Construction clothes?
             { "Item_U_C_ConstructionCoverall_Blue_F", "", 4000, "" }, //Construction clothes?
-            { "Item_U_C_ConstructionCoverall_Red_F", "", 4000, "" }, //Construction clothes?
-            { "Item_U_C_ConstructionCoverall_Vrana_F", "", 4000, "" } //Construction clothes?
+            { "Item_U_C_ConstructionCoverall_Red_F", "", 4000, "" } //Construction clothes?
+
 
 
         headgear[] = {
