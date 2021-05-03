@@ -70,9 +70,7 @@ class Clothing {
             { "Item_U_C_ConstructionCoverall_Black_F", "", 4000, "" }, //Construction clothes?
             { "Item_U_C_ConstructionCoverall_Blue_F", "", 4000, "" }, //Construction clothes?
             { "Item_U_C_ConstructionCoverall_Red_F", "", 4000, "" } //Construction clothes?
-
-
-
+        };    
         headgear[] = {
             { "NONE", $STR_C_Remove_headgear, 0, "" },
             { "H_Bandanna_camo", "", 120, "" },
