@@ -63,6 +63,7 @@ if !(isNull objectParent player) exitWith {titleText[localize "STR_NOTF_ActionIn
 if ([true,_item,1] call life_fnc_handleInv) then {
     deleteVehicle _animalCorpse;
     titleText[format [(localize "STR_NOTF_Guttingfinish"),_displayName],"PLAIN"];
+    ["gutting"] spawn mav_ttm_fnc_addExp;
 } else {
     titleText[(localize "STR_NOTF_InvFull"),"PLAIN"];
 };

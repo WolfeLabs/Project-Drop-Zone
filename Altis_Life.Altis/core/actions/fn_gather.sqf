@@ -70,6 +70,8 @@ for "_i" from 0 to 4 do {
 if ([true,_resource,_diff] call life_fnc_handleInv) then {
     _itemName = M_CONFIG(getText,"VirtualItems",_resource,"displayName");
     titleText[format [localize "STR_NOTF_Gather_Success",(localize _itemName),_diff],"PLAIN"];
+    ["gather"] spawn mav_ttm_fnc_addExp;
+
 };
 
 sleep 1;

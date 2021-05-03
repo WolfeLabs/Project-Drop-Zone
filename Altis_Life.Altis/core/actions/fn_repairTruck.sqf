@@ -67,5 +67,6 @@ if ((_veh isKindOf "Car") || (_veh isKindOf "Ship") || (_veh isKindOf "Air")) th
 
         _veh setDamage 0;
         titleText[localize "STR_NOTF_RepairedVehicle","PLAIN"];
+        ["RepairComplete"] spawn mav_ttm_fnc_addExp;
     };
 };
