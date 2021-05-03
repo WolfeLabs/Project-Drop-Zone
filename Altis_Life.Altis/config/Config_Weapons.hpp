@@ -32,14 +32,14 @@ class WeaponShops {
             { "hgun_ACPC2_F", "", 11500, 5750, "" },
             { "SMG_05_F", "", 18000, 9000, "" }, //Apex DLC
             { "hgun_PDW2000_F", "", 20000, 10000, "" }, // Ryan Edit's below
-            { "Weapon_hgun_Pistol_heavy_01_green_F", "", 5000, "" },
-            { "Weapon_hgun_Pistol_heavy_01_F", "", 5000, "" },
-            { "Weapon_hgun_P07_blk_F", "", 5000, "" },
-            { "Weapon_hgun_Pistol_01_F", "", 5000, "" },
-            { "Weapon_hgun_Pistol_heavy_02_F", "", 5000, "" },
-            { "Weapon_sgun_HunterShotgun_01_sawedoff_F", "", 5000, "" },
-            { "Weapon_sgun_HunterShotgun_01_F", "", 5000, "" },
-            { "Weapon_srifle_DMR_06_hunter_F", "", 5000, "" }
+            { "hgun_Pistol_heavy_01_green_F", "", 5000, "" },
+            { "hgun_Pistol_heavy_01_F", "", 5000, "" },
+            { "hgun_P07_blk_F", "", 5000, "" },
+            { "hgun_Pistol_01_F", "", 5000, "" },
+            { "hgun_Pistol_heavy_02_F", "", 5000, "" },
+            { "sgun_HunterShotgun_01_sawedoff_F", "", 5000, "" },
+            { "sgun_HunterShotgun_01_F", "", 5000, "" },
+            { "srifle_DMR_06_hunter_F", "", 5000, "" }
         };
         mags[] = {
             { "16Rnd_9x21_Mag", "", 125, 60, "" },
@@ -78,18 +78,18 @@ class WeaponShops {
             { "arifle_ARX_blk_F", "", 22000, 11000, "" }, //Apex DLC
             { "arifle_SPAR_01_blk_F", "", 33000, 16500, "" }, //Apex DLC
             { "arifle_CTAR_blk_F", "", 30000, 15000, "" }, //Ryan shit below
-            { "Weapon_arifle_AK12U_lush_f", "", 25000, "" },
-            { "Weapon_arifle_AK12U_arid_f", "", 25000, "" },
-            { "Weapon_arifle_AK12U_F", "", 25000, "" },
-            { "Weapon_arifle_AK12_GL_lush_F", "", 25000, "" },
-            { "Weapon_arifle_AK12_F", "", 25000, "" },
-            { "Weapon_arifle_AK12_arid_f", "", 25000, "" },
-            { "Weapon_arifle_AK12_lush_f", "", 25000, "" },
-            { "Weapon_arifle_AK12_GL_arid_F", "", 25000, "" },
-            { "Weapon_arifle_AK12_GL_F", "", 25000, "" },
-            { "Weapon_arifle_RPK12_F", "", 25000, "" },
-            { "Weapon_arifle_RPK12_lush_f", "", 25000, "" },
-            { "Weapon_arifle_RPK12_arid_f", "", 25000, "" }
+            { "arifle_AK12U_lush_f", "", 25000, "" },
+            { "arifle_AK12U_arid_f", "", 25000, "" },
+            { "arifle_AK12U_F", "", 25000, "" },
+            { "arifle_AK12_GL_lush_F", "", 25000, "" },
+            { "arifle_AK12_F", "", 25000, "" },
+            { "arifle_AK12_arid_f", "", 25000, "" },
+            { "arifle_AK12_lush_f", "", 25000, "" },
+            { "arifle_AK12_GL_arid_F", "", 25000, "" },
+            { "arifle_AK12_GL_F", "", 25000, "" },
+            { "arifle_RPK12_F", "", 25000, "" },
+            { "arifle_RPK12_lush_f", "", 25000, "" },
+            { "arifle_RPK12_arid_f", "", 25000, "" }
         };
         mags[] = {
             { "30Rnd_556x45_Stanag", "", 300, 150, "" },
