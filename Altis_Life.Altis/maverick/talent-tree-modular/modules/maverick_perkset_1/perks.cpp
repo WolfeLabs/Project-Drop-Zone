@@ -80,7 +80,7 @@ class perk_paycheck_3 {
 };
 
 // -- Faster processing
-class perk_processing_1 {
+class perk_processingSpeed_1 {
 	displayName = "Processing Speed";
 	requiredPerkPoints = 3;
 	requiredLevel = 4;
@@ -92,7 +92,7 @@ class perk_processing_1 {
 	color[] = {1,1,1,1};
 };
 
-class perk_processing_2 {
+class perk_processingSpeed_2 {
 	displayName = "Processing Speed 2";
 	requiredPerkPoints = 3;
 	requiredLevel = 7;
@@ -104,7 +104,7 @@ class perk_processing_2 {
 	color[] = {1,1,1,1};
 };
 
-class perk_processing_3 {
+class perk_processingSpeed_3 {
 	displayName = "Processing Speed 3";
 	requiredPerkPoints = 4;
 	requiredLevel = 17;
@@ -153,6 +153,10 @@ class perk_locksmith_3 {
 	color[] = {1,1,1,1};
 };
 
+/*
+Talents below are products of WolfeLabs
+*/
+
 //Health Insurance
 
 class perk_HealthInsurance_1 {
@@ -188,5 +192,79 @@ class perk_HealthInsurance_3 {
 	description = "Health Insurance that reduces revive cost when medic revives.<br/><br/><t color='#10FF45'>+60% Reduced Revive Cost</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_CanadaHealthInsurance_3.sqf";
 	limitToSides[] = {};
+	color[] = {1,1,1,1};
+};
+
+// -- Faster gathering
+class perk_gatheringspeed_1 {
+	displayName = "gathering Speed";
+	requiredPerkPoints = 3;
+	requiredLevel = 4;
+	requiredPerk = "";
+	subtitle = "Level 4 Required, 3 Perk Points";
+	description = "Learn to gathering materials more efficiently<br/><br/><t color='#10FF45'>+10% faster gathering</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_gatheringSpeed_1.sqf";
+	limitToSides[] = {"CIV"};
+	color[] = {1,1,1,1};
+};
+
+class perk_gatheringspeed_2 {
+	displayName = "gathering Speed 2";
+	requiredPerkPoints = 3;
+	requiredLevel = 7;
+	requiredPerk = "perk_gatheringspeed_1";
+	subtitle = "Level 7 Required, 3 Perk Points";
+	description = "Learn to gathering materials more efficiently<br/><br/><t color='#10FF45'>+15% faster gathering</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_gatheringSpeed_2.sqf";
+	limitToSides[] = {"CIV"};
+	color[] = {1,1,1,1};
+};
+
+class perk_gatheringspeed_3 {
+	displayName = "gathering Speed 3";
+	requiredPerkPoints = 4;
+	requiredLevel = 17;
+	requiredPerk = "perk_gatheringspeed_2";
+	subtitle = "Level 17 Required, 4 Perk Points";
+	description = "Learn to gathering materials more efficiently<br/><br/><t color='#10FF45'>+25% faster gathering</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_gatheringSpeed_3.sqf";
+	limitToSides[] = {"CIV"};
+	color[] = {1,1,1,1};
+};
+
+// -- Faster repair
+class perk_repairSpeed_1 {
+	displayName = "Repair Speed 1";
+	requiredPerkPoints = 3;
+	requiredLevel = 4;
+	requiredPerk = "";
+	subtitle = "Level 4 Required, 3 Perk Points";
+	description = "Learn to repair more efficiently<br/><br/><t color='#10FF45'>+10% faster gathering</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_repairSpeed_1.sqf";
+	limitToSides[] = {"CIV"};
+	color[] = {1,1,1,1};
+};
+
+class perk_repairSpeed_2 {
+	displayName = "Repair Speed 2";
+	requiredPerkPoints = 3;
+	requiredLevel = 7;
+	requiredPerk = "perk_repairSpeed_1";
+	subtitle = "Level 7 Required, 3 Perk Points";
+	description = "Learn to repair more efficiently<br/><br/><t color='#10FF45'>+15% faster gathering</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_repairSpeed_2.sqf";
+	limitToSides[] = {"CIV"};
+	color[] = {1,1,1,1};
+};
+
+class perk_repairSpeed_3 {
+	displayName = "Repair Speed 3";
+	requiredPerkPoints = 4;
+	requiredLevel = 17;
+	requiredPerk = "perk_repairSpeed_2";
+	subtitle = "Level 17 Required, 4 Perk Points";
+	description = "Learn to repair more efficiently<br/><br/><t color='#10FF45'>+25% faster gathering</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_repairSpeed_3.sqf";
+	limitToSides[] = {"CIV"};
 	color[] = {1,1,1,1};
 };
