@@ -239,7 +239,7 @@ class perk_repairSpeed_1 {
 	requiredLevel = 4;
 	requiredPerk = "";
 	subtitle = "Level 4 Required, 3 Perk Points";
-	description = "Learn to repair more efficiently<br/><br/><t color='#10FF45'>+10% faster gathering</t>";
+	description = "Learn to repair more efficiently<br/><br/><t color='#10FF45'>+10% faster repair</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_repairSpeed_1.sqf";
 	limitToSides[] = {"CIV"};
 	color[] = {1,1,1,1};
@@ -251,7 +251,7 @@ class perk_repairSpeed_2 {
 	requiredLevel = 7;
 	requiredPerk = "perk_repairSpeed_1";
 	subtitle = "Level 7 Required, 3 Perk Points";
-	description = "Learn to repair more efficiently<br/><br/><t color='#10FF45'>+15% faster gathering</t>";
+	description = "Learn to repair more efficiently<br/><br/><t color='#10FF45'>+15% faster repair</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_repairSpeed_2.sqf";
 	limitToSides[] = {"CIV"};
 	color[] = {1,1,1,1};
@@ -263,8 +263,82 @@ class perk_repairSpeed_3 {
 	requiredLevel = 17;
 	requiredPerk = "perk_repairSpeed_2";
 	subtitle = "Level 17 Required, 4 Perk Points";
-	description = "Learn to repair more efficiently<br/><br/><t color='#10FF45'>+25% faster gathering</t>";
+	description = "Learn to repair more efficiently<br/><br/><t color='#10FF45'>+25% faster repair</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_repairSpeed_3.sqf";
+	limitToSides[] = {"CIV"};
+	color[] = {1,1,1,1};
+};
+
+// -- Faster general goods multiplier 
+class perk_generalgoodsincrease_1 {
+	displayName = "Process Managment 1";
+	requiredPerkPoints = 3;
+	requiredLevel = 7;
+	requiredPerk = "perk_processingSpeed_2";
+	subtitle = "Level 4 Required, 3 Perk Points";
+	description = "Learn to increase output<br/><br/><t color='#10FF45'>Random output 1-3</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_generalgoodsincrease_1.sqf";
+	limitToSides[] = {"CIV"};
+	color[] = {1,1,1,1};
+};
+
+class perk_generalgoodsincrease_2 {
+	displayName = "Process Managment 2";
+	requiredPerkPoints = 4;
+	requiredLevel = 10;
+	requiredPerk = "perk_generalgoodsincrease_1";
+	subtitle = "Level 7 Required, 3 Perk Points";
+	description = "Learn to increase output<br/><br/><t color='#10FF45'>Random output 1-8</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_generalgoodsincrease_2.sqf";
+	limitToSides[] = {"CIV"};
+	color[] = {1,1,1,1};
+};
+
+class perk_generalgoodsincrease_3 {
+	displayName = "Process Managment 3";
+	requiredPerkPoints = 8;
+	requiredLevel = 18;
+	requiredPerk = "perk_generalgoodsincrease_2";
+	subtitle = "Level 17 Required, 4 Perk Points";
+	description = "Learn to increase output<br/><br/><t color='#10FF45'>Random output 1-13</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_generalgoodsincrease_3.sqf";
+	limitToSides[] = {"CIV"};
+	color[] = {1,1,1,1};
+};
+
+// -- Faster cocaine goods multiplier 
+class perk_cocainegoodsincrease_1 {
+	displayName = "Cocaine Cutting Process 1";
+	requiredPerkPoints = 5;
+	requiredLevel = 10;
+	requiredPerk = "perk_processingSpeed_2";
+	subtitle = "Level 10 Required, 5 Perk Points";
+	description = "Learn to increase output<br/><br/><t color='#10FF45'>Random output 1-5</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_cocainegoodsincrease_1.sqf";
+	limitToSides[] = {"CIV"};
+	color[] = {1,1,1,1};
+};
+
+class perk_cocainegoodsincrease_2 {
+	displayName = "Cocaine Cutting Process 2";
+	requiredPerkPoints = 8;
+	requiredLevel = 14;
+	requiredPerk = "perk_cocainegoodsincrease_1";
+	subtitle = "Level 14 Required, 8 Perk Points";
+	description = "Learn to increase output<br/><br/><t color='#10FF45'>Random output 1-15</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_cocainegoodsincrease_2.sqf";
+	limitToSides[] = {"CIV"};
+	color[] = {1,1,1,1};
+};
+
+class perk_cocainegoodsincrease_3 {
+	displayName = "Cocaine Cutting Process 3";
+	requiredPerkPoints = 12;
+	requiredLevel = 20;
+	requiredPerk = "perk_cocainegoodsincrease_2";
+	subtitle = "Level 20 Required, 12 Perk Points";
+	description = "Learn to increase output<br/><br/><t color='#10FF45'>Random output 1-20</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_generalgoodsincrease_3.sqf";
 	limitToSides[] = {"CIV"};
 	color[] = {1,1,1,1};
 };

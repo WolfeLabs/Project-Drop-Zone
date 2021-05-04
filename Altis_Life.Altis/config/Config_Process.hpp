@@ -34,14 +34,6 @@ class ProcessAction {
         NoLicenseCost = 1350;
     };
 
-    class heroin {
-        MaterialsReq[] = {{"heroin_unprocessed",1}};
-        MaterialsGive[] = {{"heroin_processed",(1 * floor (missionNamespace getVariable ["mav_ttm_var_generalgoodsMultiplier", 1]))}};
-        Text = "STR_Process_Heroin";
-        //ScrollText = "Process Heroin";
-        NoLicenseCost = 1750;
-    };
-
     class copper {
         MaterialsReq[] = {{"copper_unrefined",1}};
         MaterialsGive[] = {{"copper_refined",(1 * floor (missionNamespace getVariable ["mav_ttm_var_generalgoodsMultiplier", 1]))}};
@@ -74,6 +66,15 @@ class ProcessAction {
         NoLicenseCost = 450;
     };
 
+    class cement {
+        MaterialsReq[] = {{"rock",1}};
+        MaterialsGive[] = {{"cement",(1 * floor (missionNamespace getVariable ["mav_ttm_var_generalgoodsMultiplier", 1]))}};
+        Text = "STR_Process_Cement";
+        //ScrollText = "Mix Cement";
+        NoLicenseCost = 350;
+    };
+
+    //Drug processes below
     class cocaine {
         MaterialsReq[] = {{"cocaine_unprocessed",1}};
         MaterialsGive[] = {{"cocaine_processed",(1 * floor (missionNamespace getVariable ["mav_ttm_var_cocaineMultiplier", 1]))}};
@@ -82,21 +83,29 @@ class ProcessAction {
         NoLicenseCost = 1500;
     };
 
+      class heroin {
+        MaterialsReq[] = {{"heroin_unprocessed",1}};
+        MaterialsGive[] = {{"heroin_processed",(1 * floor (missionNamespace getVariable ["mav_ttm_var_heroinMultiplier", 1]))}};
+        Text = "STR_Process_Heroin";
+        //ScrollText = "Process Heroin";
+        NoLicenseCost = 1750;
+    };
+
     class ecstasy {
         MaterialsReq[] = {{"mdma_ecstasy",1}}; // Material that will be processed (we will loose them)
         MaterialsGive[] = {{"ecstasy",(1 * floor (missionNamespace getVariable ["mav_ttm_var_ecstasyMultiplier", 1]))}}; // Material that will be generated (we will get them)
         Text = "STR_Process_Ecstasy"; // Text that you show on Processing NPC - We already set it up on stringtables.xml
         //ScrollText = "Process Ecstasy";
         NoLicenseCost = 2000; // Price that will costs if the player don't have the license to process it.
-};
+    };
 
-class meth {
+    class meth {
         MaterialsReq[] = {{"methi",1}}; // Material that will be processed (we will loose them)
         MaterialsGive[] = {{"methp",(1 * floor (missionNamespace getVariable ["mav_ttm_var_methMultiplier", 1]))}}; // Material that will be generated (we will get them)
         Text = "STR_Process_Meth"; // Text that you show on Processing NPC - We already set it up on stringtables.xml
         //ScrollText = "Process Meth";
         NoLicenseCost = 2000; // Price that will costs if the player don't have the license to process it.
-};
+    };
 
     class marijuana {
         MaterialsReq[] = {{"cannabis",1}};
@@ -106,11 +115,5 @@ class meth {
         NoLicenseCost = 500;
     };
 
-    class cement {
-        MaterialsReq[] = {{"rock",1}};
-        MaterialsGive[] = {{"cement",(1 * floor (missionNamespace getVariable ["mav_ttm_var_generalgoodsMultiplier", 1]))}};
-        Text = "STR_Process_Cement";
-        //ScrollText = "Mix Cement";
-        NoLicenseCost = 350;
-    };
+    
 };
