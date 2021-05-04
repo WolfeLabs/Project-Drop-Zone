@@ -379,3 +379,114 @@ class perk_heroingoodsincrease_3 {
 	limitToSides[] = {"CIV"};
 	color[] = {1,1,1,1};
 };
+
+// --  marijuana goods multiplier 
+class perk_marijuanagoodsincrease_1 {
+	displayName = "Marijuana Cutting Process";
+	requiredPerkPoints = 5;
+	requiredLevel = 10;
+	requiredPerk = "perk_processingSpeed_2";
+	subtitle = "Level 10 Required, 5 Perk Points";
+	description = "Learn to increase output<br/><br/><t color='#10FF45'>Random output 1-5</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_marijuanagoodsincrease_1.sqf";
+	limitToSides[] = {"CIV"};
+	color[] = {1,1,1,1};
+};
+
+class perk_Marijuanagoodsincrease_2 {
+	displayName = "Marijuana Cutting Process 2";
+	requiredPerkPoints = 8;
+	requiredLevel = 14;
+	requiredPerk = "perk_marijuanagoodsincrease_1";
+	subtitle = "Level 14 Required, 8 Perk Points";
+	description = "Learn to increase output<br/><br/><t color='#10FF45'>Random output 1-15</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_marijuanagoodsincrease_2.sqf";
+	limitToSides[] = {"CIV"};
+	color[] = {1,1,1,1};
+};
+
+class perk_Marijuanagoodsincrease_3 {
+	displayName = "Marijuana Cutting Process 3";
+	requiredPerkPoints = 12;
+	requiredLevel = 20;
+	requiredPerk = "perk_Marijuanagoodsincrease_2";
+	subtitle = "Level 20 Required, 12 Perk Points";
+	description = "Learn to increase output<br/><br/><t color='#10FF45'>Random output 1-20</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_Marijuanagoodsincrease_3.sqf";
+	limitToSides[] = {"CIV"};
+	color[] = {1,1,1,1};
+};
+
+// --  ecstasy goods multiplier 
+class perk_ecstasygoodsincrease_1 {
+	displayName = "Ecstasy Cutting Process";
+	requiredPerkPoints = 5;
+	requiredLevel = 10;
+	requiredPerk = "perk_processingSpeed_2";
+	subtitle = "Level 10 Required, 5 Perk Points";
+	description = "Learn to increase output<br/><br/><t color='#10FF45'>Random output 1-5</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_ecstasygoodsincrease_1.sqf";
+	limitToSides[] = {"CIV"};
+	color[] = {1,1,1,1};
+};
+
+class perk_ecstasygoodsincrease_2 {
+	displayName = "Ecstasy Cutting Process 2";
+	requiredPerkPoints = 8;
+	requiredLevel = 14;
+	requiredPerk = "perk_ecstasygoodsincrease_1";
+	subtitle = "Level 14 Required, 8 Perk Points";
+	description = "Learn to increase output<br/><br/><t color='#10FF45'>Random output 1-15</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_ecstasygoodsincrease_2.sqf";
+	limitToSides[] = {"CIV"};
+	color[] = {1,1,1,1};
+};
+
+class perk_ecstasygoodsincrease_3 {
+	displayName = "ecstasy Cutting Process 3";
+	requiredPerkPoints = 12;
+	requiredLevel = 20;
+	requiredPerk = "perk_ecstasygoodsincrease_2";
+	subtitle = "Level 20 Required, 12 Perk Points";
+	description = "Learn to increase output<br/><br/><t color='#10FF45'>Random output 1-20</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_ecstasygoodsincrease_3.sqf";
+	limitToSides[] = {"CIV"};
+	color[] = {1,1,1,1};
+};
+
+// --  meth goods multiplier 
+class perk_methgoodsincrease_1 {
+	displayName = "Meth Cutting Process";
+	requiredPerkPoints = 5;
+	requiredLevel = 10;
+	requiredPerk = "perk_processingSpeed_2";
+	subtitle = "Level 10 Required, 5 Perk Points";
+	description = "Learn to increase output<br/><br/><t color='#10FF45'>Random output 1-5</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_methgoodsincrease_1.sqf";
+	limitToSides[] = {"CIV"};
+	color[] = {1,1,1,1};
+};
+
+class perk_methgoodsincrease_2 {
+	displayName = "Meth Cutting Process 2";
+	requiredPerkPoints = 8;
+	requiredLevel = 14;
+	requiredPerk = "perk_methgoodsincrease_1";
+	subtitle = "Level 14 Required, 8 Perk Points";
+	description = "Learn to increase output<br/><br/><t color='#10FF45'>Random output 1-15</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_methgoodsincrease_2.sqf";
+	limitToSides[] = {"CIV"};
+	color[] = {1,1,1,1};
+};
+
+class perk_methgoodsincrease_3 {
+	displayName = "Meth Cutting Process 3";
+	requiredPerkPoints = 12;
+	requiredLevel = 20;
+	requiredPerk = "perk_methgoodsincrease_2";
+	subtitle = "Level 20 Required, 12 Perk Points";
+	description = "Learn to increase output<br/><br/><t color='#10FF45'>Random output 1-20</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_methgoodsincrease_3.sqf";
+	limitToSides[] = {"CIV"};
+	color[] = {1,1,1,1};
+};
