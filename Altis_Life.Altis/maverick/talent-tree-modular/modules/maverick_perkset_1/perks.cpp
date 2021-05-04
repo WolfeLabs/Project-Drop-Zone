@@ -96,7 +96,7 @@ class perk_processingSpeed_2 {
 	displayName = "Processing Speed 2";
 	requiredPerkPoints = 3;
 	requiredLevel = 7;
-	requiredPerk = "perk_processing_1";
+	requiredPerk = "perk_processingSpeed_1";
 	subtitle = "Level 7 Required, 3 Perk Points";
 	description = "Learn to process materials more efficiently<br/><br/><t color='#10FF45'>+15% faster processing</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_processSpeed_2.sqf";
@@ -108,7 +108,7 @@ class perk_processingSpeed_3 {
 	displayName = "Processing Speed 3";
 	requiredPerkPoints = 4;
 	requiredLevel = 17;
-	requiredPerk = "perk_processing_2";
+	requiredPerk = "perk_processingSpeed_2";
 	subtitle = "Level 17 Required, 4 Perk Points";
 	description = "Learn to process materials more efficiently<br/><br/><t color='#10FF45'>+25% faster processing</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_processSpeed_3.sqf";
@@ -197,7 +197,7 @@ class perk_HealthInsurance_3 {
 
 // -- Faster gathering
 class perk_gatheringspeed_1 {
-	displayName = "gathering Speed";
+	displayName = "Gathering Speed";
 	requiredPerkPoints = 3;
 	requiredLevel = 4;
 	requiredPerk = "";
@@ -209,7 +209,7 @@ class perk_gatheringspeed_1 {
 };
 
 class perk_gatheringspeed_2 {
-	displayName = "gathering Speed 2";
+	displayName = "Gathering Speed 2";
 	requiredPerkPoints = 3;
 	requiredLevel = 7;
 	requiredPerk = "perk_gatheringspeed_1";
@@ -221,7 +221,7 @@ class perk_gatheringspeed_2 {
 };
 
 class perk_gatheringspeed_3 {
-	displayName = "gathering Speed 3";
+	displayName = "Gathering Speed 3";
 	requiredPerkPoints = 4;
 	requiredLevel = 17;
 	requiredPerk = "perk_gatheringspeed_2";
@@ -234,7 +234,7 @@ class perk_gatheringspeed_3 {
 
 // -- Faster repair
 class perk_repairSpeed_1 {
-	displayName = "Repair Speed 1";
+	displayName = "Repair Speed";
 	requiredPerkPoints = 3;
 	requiredLevel = 4;
 	requiredPerk = "";
@@ -269,9 +269,9 @@ class perk_repairSpeed_3 {
 	color[] = {1,1,1,1};
 };
 
-// -- Faster general goods multiplier 
+// --  general goods multiplier 
 class perk_generalgoodsincrease_1 {
-	displayName = "Process Managment 1";
+	displayName = "Process Managment";
 	requiredPerkPoints = 3;
 	requiredLevel = 7;
 	requiredPerk = "perk_processingSpeed_2";
@@ -306,9 +306,9 @@ class perk_generalgoodsincrease_3 {
 	color[] = {1,1,1,1};
 };
 
-// -- Faster cocaine goods multiplier 
+// --  cocaine goods multiplier 
 class perk_cocainegoodsincrease_1 {
-	displayName = "Cocaine Cutting Process 1";
+	displayName = "Cocaine Cutting Process";
 	requiredPerkPoints = 5;
 	requiredLevel = 10;
 	requiredPerk = "perk_processingSpeed_2";
@@ -338,7 +338,44 @@ class perk_cocainegoodsincrease_3 {
 	requiredPerk = "perk_cocainegoodsincrease_2";
 	subtitle = "Level 20 Required, 12 Perk Points";
 	description = "Learn to increase output<br/><br/><t color='#10FF45'>Random output 1-20</t>";
-	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_generalgoodsincrease_3.sqf";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_cocainegoodsincrease_3.sqf";
+	limitToSides[] = {"CIV"};
+	color[] = {1,1,1,1};
+};
+
+// --  heroin goods multiplier 
+class perk_heroingoodsincrease_1 {
+	displayName = "Heroin Cutting Process";
+	requiredPerkPoints = 5;
+	requiredLevel = 10;
+	requiredPerk = "perk_processingSpeed_2";
+	subtitle = "Level 10 Required, 5 Perk Points";
+	description = "Learn to increase output<br/><br/><t color='#10FF45'>Random output 1-5</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_heroingoodsincrease_1.sqf";
+	limitToSides[] = {"CIV"};
+	color[] = {1,1,1,1};
+};
+
+class perk_heroingoodsincrease_2 {
+	displayName = "Heroin Cutting Process 2";
+	requiredPerkPoints = 8;
+	requiredLevel = 14;
+	requiredPerk = "perk_heroingoodsincrease_1";
+	subtitle = "Level 14 Required, 8 Perk Points";
+	description = "Learn to increase output<br/><br/><t color='#10FF45'>Random output 1-15</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_heroingoodsincrease_2.sqf";
+	limitToSides[] = {"CIV"};
+	color[] = {1,1,1,1};
+};
+
+class perk_heroingoodsincrease_3 {
+	displayName = "Heroin Cutting Process 3";
+	requiredPerkPoints = 12;
+	requiredLevel = 20;
+	requiredPerk = "perk_heroingoodsincrease_2";
+	subtitle = "Level 20 Required, 12 Perk Points";
+	description = "Learn to increase output<br/><br/><t color='#10FF45'>Random output 1-20</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_heroingoodsincrease_3.sqf";
 	limitToSides[] = {"CIV"};
 	color[] = {1,1,1,1};
 };
