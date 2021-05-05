@@ -35,6 +35,8 @@ class RscTitles {
     #include "dialog\statusBar.hpp"
     #include "maverick\maverick_titles_master.cpp"
     #include "maverick\talent-tree-modular\gui\_masterTitles.cpp"
+    #include "maverick\tuning\dialogs\titles.hpp"
+
 
 };
 
