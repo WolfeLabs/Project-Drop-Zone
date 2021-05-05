@@ -94,6 +94,7 @@ switch (_type) do
 		[true, "red", [-0.86, -2.75, -0.18]] call _attach;
 		[false, "blue", [0.86, -2.75, -0.18]] call _attach;	
 		[true, "red", [-0.5, -1, 0.37]] call _attach;
+        [false, "blue", [0.4, -1, 0.37]] call _attach;
     };
 	
 	case "C_Offroad_02_unarmed_F":
