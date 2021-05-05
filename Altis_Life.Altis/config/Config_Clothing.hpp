@@ -176,33 +176,7 @@ class Clothing {
             { "B_Carryall_cbr", "", 7500, "" },
             { "B_Carryall_ghex_f", "", 7500, "" }, //Apex DLC
             { "B_Bergen_dgtl_f", "", 9500, "" }, //Apex DLC
-            { "B_Bergen_tna_f", "", 9500, "" }, //Apex DLC
-            { "B_CivilianBackpack_01_Everyday_Astra_F", "", 5000, "" },// I'm tired of sorting this shit
-            { "B_CivilianBackpack_01_Everyday_Black_F", "", 5000, "" },// I'm tired of sorting this shit
-            { "B_CivilianBackpack_01_Everyday_Vrana_F", "", 5000, "" },// I'm tired of sorting this shit
-            { "B_CivilianBackpack_01_Everyday_IDAP_F", "", 5000, "" },// I'm tired of sorting this shit
-            { "B_CivilianBackpack_01_Sport_Red_F", "", 5000, "" },// I'm tired of sorting this shit
-            { "B_CivilianBackpack_01_Sport_Green_F", "", 5000, "" },// I'm tired of sorting this shit
-            { "B_CivilianBackpack_01_Sport_Blue_F", "", 5000, "" },// I'm tired of sorting this shit
-            { "B_TacticalPack_blk", "", 5000, "" },// I'm tired of sorting this shit
-            { "B_TacticalPack_rgr", "", 5000, "" },// I'm tired of sorting this shit
-            { "B_TacticalPack_oli", "", 5000, "" },// I'm tired of sorting this shit
-            { "B_Messenger_IDAP_F", "", 5000, "" },// I'm tired of sorting this shit
-            { "B_Messenger_Olive_F", "", 5000, "" },// I'm tired of sorting this shit
-            { "B_Messenger_Gray_F", "", 5000, "" },// I'm tired of sorting this shit
-            { "B_Messenger_Black_F", "", 5000, "" },// I'm tired of sorting this shit
-            { "B_Messenger_Coyote_F", "", 5000, "" },// I'm tired of sorting this shit
-            { "B_LegStrapBag_olive_F", "", 5000, "" },// I'm tired of sorting this shit
-            { "B_LegStrapBag_coyote_F", "", 5000, "" },// I'm tired of sorting this shit
-            { "B_LegStrapBag_black_F", "", 5000, "" },// I'm tired of sorting this shit
-            { "B_Kitbag_tan", "", 5000, "" },// I'm tired of sorting this shit
-            { "B_Kitbag_rgr", "", 5000, "" },// I'm tired of sorting this shit
-            { "B_Kitbag_cbr", "", 5000, "" },// I'm tired of sorting this shit
-            { "B_FieldPack_oli", "", 5000, "" },// I'm tired of sorting this shit
-            { "B_FieldPack_cbr", "", 5000, "" },// I'm tired of sorting this shit
-            { "B_FieldPack_blk", "", 5000, "" },// I'm tired of sorting this shit
-            { "B_AssaultPack_rgr", "", 5000, "" },// I'm tired of sorting this shit
-            { "B_AssaultPack_blk", "", 5000, "" }// I'm tired of sorting this shit
+            { "B_Bergen_tna_f", "", 9500, "" } //Apex DLC
         };
     };
 
@@ -365,12 +339,6 @@ class Clothing {
             { "U_O_PilotCoveralls", "", 15610, "" },
             { "U_O_SpecopsUniform_ocamo", "", 17500, "" },
             { "U_O_GhillieSuit", "", 50000, "" },
-            {"U_B_CTRG_Soldier_urb_1_F","",1000,500,""},
-            {"U_B_GEN_Commander_F","",1000,500,""},
-            {"U_B_GEN_Soldier_F","",1000,500,""},
-            {"U_BG_Guerrilla_6_1","",1000,500,""},
-            {"U_B_FullGhillie_ard","",50000,25000,""},
-            {"U_B_FullGhillie_sard","",50000,25000,""},
             { "U_B_T_Soldier_F", "", 50000, "" }, //Apex DLC
             { "U_I_C_Soldier_Bandit_1_F", "", 50000, "" }, //Apex DLC
             { "U_I_C_Soldier_Bandit_2_F", "", 51000, "" }, //Apex DLC
@@ -449,15 +417,7 @@ class Clothing {
             { "G_Bandanna_oli", "", 150, "" },
             { "G_Bandanna_shades", "", 150, "" },
             { "G_Bandanna_sport", "", 150, "" },
-            { "G_Bandanna_tan", "", 150, "" },
-            { "G_AirPurifyingRespirator_01_F", "", 3500, "" },
-            { "G_AirPurifyingRespirator_02_black_F", "", 3500, "" },
-            { "G_AirPurifyingRespirator_02_olive_F", "", 3500, "" },
-            { "G_AirPurifyingRespirator_02_sand_F", "", 3500, "" },
-            { "G_RegulatorMask_F", "", 3500, "" },
-            { "G_Blindfold_01_black_F", "", 3500, "" },
-            { "G_Blindfold_01_white_F", "", 3500, "" }
-
+            { "G_Bandanna_tan", "", 150, "" }
         };
         vests[] = {
             { "NONE", $STR_C_Remove_vests, 0, "" },
