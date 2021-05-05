@@ -44,8 +44,35 @@ class Clothing {
             { "U_C_Man_casual_6_F", "", 5000, "" }, //Apex DLC
             { "U_C_man_sport_1_F", "", 5000, "" }, //Apex DLC
             { "U_C_man_sport_2_F", "", 5000, "" }, //Apex DLC
-            { "U_C_man_sport_3_F", "", 5000, "" } //Apex DLC
-        };
+            { "U_C_man_sport_3_F", "", 5000, "" }, //Apex DLC
+            { "Item_U_C_IDAP_Man_cargo_F", "", 5000, "" }, //IDAP Shit
+            { "Item_U_C_IDAP_Man_jeans_F", "", 5000, "" }, //IDAP Shit
+            { "Item_U_C_IDAP_Man_Casual_F", "", 5000, "" }, //IDAP Shit
+            { "Item_U_C_IDAP_Man_shorts_F", "", 5000, "" }, //IDAP Shit
+            { "Item_U_C_IDAP_Man_tee_F", "", 5000, "" }, //IDAP Shit
+            { "Item_U_C_IDAP_Man_teeshorts_F", "", 5000, "" }, //IDAP Shit
+            { "Item_U_C_ArtTShirt_01_v6_F", "", 5000, "" }, //Art of war shit
+            { "Item_U_C_ArtTShirt_01_v1_F", "", 5000, "" }, //Art of war shit
+            { "Item_U_C_ArtTShirt_01_v2_F", "", 5000, "" }, //Art of war shit
+            { "Item_U_C_ArtTShirt_01_v4_F", "", 5000, "" }, //Art of war shit
+            { "Item_U_C_ArtTShirt_01_v5_F", "", 5000, "" }, //Art of war shit
+            { "Item_U_C_ArtTShirt_01_v3_F", "", 5000, "" }, //Art of war shit
+            { "Item_U_C_FormalSuit_01_black_F", "", 10000, "" }, //Art of war shit
+            { "Item_U_C_FormalSuit_01_blue_F", "", 10000, "" }, //Art of war shit
+            { "Item_U_C_FormalSuit_01_gray_F", "", 10000, "" }, //Art of war shit
+            { "Item_U_C_FormalSuit_01_khaki_F", "", 10000, "" }, //Art of war shit
+            { "Item_U_C_FormalSuit_01_tshirt_black_F", "", 10000, "" }, //Art of war shit
+            { "Item_U_C_FormalSuit_01_tshirt_gray_F", "", 10000, "" }, //Art of war shit
+            { "U_C_Uniform_Scientist_01_formal_F", "", 5000, "" }, //Art of war shit
+            { "U_C_Uniform_Scientist_02_F", "", 5000, "" }, //Art of war shit
+            { "U_C_Uniform_Scientist_02_formal_F", "", 5000, "" }, //Art of war shit
+            { "U_C_Uniform_Farmer_01_F", "", 5000, "" }, //Art of war farm simulator 2035
+            { "Item_U_C_ConstructionCoverall_Black_F", "", 4000, "" }, //Construction clothes?
+            { "Item_U_C_ConstructionCoverall_Blue_F", "", 4000, "" }, //Construction clothes?
+            { "Item_U_C_ConstructionCoverall_Red_F", "", 4000, "" } //Construction clothes?
+
+
+
         headgear[] = {
             { "NONE", $STR_C_Remove_headgear, 0, "" },
             { "H_Bandanna_camo", "", 120, "" },
@@ -69,7 +96,33 @@ class Clothing {
             { "H_Hat_blue", "", 310, "" },
             { "H_Hat_checker", "", 340, "" },
             { "H_Booniehat_tan", "", 425, "" },
-            { "H_Booniehat_grn", "", 425, "" }
+            { "H_Booniehat_grn", "", 425, "" },
+            { "Headgear_H_Watchcap_blk", "", 5000, "" },
+            { "Headgear_H_Watchcap_cbr", "", 5000, "" },
+            { "Headgear_H_Watchcap_khk", "", 5000, "" },
+            { "Headgear_H_Booniehat_khk_hs", "", 5000, "" },
+            { "Headgear_H_Booniehat_khk", "", 5000, "" },
+            { "Headgear_H_Booniehat_mcamo", "", 5000, "" },
+            { "Headgear_H_Booniehat_oli", "", 5000, "" },
+            { "Headgear_H_Booniehat_tan", "", 5000, "" },
+            { "Headgear_H_Booniehat_taiga", "", 5000, "" },
+            { "Headgear_H_Booniehat_tna_F", "", 5000, "" },
+            { "Headgear_H_Booniehat_wdl", "", 5000, "" },
+            { "Headgear_H_Booniehat_dgtl", "", 5000, "" },
+            { "Headgear_H_Booniehat_eaf", "", 5000, "" },
+            { "Headgear_H_Cap_tan_specops_US", "", 5000, "" },
+            { "Headgear_H_Cap_White_IDAP_F", "", 5000, "" },
+            { "Headgear_H_Cap_khaki_specops_UK", "", 5000, "" },
+            { "Headgear_H_Construction_headset_yellow_F", "", 5000, "" },
+            { "Headgear_H_Construction_headset_white_F", "", 5000, "" },
+            { "Headgear_H_Construction_headset_vrana_F", "", 5000, "" },
+            { "Headgear_H_Construction_earprot_vrana_F", "", 5000, "" },
+            { "Headgear_H_Construction_headset_red_F", "", 5000, "" },
+            { "Headgear_H_Construction_headset_orange_F", "", 5000, "" },
+            { "Headgear_H_Construction_headset_black_F", "", 5000, "" },
+            { "Headgear_H_Hat_Safari_sand_F", "", 5000, "" },
+            { "Headgear_H_Hat_Safari_olive_F", "", 5000, "" },
+            { "Headgear_H_WirelessEarpiece_F", "", 5000, "" }
         };
         goggles[] = {
             { "NONE", $STR_C_Remove_goggles, 0, "" },
@@ -125,7 +178,33 @@ class Clothing {
             { "B_Carryall_cbr", "", 7500, "" },
             { "B_Carryall_ghex_f", "", 7500, "" }, //Apex DLC
             { "B_Bergen_dgtl_f", "", 9500, "" }, //Apex DLC
-            { "B_Bergen_tna_f", "", 9500, "" } //Apex DLC
+            { "B_Bergen_tna_f", "", 9500, "" }, //Apex DLC
+            { "B_CivilianBackpack_01_Everyday_Astra_F", "", 5000, "" },// I'm tired of sorting this shit
+            { "B_CivilianBackpack_01_Everyday_Black_F", "", 5000, "" },// I'm tired of sorting this shit
+            { "B_CivilianBackpack_01_Everyday_Vrana_F", "", 5000, "" },// I'm tired of sorting this shit
+            { "B_CivilianBackpack_01_Everyday_IDAP_F", "", 5000, "" },// I'm tired of sorting this shit
+            { "B_CivilianBackpack_01_Sport_Red_F", "", 5000, "" },// I'm tired of sorting this shit
+            { "B_CivilianBackpack_01_Sport_Green_F", "", 5000, "" },// I'm tired of sorting this shit
+            { "B_CivilianBackpack_01_Sport_Blue_F", "", 5000, "" },// I'm tired of sorting this shit
+            { "B_TacticalPack_blk", "", 5000, "" },// I'm tired of sorting this shit
+            { "B_TacticalPack_rgr", "", 5000, "" },// I'm tired of sorting this shit
+            { "B_TacticalPack_oli", "", 5000, "" },// I'm tired of sorting this shit
+            { "B_Messenger_IDAP_F", "", 5000, "" },// I'm tired of sorting this shit
+            { "B_Messenger_Olive_F", "", 5000, "" },// I'm tired of sorting this shit
+            { "B_Messenger_Gray_F", "", 5000, "" },// I'm tired of sorting this shit
+            { "B_Messenger_Black_F", "", 5000, "" },// I'm tired of sorting this shit
+            { "B_Messenger_Coyote_F", "", 5000, "" },// I'm tired of sorting this shit
+            { "B_LegStrapBag_olive_F", "", 5000, "" },// I'm tired of sorting this shit
+            { "B_LegStrapBag_coyote_F", "", 5000, "" },// I'm tired of sorting this shit
+            { "B_LegStrapBag_black_F", "", 5000, "" },// I'm tired of sorting this shit
+            { "B_Kitbag_tan", "", 5000, "" },// I'm tired of sorting this shit
+            { "B_Kitbag_rgr", "", 5000, "" },// I'm tired of sorting this shit
+            { "B_Kitbag_cbr", "", 5000, "" },// I'm tired of sorting this shit
+            { "B_FieldPack_oli", "", 5000, "" },// I'm tired of sorting this shit
+            { "B_FieldPack_cbr", "", 5000, "" },// I'm tired of sorting this shit
+            { "B_FieldPack_blk", "", 5000, "" },// I'm tired of sorting this shit
+            { "B_AssaultPack_rgr", "", 5000, "" },// I'm tired of sorting this shit
+            { "B_AssaultPack_blk", "", 5000, "" }// I'm tired of sorting this shit
         };
     };
 
@@ -206,7 +285,21 @@ class Clothing {
         };
         vests[] = {
             { "NONE", $STR_C_Remove_vests, 0, "" },
-            { "V_Rangemaster_belt", "", 4900, "" }
+            { "V_Rangemaster_belt", "", 1500, "" },
+            { "Vest_V_Plain_crystal_F", "", 100, "" },
+            { "Vest_V_LegStrapBag_black_F", "", 900, "" },
+            { "Vest_V_LegStrapBag_coyote_F", "", 900, "" },
+            { "Vest_V_LegStrapBag_olive_F", "", 900, "" },
+            { "Vest_V_Pocketed_olive_F", "", 1000, "" },
+            { "Vest_V_Pocketed_coyote_F", "", 1000, "" },
+            { "Vest_V_Pocketed_black_F", "", 1000, "" },
+            { "Vest_V_Safety_blue_F", "", 500, "" },
+            { "Vest_V_Safety_yellow_F", "", 500, "" },
+            { "Vest_V_Safety_orange_F", "", 500, "" },
+            { "Vest_V_Press_F", "", 15000, "" },//Freedom of speech v. 9mm, who wins
+            { "Vest_V_EOD_blue_F", "", 30000, "" },//Expensive milslurp
+            { "Vest_V_EOD_IDAP_blue_F", "", 30000, "" } //Expensive milslurp
+
         };
         backpacks[] = {
             { "NONE", $STR_C_Remove_backpacks, 0, "" }
@@ -274,13 +367,37 @@ class Clothing {
             { "U_O_PilotCoveralls", "", 15610, "" },
             { "U_O_SpecopsUniform_ocamo", "", 17500, "" },
             { "U_O_GhillieSuit", "", 50000, "" },
+            {"U_B_CTRG_Soldier_urb_1_F","",1000,500,""},
+            {"U_B_GEN_Commander_F","",1000,500,""},
+            {"U_B_GEN_Soldier_F","",1000,500,""},
+            {"U_BG_Guerrilla_6_1","",1000,500,""},
+            {"U_B_FullGhillie_ard","",50000,25000,""},
+            {"U_B_FullGhillie_sard","",50000,25000,""},
             { "U_B_T_Soldier_F", "", 50000, "" }, //Apex DLC
             { "U_I_C_Soldier_Bandit_1_F", "", 50000, "" }, //Apex DLC
             { "U_I_C_Soldier_Bandit_2_F", "", 51000, "" }, //Apex DLC
             { "U_I_C_Soldier_Bandit_3_F", "", 50032, "" }, //Apex DLC
             { "U_I_C_Soldier_Bandit_4_F", "", 50020, "" }, //Apex DLC
             { "U_I_C_Soldier_Bandit_5_F", "", 50020, "" }, //Apex DLC
-            { "U_I_C_Soldier_Camo_F", "", 52000, "" } //Apex DLC
+            { "U_I_C_Soldier_Camo_F", "", 52000, "" }, //Apex DLC
+            { "Item_U_C_CBRN_Suit_01_Blue_F", "", 5000, "" },
+            { "Item_U_C_CBRN_Suit_01_White_F", "", 5000, "" },
+            { "Item_U_B_CBRN_Suit_01_Tropic_F", "", 5000, "" },
+            { "Item_U_I_CBRN_Suit_01_AAF_F", "", 5000, "" },
+            { "Item_U_I_E_Uniform_01_officer_F", "", 5000, "" },
+            { "Item_U_I_E_Uniform_01_shortsleeve_F", "", 5000, "" },
+            { "Item_U_I_E_Uniform_01_F", "", 5000, "" },
+            { "Item_U_I_CombatUniform_shortsleeve", "", 5000, "" },
+            { "Item_U_I_L_Uniform_01_camo_F", "", 5000, "" },
+            { "Item_U_I_L_Uniform_01_deserter_F", "", 5000, "" },
+            { "Item_U_O_R_Gorka_01_F", "", 5000, "" },
+            { "Item_U_O_R_Gorka_01_brown_F", "", 5000, "" },
+            { "Item_U_O_R_Gorka_01_camo_F", "", 5000, "" },
+            { "Item_U_I_C_Soldier_Camo_F", "", 5000, "" },
+            { "Item_U_O_R_Gorka_01_black_F", "", 5000, "" },
+            { "Item_U_Tank_green_F", "", 5000, "" },
+            { "Item_U_O_V_Soldier_Viper_F", "", 2500000, "" },
+            { "Item_U_O_V_Soldier_Viper_hex_F", "", 2500000, "" }
         };
         headgear[] = {
             { "NONE", $STR_C_Remove_headgear, 0, "" },
@@ -288,7 +405,29 @@ class Clothing {
             { "H_ShemagOpen_khk", "", 800, "" },
             { "H_ShemagOpen_tan", "", 850, "" },
             { "H_Shemag_olive", "", 850, "" },
-            { "H_HelmetO_ocamo", "", 2500, "" }
+            { "H_HelmetO_ocamo", "", 2500, "" }, // Ryan's shit below
+            { "Headgear_H_Helmet_Skate", "", 500, "" },
+            { "Headgear_H_HelmetAggressor_F", "", 2500, "" },
+            { "Headgear_H_HelmetAggressor_cover_F", "", 2500, "" },
+            { "Headgear_H_HelmetAggressor_cover_taiga_F", "", 2500, "" },
+            { "Headgear_H_HelmetHBK_headset_F", "", 2500, "" },
+            { "Headgear_H_HelmetHBK_chops_F", "", 2500, "" },
+            { "Headgear_H_HelmetHBK_ear_F", "", 2500, "" },
+            { "Headgear_H_HelmetHBK_F", "", 2500, "" },
+            { "Headgear_H_HelmetB_black", "", 2500, "" },
+            { "Headgear_H_HelmetB_grass", "", 2500, "" },
+            { "Headgear_H_HelmetB_desert", "", 2500, "" },
+            { "Headgear_H_HelmetB_camo", "", 2500, "" },
+            { "Headgear_H_HelmetB_light_wdl", "", 2500, "" },
+            { "Headgear_H_HelmetB_Light_tna_F", "", 2500, "" },
+            { "Headgear_H_HelmetB_light_snakeskin", "", 2500, "" },
+            { "Headgear_H_HelmetB_light_grass", "", 2500, "" },
+            { "Headgear_H_HelmetB_light_black", "", 2500, "" },
+            { "Headgear_H_HelmetB_light_desert", "", 2500, "" },
+            { "Headgear_H_HelmetB_TI_arid_F", "", 2500, "" },
+            { "Headgear_H_HelmetB_TI_tna_F", "", 2500, "" },
+            { "Headgear_H_HelmetO_ViperSP_ghex_F", "", 1000000, "" },
+            { "Headgear_H_HelmetO_ViperSP_hex_F", "", 1000000, "" }
         };
         goggles[] = {
             { "NONE", $STR_C_Remove_goggles, 0, "" },
@@ -312,14 +451,52 @@ class Clothing {
             { "G_Bandanna_oli", "", 150, "" },
             { "G_Bandanna_shades", "", 150, "" },
             { "G_Bandanna_sport", "", 150, "" },
-            { "G_Bandanna_tan", "", 150, "" }
+            { "G_Bandanna_tan", "", 150, "" },
+            { "G_AirPurifyingRespirator_01_F", "", 3500, "" },
+            { "G_AirPurifyingRespirator_02_black_F", "", 3500, "" },
+            { "G_AirPurifyingRespirator_02_olive_F", "", 3500, "" },
+            { "G_AirPurifyingRespirator_02_sand_F", "", 3500, "" },
+            { "G_RegulatorMask_F", "", 3500, "" },
+            { "G_Blindfold_01_black_F", "", 3500, "" },
+            { "G_Blindfold_01_white_F", "", 3500, "" }
+
         };
         vests[] = {
             { "NONE", $STR_C_Remove_vests, 0, "" },
             { "V_BandollierB_cbr", "", 4500, "" },
             { "V_HarnessO_brn", "", 7500, "" },
             { "V_TacVest_khk", "", 12500, "" },
-            { "V_TacChestrig_grn_F", "", 17500, "" } //Apex DLC
+            { "V_PlateCarrier1_rgr","",30000,15000,""},
+            { "V_PlateCarrier1_blk","",30000,15000,""},
+            { "V_PlateCarrier2_rgr","",40000,20000,""},
+            { "V_PlateCarrier2_blk","",40000,20000,""},
+            { "V_PlateCarrierIAGL_oli","",50000,25000,""},
+            { "V_TacChestrig_grn_F", "", 17500, "" }, //Ryan's additions below
+            { "Vest_V_PlateCarrier1_blk", "", 35000, "" },
+            { "Vest_V_PlateCarrier1_rgr_noflag_F", "", 35000, "" },
+            { "Vest_V_PlateCarrier1_wdl", "", 35000, "" },
+            { "Vest_V_Chestrig_blk", "", 5000, "" },
+            { "Vest_V_Chestrig_rgr", "", 5000, "" },
+            { "Vest_V_Chestrig_khk", "", 5000, "" },
+            { "Vest_V_Chestrig_oli", "", 5000, "" },
+            { "Vest_V_PlateCarrierL_CTRG", "", 35000, "" },
+            { "Vest_V_SmershVest_01_F", "", 25000, "" },
+            { "Vest_V_SmershVest_01_radio_F", "", 25000, "" },
+            { "Vest_V_CarrierRigKBT_01_light_olive_F", "", 15000, "" },
+            { "Vest_V_CarrierRigKBT_01_EAF_F", "", 15000, "" },
+            { "Vest_V_CarrierRigKBT_01_olive_F", "", 15000, "" },
+            { "Vest_V_CarrierRigKBT_01_light_EAF_F", "", 15000, "" },
+            { "Vest_V_TacVestIR_blk", "", 15000, "" },
+            { "Vest_V_BandollierB_blk", "", 5000, "" },
+            { "Vest_V_BandollierB_cbr", "", 5000, "" },
+            { "Vest_V_BandollierB_ghex_F", "", 5000, "" },
+            { "Vest_V_BandollierB_rgr", "", 5000, "" },
+            { "Vest_V_BandollierB_khk", "", 5000, "" },
+            { "Vest_V_BandollierB_oli", "", 5000, "" },
+            { "Vest_V_TacVest_brn", "", 5000, "" },
+            { "Vest_V_TacVest_camo", "", 5000, "" },
+            { "Vest_V_TacVest_khk", "", 5000, "" },
+            { "Vest_V_TacVest_oli", "", 5000, "" }
         };
         backpacks[] = {
             { "NONE", $STR_C_Remove_backpacks, 0, "" },
