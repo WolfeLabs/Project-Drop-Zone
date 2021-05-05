@@ -60,12 +60,18 @@ switch (playerSide) do {
         [] call life_fnc_initMedic;
     };
 };
+waitUntil {(missionNamespace getVariable ["life_perksInitialized", true])};
+life_paycheck = life_paycheck * (missionNamespace getVariable ["mav_ttm_var_paycheckMultiplier", 1]);
+
 CONSTVAR(life_paycheck);
 
 player setVariable ["restrained", false, true];
 player setVariable ["Escorting", false, true];
 player setVariable ["transporting", false, true];
 player setVariable ["playerSurrender", false, true];
+player setVariable ["ziptied",false,true];
+player setVariable ["blindfolded",false,true];
+player setVariable ["gagged",false,true];
 player setVariable ["realname", profileName, true];
 
 diag_log "[Life Client] Past Settings Init";

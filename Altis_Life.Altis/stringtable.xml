@@ -63,6 +63,9 @@
             <German>Bruce's Outback Outfits</German>
 			<Chinesesimp>服装商店</Chinesesimp>
         </Key>
+        <Key ID="STR_Shops_Marijuana">
+            <Original>Medical Marijuana Dispensary</Original>
+        </Key>	
         <Key ID="STR_Shops_C_Police">
             <Original>Altis Police Department Shop</Original>
             <Czech>Altis policejní oddělení Shop</Czech>
@@ -338,6 +341,9 @@
             <Portuguese>Loja de Conveniência</Portuguese>
             <Polish>Caffe OLLEN</Polish>
 			<Chinesesimp>加油站咖啡店</Chinesesimp>
+        </Key>
+        <Key ID="STR_Shops_Pharmacy">
+            <Original>Wolfe's Pharmacy</Original>
         </Key>
     </Package>
     <Package name="Global">
@@ -6852,6 +6858,9 @@
             <Polish>Konopie</Polish>
 			<Chinesesimp>大麻叶</Chinesesimp>
         </Key>
+        <Key ID="STR_Item_MedWeed">
+            <Original>Medical Marijuana</Original>
+        </Key>
         <Key ID="STR_Item_Apple">
             <Original>Apple</Original>
             <Czech>Jablko</Czech>
@@ -7656,6 +7665,34 @@
             <Polish>Oczyszczona kokaina</Polish>
 			<Chinesesimp>可卡因</Chinesesimp>
         </Key>
+        <Key ID="STR_Item_Methi">
+            <Original>Meth impure</Original>
+            </Key>
+        <Key ID="STR_Item_Methp">
+            <Original>Meth Pure</Original>
+        </Key>
+        <Key ID="STR_Item_MDMAEcstasy">
+            <Original>MDMA</Original>
+            <Czech>MDMA</Czech>
+            <Spanish>MDMA</Spanish>
+            <Russian>MDMA</Russian>
+            <German>MDMA</German>
+            <French>MDMA</French>
+            <Italian>MDMA</Italian>
+            <Portuguese>MDMA</Portuguese>
+            <Polish>MDMA</Polish>
+        </Key>
+        <Key ID="STR_Item_Ecstasy">
+            <Original>Ecstasy</Original>
+            <Czech>Ecstasy</Czech>
+            <Spanish>Ecstasy</Spanish>
+            <Russian>Ecstasy</Russian>
+            <German>Ecstasy</German>
+            <French>Ecstasy</French>
+            <Italian>Ecstasy</Italian>
+            <Portuguese>Ecstasy</Portuguese>
+            <Polish>Ecstasy</Polish>
+        </Key>
         <Key ID="STR_Item_SpikeStrip">
             <Original>Spike Strip</Original>
             <Czech>Spike Strip</Czech>
@@ -7706,6 +7743,23 @@
             <Polish>Wytwarzanie Heroiny</Polish>
 			<Chinesesimp>海洛因加工证</Chinesesimp>
         </Key>
+        <Key ID="STR_License_Meth">
+            <Original>Meth Training</Original>
+        </Key>
+        <Key ID="STR_License_Ecstasy">
+            <Original>Ecstasy Training</Original>
+            <Czech>Ecstasy Training</Czech>
+            <Spanish>Entrenamiento de Ecstasy</Spanish>
+            <Russian>Ecstasy Training</Russian>
+            <German>Ecstasy Training</German>
+            <French>Transformation de la Ecstasy</French>
+            <Italian>Processo Ecstasy</Italian>
+            <Portuguese>Treinamento de Ecstasy</Portuguese>
+            <Polish>Ecstasy Training</Polish>
+        </Key>
+        <Key ID="STR_License_Marijuana">
+            <Original>Medical Marijuana License</Original>
+        </Key>	
         <Key ID="STR_License_Oil">
             <Original>Oil Processing</Original>
             <Czech>Zpracování olej</Czech>
@@ -7886,7 +7940,7 @@
             <Polish>Wytwórca cementu</Polish>
 			<Chinesesimp>水泥制造证</Chinesesimp>
         </Key>
-        <Key ID="STR_License_Medmarijuana">
+        <Key ID="STR_License_MedWeed">
             <Original>Medical Marijuana License</Original>
             <Czech>Medical Marihuana Licence</Czech>
             <Spanish>Licencia de Marihuana Medicinal</Spanish>
@@ -8552,6 +8606,20 @@
             <Portuguese>Processando Cocaína</Portuguese>
             <Polish>Oczyszczanie kokainy</Polish>
 			<Chinesesimp>加工可卡因</Chinesesimp>
+        </Key>
+        <Key ID="STR_Process_Meth">
+            <Original>Meth Mixing</Original>
+        </Key>
+        <Key ID="STR_Process_Ecstasy">
+            <Original>Processing Ecstasy</Original>
+            <Czech>Processing Ecstasy</Czech>
+            <Spanish>Procesando Ecstasy</Spanish>
+            <Russian>Processing Ecstasy</Russian>
+            <German>Processing Ecstasy</German>
+            <French>Processing Ecstasy</French>
+            <Italian>Processing Ecstasy</Italian>
+            <Portuguese>Processando Ecstasy</Portuguese>
+            <Polish>Processing Ecstasy</Polish>
         </Key>
         <Key ID="STR_Process_Marijuana">
             <Original>Processing Marijuana</Original>
@@ -13392,6 +13460,36 @@
             <Russian>%1 - %2 депозит в размере $%3 в свой банк. Банковский баланс: $%4 на руку Баланс: $%5</Russian>
             <German>%1 - %2 hat $%3 auf sein Bankkonto eingezahlt. Bankkonto: $%4  Bargeld: $%5</German>
 			<Chinesesimp>%1 - %2 将 $%3 存进他们的银行账户。银行存款余额：$%4  手上现金：$%5</Chinesesimp>
+        </Key>
+    </Package>
+    <Package name="zipties">
+        <Key ID="STR_NOTF_ziptied">
+            <Original>%1 was ziptied by someone.</Original>
+            <German>%1 wurde gefesselt.</German>
+        </Key>
+        <Key ID="STR_NOTF_unzipteed">
+            <Original>%1 was cut loose.</Original>
+            <German>%1 wurde befreit.</German>
+        </Key>
+        <Key ID="STR_ExcessiveTied">
+            <Original>You have been released automatically for excessive restrainment time</Original>
+            <German>Du wurdest automatisch frei gelassen.</German>
+        </Key>
+        <Key ID="STR_tied">
+            <Original>You have been restrained by someone.</Original>
+            <German>Du wurdest gefesselt.</German>
+        </Key>
+        <Key ID="STR_Ziptie">
+            <Original>Ziptie</Original>
+            <German>Fesseln</German>
+        </Key>
+        <Key ID="STR_gag">
+            <Original>Gag</Original>
+            <German>Knebel</German>
+        </Key>
+        <Key ID="STR_blindfold">
+            <Original>Blindfold</Original>
+            <German>Augenbinde</German>
         </Key>
     </Package>
 </Project>
