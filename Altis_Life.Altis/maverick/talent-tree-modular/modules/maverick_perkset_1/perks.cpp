@@ -5,6 +5,17 @@
     You're not allowed to use this file without permission from the author!
 ---------------------------------------------------------------------------*/
 
+
+
+//medic Color rgba   0.878,0.298,0.298,1
+// medic side  GUER
+
+// cop Color  RGBA	 0.294,0.294,0.956,1
+//Cop side is WEST
+
+//CIV COLOR RGBA 	 1,1,1,1
+//Civ side is CIV
+
 // -- Weapon related perks
 class perk_gunsspecialist_lessRecoil_1 {
 	displayName = "Recoil Compensation";
@@ -165,7 +176,7 @@ class perk_HealthInsurance_1 {
 	requiredLevel = 2;
 	requiredPerk = "";
 	subtitle = "Level 2 Required, 2 Perk Points";
-	description = "Health Insurance that reduces revive cost when medic revives.<br/><br/><t color='#10FF45'>+20% Reduced Revive Cost</t>";
+	description = "Health Insurance that reduces revive cost when medic revives.<br/><br/><t color='#10FF45'>+20% Reduced Revive and Hospital Cost</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_CanadaHealthInsurance_1.sqf";
 	limitToSides[] = {};
 	color[] = {1,1,1,1};
@@ -177,7 +188,7 @@ class perk_HealthInsurance_2 {
 	requiredLevel = 6;
 	requiredPerk = "perk_HealthInsurance_1";
 	subtitle = "Level 6 Required, 4 Perk Points";
-	description = "Health Insurance that reduces revive cost when medic revives.<br/><br/><t color='#10FF45'>+40% Reduced Revive Cost</t>";
+	description = "Health Insurance that reduces revive cost when medic revives.<br/><br/><t color='#10FF45'>+40% Reduced Revive and Hospital Cost</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_CanadaHealthInsurance_2.sqf";
 	limitToSides[] = {};
 	color[] = {1,1,1,1};
@@ -189,7 +200,7 @@ class perk_HealthInsurance_3 {
 	requiredLevel = 12;
 	requiredPerk = "perk_HealthInsurance_2";
 	subtitle = "Level 12 Required, 4 Perk Points";
-	description = "Health Insurance that reduces revive cost when medic revives.<br/><br/><t color='#10FF45'>+60% Reduced Revive Cost</t>";
+	description = "Health Insurance that reduces revive cost when medic revives.<br/><br/><t color='#10FF45'>+60% Reduced Revive and Hospital Cost</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_CanadaHealthInsurance_3.sqf";
 	limitToSides[] = {};
 	color[] = {1,1,1,1};
@@ -269,6 +280,83 @@ class perk_repairSpeed_3 {
 	color[] = {1,1,1,1};
 };
 
+// increase process amount
+class perk_processamount_1 {
+	displayName = "Process Amount";
+	requiredPerkPoints = 8;
+	requiredLevel = 12;
+	requiredPerk = "";
+	subtitle = "Level 12 Required, 8 Perk Points";
+	description = "Process amount increased By:<br/><br/><t color='#38FF3F'> 200% </t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_Process_amount_1.sqf";
+	limitToSides[] = {"CIV"};
+	color[] = {1,1,1,1};
+};
+
+class perk_processamount_2 {
+	displayName = "Process Amount 2";
+	requiredPerkPoints = 12;
+	requiredLevel = 18;
+	requiredPerk = "perk_Processamount_1";
+	subtitle = "Level 18 Required, 12 Perk Points";
+	description = "Process amount increased By:<br/><br/><t color='#38FF3F'>400%</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_Process_amount_2.sqf";
+	limitToSides[] = {"CIV"};
+	color[] = {1,1,1,1};
+};
+
+
+class perk_processamount_3 {
+	displayName = "Process Amount 3";
+	requiredPerkPoints = 16;
+	requiredLevel = 21;
+	requiredPerk = "perk_Processamount_2";
+	subtitle = "Level 21 Required, 16 Perk Points";
+	description = "Process amount increased By:<br/><br/><t color='#38FF3F'> 600%</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_Process_amount_3.sqf";
+	limitToSides[] = {"CIV"};
+	color[] = {1,1,1,1};
+};
+
+	//Revive Speed
+class perk_Revive_1 {
+	displayName = "Revive 1";
+	requiredPerkPoints = 2;
+	requiredLevel = 2;
+	requiredPerk = "";
+	subtitle = "Level 2 Required, 2 Perk Points";
+	description = "Learn to Revive Patient's faster<br/><br/><t color='#10FF45'>+10% faster Revives</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_ReviveSpeed_1.sqf";
+	limitToSides[] = {"GUER"};
+	color[] = {0.878,0.298,0.298,1};
+};
+
+class perk_Revive_2 {
+	displayName = "Revive 2";
+	requiredPerkPoints = 3;
+	requiredLevel = 5;
+	requiredPerk = "perk_Revive_1";
+	subtitle = "Level 5 Required, 3 Perk Points";
+	description = "Learn to Revive Patient's faster<br/><br/><t color='#10FF45'>+15% faster Revives</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_ReviveSpeed_2.sqf";
+	limitToSides[] = {"GUER"};
+	color[] = {0.878,0.298,0.298,1};
+};
+
+class perk_Revive_3 {
+	displayName = "Revive 3";
+	requiredPerkPoints = 4;
+	requiredLevel = 10;
+	requiredPerk = "perk_Revive_2";
+	subtitle = "Level 10 Required, 4 Perk Points";
+	description = "Learn to Revive Patient's faster<br/><br/><t color='#10FF45'>+25% faster Revives</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_ReviveSpeed_3.sqf";
+	limitToSides[] = {"GUER"};
+	color[] = {0.878,0.298,0.298,1};
+};
+
+
+/* 
 // --  general goods multiplier 
 class perk_generalgoodsincrease_1 {
 	displayName = "Process Managment";
@@ -489,4 +577,4 @@ class perk_methgoodsincrease_3 {
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_methgoodsincrease_3.sqf";
 	limitToSides[] = {"CIV"};
 	color[] = {1,1,1,1};
-};
+}; */
