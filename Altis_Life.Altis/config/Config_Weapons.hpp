@@ -31,15 +31,7 @@ class WeaponShops {
             { "hgun_Pistol_heavy_02_F", "", 9850, 4925, "" },
             { "hgun_ACPC2_F", "", 11500, 5750, "" },
             { "SMG_05_F", "", 18000, 9000, "" }, //Apex DLC
-            { "hgun_PDW2000_F", "", 20000, 10000, "" }, // Ryan Edit's below
-            { "Weapon_hgun_Pistol_heavy_01_green_F", "", 5000, "" },
-            { "Weapon_hgun_Pistol_heavy_01_F", "", 5000, "" },
-            { "Weapon_hgun_P07_blk_F", "", 5000, "" },
-            { "Weapon_hgun_Pistol_01_F", "", 5000, "" },
-            { "Weapon_hgun_Pistol_heavy_02_F", "", 5000, "" },
-            { "Weapon_sgun_HunterShotgun_01_sawedoff_F", "", 5000, "" },
-            { "Weapon_sgun_HunterShotgun_01_F", "", 5000, "" },
-            { "Weapon_srifle_DMR_06_hunter_F", "", 5000, "" }
+            { "hgun_PDW2000_F", "", 20000, 10000, "" }
         };
         mags[] = {
             { "16Rnd_9x21_Mag", "", 125, 60, "" },
@@ -47,15 +39,7 @@ class WeaponShops {
             { "9Rnd_45ACP_Mag", "", 200, 100, "" },
             { "30Rnd_9x21_Mag", "", 250, 125, "" },
             { "30Rnd_9x21_Mag_SMG_02", "", 250, 125, "" }, //Apex DLC
-            { "10Rnd_9x21_Mag", "", 250, 125, "" }, //Apex DLC
-            { "10Rnd_Mk14_762x51_Mag", "", 200, "" },
-            { "11Rnd_45ACP_Mag", "", 200, "" },
-            { "9Rnd_45ACP_Mag", "", 200, "" },
-            { "16Rnd_9x21_Mag", "", 120, "" },
-            { "10Rnd_9x21_Mag", "", 100, "" },
-            { "2Rnd_12Gauge_Pellets", "", 100, "" },
-            { "2Rnd_12Gauge_Slug", "", 200, "" },
-            { "20Rnd_762x51_Mag", "", 300, "" }
+            { "10Rnd_9x21_Mag", "", 250, 125, "" } //Apex DLC
         };
         accs[] = {
             { "acc_flashlight_pistol", "", 1000, 500, "" },//Pistol Flashlight
@@ -77,19 +61,7 @@ class WeaponShops {
             { "arifle_AKM_F", "", 22000, 11000, "" }, //Apex DLC
             { "arifle_ARX_blk_F", "", 22000, 11000, "" }, //Apex DLC
             { "arifle_SPAR_01_blk_F", "", 33000, 16500, "" }, //Apex DLC
-            { "arifle_CTAR_blk_F", "", 30000, 15000, "" }, //Ryan shit below
-            { "Weapon_arifle_AK12U_lush_f", "", 25000, "" },
-            { "Weapon_arifle_AK12U_arid_f", "", 25000, "" },
-            { "Weapon_arifle_AK12U_F", "", 25000, "" },
-            { "Weapon_arifle_AK12_GL_lush_F", "", 25000, "" },
-            { "Weapon_arifle_AK12_F", "", 25000, "" },
-            { "Weapon_arifle_AK12_arid_f", "", 25000, "" },
-            { "Weapon_arifle_AK12_lush_f", "", 25000, "" },
-            { "Weapon_arifle_AK12_GL_arid_F", "", 25000, "" },
-            { "Weapon_arifle_AK12_GL_F", "", 25000, "" },
-            { "Weapon_arifle_RPK12_F", "", 25000, "" },
-            { "Weapon_arifle_RPK12_lush_f", "", 25000, "" },
-            { "Weapon_arifle_RPK12_arid_f", "", 25000, "" }
+            { "arifle_CTAR_blk_F", "", 30000, 15000, "" } //Apex DLC
         };
         mags[] = {
             { "30Rnd_556x45_Stanag", "", 300, 150, "" },
@@ -98,50 +70,13 @@ class WeaponShops {
             { "30Rnd_65x39_caseless_green", "", 275, 140, "" },
             { "10Rnd_762x54_Mag", "", 500, 250, "" },
             { "20Rnd_556x45_UW_mag", "", 125, 60, "" },
-            { "30Rnd_580x42_Mag_F", "", 125, 60, "" }, //Apex DLC
-            { "30Rnd_762x39_AK12_Lush_Mag_F", "", 250, 60, "" },
-            { "30Rnd_762x39_AK12_Lush_Mag_Tracer_F", "", 250, 60, "" },
-            { "UGL_FlareWhite_F", "", 250, 60, "" },
-            { "UGL_FlareGreen_F", "", 250, 60, "" },
-            { "UGL_FlareRed_F", "", 250, 60, "" },
-            { "UGL_FlareYellow_F", "", 250, 60, "" },
-            { "1Rnd_Smoke_Grenade_shell", "", 250, 60, "" },
-            { "1Rnd_SmokeRed_Grenade_shell", "", 250, 60, "" },
-            { "1Rnd_SmokeGreen_Grenade_shell", "", 250, 60, "" },
-            { "1Rnd_SmokeYellow_Grenade_shell", "", 250, 60, "" },
-            { "1Rnd_SmokePurple_Grenade_shell", "", 250, 60, "" },
-            { "1Rnd_SmokeBlue_Grenade_shell", "", 250, 60, "" },
-            { "1Rnd_SmokeOrange_Grenade_shell", "", 250, 60, "" },
-            { "75rnd_762x39_AK12_Lush_Mag_F", "", 350, 60, "" },
-            { "75rnd_762x39_AK12_Lush_Mag_Tracer_F", "", 350, 60, "" }
+            { "30Rnd_580x42_Mag_F", "", 125, 60, "" } //Apex DLC
         };
         accs[] = {
             { "optic_ACO_grn", "", 3500, 1750, "" },
             { "optic_Holosight", "", 3600, 1800, "" },
             { "optic_Hamr", "", 7500, 3750, "" },
-            { "acc_flashlight", "", 1000, 500, "" },
-            { "Item_optic_Hamr_khk_F", "", 1000, 500, "" },
-            { "Item_optic_Hamr", "", 1000, 500, "" },
-            { "Item_optic_MRD_black", "", 1000, 500, "" },
-            { "Item_optic_MRCO", "", 1000, 500, "" },
-            { "Item_optic_SOS_khk_F", "", 1000, 500, "" },
-            { "Item_optic_SOS", "", 1000, 500, "" },
-            { "Item_optic_KHS_tan", "", 1000, 500, "" },
-            { "Item_optic_KHS_old", "", 1000, 500, "" },
-            { "Item_optic_KHS_hex", "", 1000, 500, "" },
-            { "Item_optic_KHS_blk", "", 1000, 500, "" },
-            { "Item_optic_ERCO_snd_F", "", 1000, 500, "" },
-            { "Item_optic_ERCO_khk_F", "", 1000, 500, "" },
-            { "Item_optic_ERCO_blk_F", "", 1000, 500, "" },
-            { "Item_optic_DMS_weathered_F", "", 1000, 500, "" },
-            { "Item_optic_DMS", "", 1000, 500, "" },
-            { "Item_optic_Arco_AK_lush_F", "", 1000, 500, "" },
-            { "Item_optic_Arco_AK_blk_F", "", 1000, 500, "" },
-            { "Item_optic_Arco_AK_arid_F", "", 1000, 500, "" },
-            { "Item_optic_Arco_lush_F", "", 1000, 500, "" },
-            { "Item_optic_Arco_ghex_F", "", 1000, 500, "" },
-            { "Item_optic_AMS_snd", "", 1000, 500, "" },
-            { "Item_optic_Arco", "", 1000, 500, "" }
+            { "acc_flashlight", "", 1000, 500, "" }
         };
     };
 
