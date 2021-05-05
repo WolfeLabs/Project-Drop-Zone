@@ -528,6 +528,9 @@ Left Shift + R: Restrain (police only).<br/><br/>
             "Civilian controls",
                 "
 Left Shift + G: Knock out / stun (Weapon required. Used for robbing).<br/>
+R(With Ziptie in Inventory): Restrain unconcious person<br/>
+Shift + C: Activate Vehicle Underglow(If Purchased)<br/>
+Shift + B: Activate Nitrous Boost(If Purchased)<br/>
 Spacebar: Place storage container.<br/><br/>
                 "
         ]
@@ -547,6 +550,7 @@ Shift + Spacebar: Jump.<br/>
 Q(In Vehicle): Left Turn Signal.<br/>
 E(In Vehicle): Right Turn Signal.<br/>
 G(In Vehicle): Caution Lights.<br/>
+Ctrl + T: Open Perk Tree<br/>
 Left Shift + O: (un)fade sound (ear plugs).<br/><br/>
                 "
         ]
