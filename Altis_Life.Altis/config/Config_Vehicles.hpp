@@ -111,9 +111,9 @@ class CarShops {
         conditions = "";
         vehicles[] = {
             { "C_Offroad_01_F", "" },
-            { "I_Truck_02_medical_F", "" },
-            { "O_Truck_03_medical_F", "" },
-            { "B_Truck_01_medical_F", "" }
+            { "C_Offroad_02_unarmed_F", "" }, //jeep
+            { "C_SUV_01_F", "" },
+            { "C_Van_02_medevac_F", "" }
         };
     };
 
@@ -285,6 +285,9 @@ class LifeCfgVehicles {
                 "\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_orange_co.paa"
             }, "" },
             { "Red", "civ", {
+                "\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_red_co.paa"
+            }, "" },
+             { "Red", "med", {
                 "\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_red_co.paa"
             }, "" },
             { "White", "civ", {
@@ -770,6 +773,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Orange", "civ", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"
             }, "" },
+            { "Dark Red", "med", {
+                "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_co.paa"
+            }, "" },
             { "Police", "cop", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_02_co.paa"
             }, "" },
@@ -968,4 +974,20 @@ will modify the virtual space and the price of the vehicle, but other informatio
         price = 250000;
         textures[] = {};
     };
+
+
+    class C_Van_02_medevac_F {
+		vItemSpace = 350;
+		conditions = "{(playerSide isEqualTo med)}";
+		price = 35000;
+		textures[] = {
+			{ "EMS Blue", "med", {
+				"textures\EMS\veh\vanbutforEMS.paa"
+			}, "" }
+		};
+	};
+
+
+
+  ////////EOF
 };
