@@ -114,15 +114,16 @@ switch (_type) do
 	
     case "C_SUV_01_F":
     {
-        [true, "red", [-0.39, 2.28, -0.52]] call _attach;
+         [false, "red", [-0.39, 2.28, -0.52]] call _attach;
         [true, "red", [0.38, 2.28, -0.52]] call _attach;
-        [true, "red", [-0.86, -2.75, -0.18]] call _attach;
+        [false, "red", [-0.86, -2.75, -0.18]] call _attach;
         [true, "red", [0.86, -2.75, -0.18]] call _attach;
-        [true, "white", [0.8, 1.95, -0.48]] call _attach;
+        [false, "white", [0.8, 1.95, -0.48]] call _attach;
         [true, "white", [-0.8, 1.95, -0.48]] call _attach;
 		[true, "red", [-0.86, -2.75, -0.18]] call _attach;
-		[true, "red", [0.86, -2.75, -0.18]] call _attach;	
+		[false, "red", [0.86, -2.75, -0.18]] call _attach;	
 		[true, "red", [-0.5, -1, 0.37]] call _attach;
+        [false, "red", [0.4, -1, 0.37]] call _attach;
     };
 
     case "C_Hatchback_01_sport_F":

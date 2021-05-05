@@ -49,6 +49,8 @@ if (!_preset) then
         case "med_offroad":
         {
             _vehicle animate ["HidePolice", 0];
+            _vehicle animate ["hideConstruction", 0];
+            _vehicle animate ["HideBumper1", 0];
             _vehicle setVariable ["lights",false,true];
         };
 

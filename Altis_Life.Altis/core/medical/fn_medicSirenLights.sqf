@@ -11,7 +11,7 @@ params [
     ["_vehicle",objNull,[objNull]]
 ];
 if (isNull _vehicle) exitWith {}; //Bad entry!
-if !(typeOf _vehicle in ["C_Offroad_01_F"]) exitWith {}; //Last chance check to prevent something from defying humanity and creating a monster.
+if !(typeOf _vehicle in ["C_Offroad_01_F","C_Offroad_02_unarmed_F","C_SUV_01_F","C_Van_01_transport_F"]) exitWith {}; //Last chance check to prevent something from defying humanity and creating a monster.
 
 private _trueorfalse = _vehicle getVariable ["lights",false];
 
