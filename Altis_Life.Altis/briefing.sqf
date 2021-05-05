@@ -157,7 +157,8 @@ Items on this list may result in your removal from the server and/or ban, based 
 1. Side Chat may not be used to play music or otherwise micspam.<br/>
 2. Spamming any chat channel will result in your removal.<br/>
 4. Discord channels are split up into areas for a reason. Cops must be in the cop channels at all times.<br/>
-5. Civilians cannot be in any cop channels on Discord in order to gather information on their location or movements. Civs caught doing this will be removed the channel. Repeat offenders can be kicked or banned from both the game and Discord.<br/><br/>
+5. Civilians cannot be in any cop channels on Discord in order to gather information on their location or movements. Civs caught doing this will be removed the channel. Repeat offenders can be kicked or banned from both the game and Discord.<br/>
+Discord Invite Link : https://discord.me/pdzaltis <br/><br/>
                 "
         ]
     ];
