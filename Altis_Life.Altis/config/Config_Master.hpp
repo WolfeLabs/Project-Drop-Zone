@@ -155,11 +155,13 @@ class Life_Settings {
     vehicle_sell_multiplier_COP = 1; //Cop Vehicle Garage Sell Price = Vehicle Buy Price * multiplier
     vehicle_sell_multiplier_MEDIC = 1; //Medic Vehicle Garage Sell Price = Vehicle Buy Price * multiplier
     vehicle_sell_multiplier_OPFOR = -1; // -- NOT IN USE -- Simply left in for east support.
+  
     /*Ziptie*/
     ziptie_need_rebel = false;
+
     /* "Other" Vehicle Prices */
     vehicle_chopShop_multiplier = .25; //Chop Shop price for vehicles. TO AVOID EXPLOITS NEVER SET HIGHER THAN A PURCHASE/RENTAL multipler!   Payout = Config_vehicle Price * multiplier
-    vehicle_storage_fee_multiplier = .1; //Pull from garage cost --> Cost takes the playersides Buy Price * multiplier
+    vehicle_storage_fee_multiplier = .02; //Pull from garage cost --> Cost takes the playersides Buy Price * multiplier
     vehicle_cop_impound_multiplier = .1; //TO AVOID EXPLOITS NEVER SET HIGHER THAN A PURCHASE/RENTAL multipler!   Payout = Config_vehicle Price * multiplier
 
     disableCommanderView = true; //false - Group leaders can access the commander view. true [default] - Group leaders cannot access the commander view.
