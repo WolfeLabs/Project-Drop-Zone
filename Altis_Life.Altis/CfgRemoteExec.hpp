@@ -76,6 +76,11 @@ class CfgRemoteExec {
         F(TON_fnc_clientGetKey,CLIENT)
         F(TON_fnc_clientMessage,CLIENT)
         F(TON_fnc_player_query,CLIENT)
+        F(zipties_fnc_zip_tie,CLIENT)
+        F(zipties_fnc_zip_gagplayer,CLIENT)
+        F(zipties_fnc_zip_blindfold,CLIENT)
+        F(zipties_fnc_zip_patdown,CLIENT)
+        F(zipties_fnc_zip_untieFix,CLIENT)
 
         /* Server only functions */
         F(DB_fnc_insertRequest,SERVER)

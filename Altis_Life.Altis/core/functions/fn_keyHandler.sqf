@@ -21,7 +21,7 @@ private _interactionKey = if (actionKeys "User10" isEqualTo []) then {219} else 
 private _interruptionKeys = [17, 30, 31, 32]; //A,S,W,D
 
 //Vault handling...
-if ((_code in (actionKeys "GetOver") || _code in (actionKeys "salute") || _code in (actionKeys "SitDown") || _code in (actionKeys "Throw") || _code in (actionKeys "GetIn") || _code in (actionKeys "GetOut") || _code in (actionKeys "Fire") || _code in (actionKeys "ReloadMagazine") || _code in [16,18]) && ((player getVariable ["restrained",false]) || (player getVariable ["playerSurrender",false]) || life_isknocked || life_istazed)) exitWith {
+if ((_code in (actionKeys "GetOver") || _code in (actionKeys "salute") || _code in (actionKeys "SitDown") || _code in (actionKeys "Throw") || _code in (actionKeys "GetIn") || _code in (actionKeys "GetOut") || _code in (actionKeys "Fire") || _code in (actionKeys "ReloadMagazine") || _code in [16,18]) && ((player getVariable ["restrained",false]) || (player getVariable ["playerSurrender",false]) || (player getVariable ["ziptied",false]) || life_isknocked || life_istazed)) exitWith {
     true;
 };
 
@@ -150,11 +150,13 @@ switch (_code) do {
 
     //Restraining (Shift + R)
     case 19: {
-        if (_shift) then {_handled = true};
-        if (_shift && playerSide isEqualTo west && {!isNull cursorObject} && {cursorObject isKindOf "CAManBase"} && {(isPlayer cursorObject)} && {(side cursorObject in [civilian,independent])} && {alive cursorObject} && {cursorObject distance player < 3.5} && {!(cursorObject getVariable "Escorting")} && {!(cursorObject getVariable "restrained")} && {speed cursorObject < 1}) then {
+        if (_shift) then {_handled = true;};
+        if (_shift && playerSide isEqualTo west && {!isNull cursorObject} && {cursorObject isKindOf "Man"} && {(isPlayer cursorObject)} && {(side cursorObject in [civilian,independent])} && {alive cursorObject} && {cursorObject distance player < 3.5} && {!(cursorObject getVariable "Escorting")} && {!(cursorObject getVariable "restrained")} && {speed cursorObject < 1}) then {
             [] call life_fnc_restrainAction;
+        } else {
+            [] call zipties_fnc_zip_tieAction;
         };
-    };
+    };  
 
     //Knock out, this is experimental and yeah... (Shift + G)
     case 34: {
@@ -217,7 +219,7 @@ switch (_code) do {
 
     //Y Player Menu
     case 21: {
-        if (!_alt && !_ctrlKey && !dialog && !(player getVariable ["restrained",false]) && {!life_action_inUse}) then {
+        if (!_alt && !_ctrlKey && !dialog && !(player getVariable ["restrained",false]) && !(player getVariable ["ziptied",false]) && {!life_action_inUse}) then {
             [] call life_fnc_p_openMenu;
         };
     };

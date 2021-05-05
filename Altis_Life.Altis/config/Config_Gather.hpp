@@ -125,5 +125,23 @@ Example 2:
             mined[] = { "oil_unprocessed" };
             zoneSize = 30;
         };
+
+        class Methi {
+            amount = 3; // Ammount that will be gathered
+            zones[] = { "meth_1"}; // Create mark with this name and put it on map using editor. If want more than one place, just place.
+            item = ""; // No idea what it means =( Don't change it.
+            mined[] = {"methi"};
+            zoneSize = 30;
+        };
+
+        class mdma_ecstasy {
+            amount = 3; // Ammount that will be gathered
+            zones[] = { "ecstasy_1"}; // Create mark with this name and put it on map using editor. If want more than one place, just place.
+            item = ""; // No idea what it means =( Don't change it.
+            mined[] = {"mdma_ecstasy"};
+            zoneSize = 30;
+};  
+
+        //end of mining
     };
 };

@@ -39,7 +39,9 @@ _Btn1 ctrlSetText localize "STR_vInAct_Repair";
 _Btn1 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_repairTruck; closeDialog 0;";
 
 if ((life_inv_toolkit >= 1) && {alive life_vInact_curTarget} && {([life_vInact_curTarget] call life_fnc_isDamaged)}) then {_Btn1 ctrlEnable true;} else {_Btn1 ctrlEnable false;};
-
+_Btn4 ctrlSetText localize "STR_vInAct_PullOut";
+_Btn4 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_pulloutAction; closeDialog 0;";
+if (crew _curTarget isEqualTo []) then {_Btn4 ctrlEnable false;};
 if (playerSide isEqualTo west) then {
     _Btn2 ctrlSetText localize "STR_vInAct_Registration";
     _Btn2 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_searchVehAction; closeDialog 0;";
@@ -124,7 +126,6 @@ if (playerSide isEqualTo west) then {
         };
     };
 
-    _Btn4 ctrlShow false;
     _Btn5 ctrlShow false;
     _Btn6 ctrlShow false;
 };
