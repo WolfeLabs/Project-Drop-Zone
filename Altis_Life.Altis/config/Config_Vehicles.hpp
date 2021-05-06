@@ -63,10 +63,14 @@ class CarShops {
         side = "civ";
         conditions = "";
         vehicles[] = {
+			{ "C_Plane_Civil_01_F", "" }, //Apex DLC
             { "C_Heli_Light_01_civil_F", "" },
             { "B_Heli_Light_01_F", "" },
+			{ "I_Heli_light_03_unarmed_F", "" },
             { "O_Heli_Light_02_unarmed_F", "" },
-            { "C_Plane_Civil_01_F", "" } //Apex DLC
+			{ "O_Heli_Transport_04_fuel_F", "" },
+			{ "O_Heli_Transport_04_box_F", "" },
+			{ "B_Heli_Transport_03_unarmed_F", "" }
         };
     };
 
@@ -89,9 +93,16 @@ class CarShops {
             { "B_Quadbike_01_F", "" },
             { "B_G_Offroad_01_F", "" },
             { "O_MRAP_02_F", "" },
-            { "B_Heli_Light_01_stripped_F", "" },
             { "B_G_Offroad_01_armed_F", "" },
-            { "O_T_LSV_02_unarmed_F", "" } //Apex DLC
+            { "O_T_LSV_02_unarmed_F", "" }, //Apex DLC
+			{ "B_Heli_Light_01_stripped_F", "" },
+			{ "I_Heli_light_03_unarmed_F", "" },
+			{ "O_Heli_Transport_04_bench_F", "" },
+			{ "O_Heli_Transport_04_fuel_F", "" },
+			{ "B_Heli_Transport_03_unarmed_F", "" },
+			{ "I_Heli_Transport_02_F", "" },
+			{ "B_Heli_Transport_03_F", "" },
+			{ "O_Heli_Attack_02_dynamicLoadout_F", "" }
         };
     };
 
@@ -132,7 +143,10 @@ class CarShops {
         conditions = "call life_coplevel >= 3";
         vehicles[] = {
             { "B_Heli_Light_01_F", "" },
-            { "B_Heli_Transport_01_F", "call life_coplevel >= 4" }
+            { "B_Heli_Transport_01_F", "call life_coplevel >= 4" },
+			{ "I_Heli_light_03_unarmed_F", "call life_coplevel >= 3" },
+			{ "B_Heli_Transport_03_unarmed_F", "call life_coplevel >= 4" },
+			{ "I_Heli_light_03_unarmed_F", "call life_coplevel >= 3" }
         };
     };
 
@@ -179,6 +193,62 @@ class LifeCfgVehicles {
         vItemSpace = -1;
         conditions = "";
         price = -1;
+        textures[] = {};
+    };
+	
+	class B_Heli_Transport_03_F {
+        vItemSpace = 720;
+        conditions = "";
+        price = 20000000;
+        textures[] = {};
+    };
+	
+	class I_Heli_Transport_02_F {
+        vItemSpace = 800;
+        conditions = "";
+        price = 5000000;
+        textures[] = {};
+    };
+	
+	class O_Heli_Attack_02_dynamicLoadout_F {
+        vItemSpace = 90;
+        conditions = "";
+        price = 100000000;
+        textures[] = {};
+    };
+	
+	class O_Heli_Transport_04_bench_F {
+        vItemSpace = 90;
+        conditions = "";
+        price = 1000000;
+        textures[] = {};
+    };
+	
+	class O_Heli_Transport_04_box_F {
+        vItemSpace = 800;
+        conditions = "license_civ_pilot || {!(playerSide isEqualTo civilian)}";
+        price = 1500000;
+        textures[] = {};
+    };
+	
+	class O_Heli_Transport_04_fuel_F {
+        vItemSpace = 90;
+        conditions = "license_civ_pilot || {!(playerSide isEqualTo civilian)}";
+        price = 1000000;
+        textures[] = {};
+    };
+	
+	class B_Heli_Transport_03_unarmed_F {
+        vItemSpace = 720;
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
+        price = 3500000;
+        textures[] = {};
+    };
+	
+	class I_Heli_light_03_unarmed_F {
+        vItemSpace = 120;
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
+        price = 625000;
         textures[] = {};
     };
 
@@ -774,7 +844,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     class B_Heli_Light_01_F {
         vItemSpace = 90;
         conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
-        price = 245000;
+        price = 375000;
         textures[] = {
             { "Police", "cop", {
                 "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa"
@@ -829,7 +899,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class C_Heli_Light_01_civil_F : B_Heli_Light_01_F {
         vItemSpace = 75;
-        price = 245000;
+        price = 325000;
     };
 
     class O_Heli_Light_02_unarmed_F {
