@@ -145,8 +145,7 @@ class CarShops {
             { "B_Heli_Light_01_F", "" },
             { "B_Heli_Transport_01_F", "call life_coplevel >= 4" },
 			{ "I_Heli_light_03_unarmed_F", "call life_coplevel >= 3" },
-			{ "B_Heli_Transport_03_unarmed_F", "call life_coplevel >= 4" },
-			{ "I_Heli_light_03_unarmed_F", "call life_coplevel >= 3" }
+			{ "B_Heli_Transport_03_unarmed_F", "call life_coplevel >= 4" }
         };
     };
 
@@ -443,7 +442,7 @@ class LifeCfgVehicles {
     class B_Heli_Transport_01_F {
         vItemSpace = 200;
         conditions = "license_cop_cAir || {!(playerSide isEqualTo west)}";
-        price = 200000;
+        price = 1500000;
         textures[] = {};
     };
 
