@@ -66,7 +66,11 @@ class CarShops {
             { "C_Heli_Light_01_civil_F", "" },
             { "B_Heli_Light_01_F", "" },
             { "O_Heli_Light_02_unarmed_F", "" },
-            { "C_Plane_Civil_01_F", "" } //Apex DLC
+            { "C_Plane_Civil_01_F", "" }, //Apex DLC
+			{ "B_Heli_Transport_03_unarmed_F", "" },
+			{ "O_Heli_Transport_04_box_F", "" },
+			{ "O_Heli_Transport_04_fuel_F", "" },
+			{ "I_Heli_light_03_unarmed_F", "" }
         };
     };
 
@@ -90,6 +94,10 @@ class CarShops {
             { "B_G_Offroad_01_F", "" },
             { "O_MRAP_02_F", "" },
             { "B_Heli_Light_01_stripped_F", "" },
+			{ "B_Heli_Transport_03_unarmed_F", "" },
+			{ "O_Heli_Transport_04_bench_F", "" },
+			{ "O_Heli_Transport_04_fuel_F", "" },
+			{ "I_Heli_light_03_unarmed_F", "" },
             { "B_G_Offroad_01_armed_F", "" },
             { "O_T_LSV_02_unarmed_F", "" } //Apex DLC
         };
@@ -132,7 +140,9 @@ class CarShops {
         conditions = "call life_coplevel >= 3";
         vehicles[] = {
             { "B_Heli_Light_01_F", "" },
-            { "B_Heli_Transport_01_F", "call life_coplevel >= 4" }
+            { "B_Heli_Transport_01_F", "call life_coplevel >= 4" },
+			{ "B_Heli_Transport_03_unarmed_F", "call life_coplevel >= 4" },
+			{ "I_Heli_light_03_unarmed_F", "call life_coplevel >= 3" }
         };
     };
 
@@ -179,6 +189,41 @@ class LifeCfgVehicles {
         vItemSpace = -1;
         conditions = "";
         price = -1;
+        textures[] = {};
+    };
+	
+	class O_Heli_Transport_04_bench_F {
+        vItemSpace = 90;
+        conditions = "";
+        price = 1000000;
+        textures[] = {};
+    };
+	
+	class O_Heli_Transport_04_box_F {
+        vItemSpace = 800;
+        conditions = "license_civ_pilot || {!(playerSide isEqualTo civilian)}";
+        price = 1250000;
+        textures[] = {};
+    };
+	
+	class O_Heli_Transport_04_fuel_F {
+        vItemSpace = 90;
+        conditions = "license_civ_pilot || {!(playerSide isEqualTo civilian)}";
+        price = 1110000;
+        textures[] = {};
+    };
+	
+	class B_Heli_Transport_03_unarmed_F {
+        vItemSpace = 720;
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
+        price = 1200000;
+        textures[] = {};
+    };
+	
+	class I_Heli_light_03_unarmed_F {
+        vItemSpace = 120;
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
+        price = 625000;
         textures[] = {};
     };
 
