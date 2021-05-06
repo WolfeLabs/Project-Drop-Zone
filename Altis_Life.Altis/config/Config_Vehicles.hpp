@@ -111,6 +111,7 @@ class CarShops {
         conditions = "";
         vehicles[] = {
             { "C_Offroad_01_F", "" },
+            { "C_Offroad_01_covered_F", "" },
             { "C_Offroad_02_unarmed_F", "" }, //jeep
             { "C_SUV_01_F", "" },
             { "C_Van_02_medevac_F", "" }
@@ -600,6 +601,28 @@ class LifeCfgVehicles {
             }, "" }
         };
     };
+
+    class C_Offroad_01_covered_F { //offroad covered
+        vItemSpace = 65;
+        conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
+        price = 12500;
+        textures[] = {
+            { "Taxi", "civ", {
+                "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
+            }, "" },
+            { "Red", "med", {
+                "\A3\soft_F\Offroad_01\Data\offroad_01_ext_co.paa",
+                "\A3\soft_F\Offroad_01\Data\offroad_01_ext_co.paa"
+            }, "" },
+            { "Police 1", "cop", {
+                "textures\COPS\veh\police_offroad.paa"
+            }, "" },			
+            { "Police", "cop", {
+                "#(ai,64,64,1)Fresnel(1.3,7)"
+            }, "" }
+        };
+    };
+
 
     class C_Kart_01_Blu_F {
         vItemSpace = 20;
