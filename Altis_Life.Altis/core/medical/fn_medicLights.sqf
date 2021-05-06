@@ -86,6 +86,26 @@ switch (_type) do
 		[true, "red", [0.345, 0.0, 0.525]] call _attach;
     };
 
+    case "C_Offroad_01_covered_F":
+    {
+        [false, "red", [-0.44, 0, 0.525]] call _attach;
+        [true, "red", [0.345, 0, 0.525]] call _attach;
+        [false, "red", [0.575, -2.95, -0.77]] call _attach;
+        [true, "red", [-0.645, -2.95, -0.77]] call _attach;
+        [false, "white", [0.61, 2.2825, -0.355]] call _attach;
+        [true, "white", [-0.695, 2.2825, -0.355]] call _attach;
+		[false, "red", [-0.905, -2.875, -0.225]] call _attach;
+		[true, "red", [0.825, -2.875, -0.225]] call _attach;
+		[true, "red", [-0.645, -2.95, -0.77]] call _attach;
+		[false, "red", [0.575, -2.95, -0.77]] call _attach;
+		[false, "red", [-0.44, 0.0, 0.525]] call _attach;
+		[true, "red", [0.345, 0.0, 0.525]] call _attach;
+        [true, "white", [-0.05, -2.598, 0.427]] call _attach; //rear top center
+        [false, "red", [0.25, -2.598, 0.427]] call _attach; //rear passanger top
+        [false, "red", [-0.25, -2.598, 0.427]] call _attach; //rear passanger top
+
+    };
+
 	case "C_Offroad_02_unarmed_F":
     {
         [false, "red", [-0.39, 2.28, -0.52]] call _attach; //front driver side
@@ -96,33 +116,39 @@ switch (_type) do
 		[false, "red", [0.80, -1.65, -0.18]] call _attach; //rear passenger side
     };	
 	
-	case "C_Van_01_box_F":
+	case "C_Van_02_medevac_F":
     {
-        [true, "red", [-.8, -.20, 1.2]] call _attach; //front foward left
-        [true, "red", [.8, -3.50, 1.2]] call _attach; //rear back top right
-        [false, "red", [0.8, -.20, 1.2]] call _attach; //front foward right
-        [false, "red", [-.8, -3.50, 1.2]] call _attach; //rear back top left
-        [true, "red", [1, -.50, 1.2]] call _attach; //front right top
-        [true, "red", [-1, -3.65, 1.2]] call _attach; //rear left top
-        [false, "red", [-1, -.50, 1.2]] call _attach; //front left top
-        [false, "red", [1, -3.65, 1.2]] call _attach; //rear right top        
-        [true, "white", [-0.65, 1.95, -0.45]] call _attach; //head light
-        [false, "white", [0.65, 1.95, -0.45]] call _attach; //head light
-        [true, "red", [-0.65, -2.95, -0.85]] call _attach; //tail light
-        [true, "red", [0.65, -2.95, -0.85]] call _attach; //tail light
+        [true, "red", [0.9, 1.55, 0.927]] call _attach; //pass front
+        [false, "white", [0.9, 0.1, 0.927]] call _attach; //pass front middle
+        [true, "red", [0.9, -1.4, 0.927]] call _attach; //pass rear middle
+        [false, "white", [0.9, -2.85, 0.927]] call _attach; //pass rear back
+        [true, "red", [0.95, -3.2, -0.373]] call _attach; //pass tail
+        [true, "red", [0.5, -3.15, 0.927]] call _attach; //pass rear
+        [false, "white", [0.75, 3.9, -0.573]] call _attach; //pass front
+        [true, "red", [0.45, 4.1, -0.573]] call _attach; //pass inner flash
+        //Driver Side
+        [true, "red", [-0.9, 1.55, 0.927]] call _attach; //driver front
+        [false, "white", [-0.9, 0.1, 0.927]] call _attach; //driver front middle
+        [true, "red", [-0.9, -1.4, 0.927]] call _attach; //driver rear middle
+        [false, "white", [-0.9, -2.85, 0.927]] call _attach; //driver rear back
+        [true, "red", [-0.95, -3.2, -0.373]] call _attach; //driver tail
+        [true, "red", [-0.5, -3.15, 0.927]] call _attach; //driver rear
+        [false, "white", [-0.75, 3.9, -0.573]] call _attach; //driver front
+        [true, "red", [-0.45, 4.1, -0.573]] call _attach; //driver inner flash
     };
 	
     case "C_SUV_01_F":
     {
-        [true, "red", [-0.39, 2.28, -0.52]] call _attach;
+         [false, "red", [-0.39, 2.28, -0.52]] call _attach;
         [true, "red", [0.38, 2.28, -0.52]] call _attach;
-        [true, "red", [-0.86, -2.75, -0.18]] call _attach;
+        [false, "red", [-0.86, -2.75, -0.18]] call _attach;
         [true, "red", [0.86, -2.75, -0.18]] call _attach;
-        [true, "white", [0.8, 1.95, -0.48]] call _attach;
+        [false, "white", [0.8, 1.95, -0.48]] call _attach;
         [true, "white", [-0.8, 1.95, -0.48]] call _attach;
 		[true, "red", [-0.86, -2.75, -0.18]] call _attach;
-		[true, "red", [0.86, -2.75, -0.18]] call _attach;	
+		[false, "red", [0.86, -2.75, -0.18]] call _attach;	
 		[true, "red", [-0.5, -1, 0.37]] call _attach;
+        [false, "red", [0.4, -1, 0.37]] call _attach;
     };
 
     case "C_Hatchback_01_sport_F":
