@@ -80,7 +80,9 @@ class WeaponShops {
             { "arifle_SPAR_01_blk_F", "", 33000, 16500, "" }, // spar16
 	    { "srifle_DMR_03_F", "", 41000, 16500, "" }, // Mk-1 EMR 7.62mm
 	    { "srifle_EBR_F", "", 45000, 16500, "" }, // Mk18 ABR 7.62mm
+
 	    { "LMG_03_F", "", 175000, 87500, "" }, // LIM-85 5.56mm
+
 	    { "srifle_DMR_02_DMS_F", "", 133000, 16500, "" }, // MAR-10 .338
             { "arifle_CTAR_blk_F", "", 30000, 15000, "" }, //car 5.8
             { "arifle_AK12U_F", "", 25000, 12500, "" }, //ak12u 
