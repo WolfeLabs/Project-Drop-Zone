@@ -7,7 +7,7 @@ disableChannels[] = {
 	{4, false, false}, //--- Vehicle Chat
 	{5, false, false}, //--- Direct Chat
 	{6, true, true},	//--- System Chat
-	{7, false, true}  //--- Civ Side Chat
+//	{7,false, true}  //--- Civ Side Chat
 };
 overviewText = "$STR_MISC_overviewText";    // Text to be displayed below the overviewPicture on the mission selection screen when the mission is available to play.
 unsafeCVL = 1; // Allows createVehicleLocal to be executed in Multiplayer
