@@ -62,6 +62,13 @@ class WeaponShops {
         side = "civ";
         conditions = "license_civ_rebel";
         items[] = {
+            { "hgun_Rook40_F", "", 7000, 3250, "" },//Rook 40 9mm
+            { "hgun_Pistol_01_F", "", 6000, 3000, "" }, //pm 9mm
+            { "hgun_P07_blk_F", "", 7000, 3500, "" },//po7 black            
+            { "hgun_Pistol_heavy_02_F", "", 8500, 4250, "" },//zubr .45acp
+            { "hgun_ACPC2_F", "", 8750, 4375, "" },//1911 .45acp
+            { "hgun_Pistol_heavy_01_F", "", 9000, 4500, "" },//4-five 
+            { "hgun_Pistol_heavy_01_green_F", "", 9000, 4500, "" },//4-five green 
             { "arifle_TRG20_F", "", 25000, 12500, "" },//tavor gay 5.56
             { "arifle_Katiba_F", "", 30000, 15000, "" },//katiba 6.5
             { "srifle_DMR_01_F", "", 50000, 25000, "" },//rahim 7.62
@@ -71,6 +78,10 @@ class WeaponShops {
             { "arifle_AKM_F", "", 22000, 11000, "" }, //akm 7.62
             { "arifle_ARX_blk_F", "", 22000, 11000, "" }, //type 115
             { "arifle_SPAR_01_blk_F", "", 33000, 16500, "" }, // spar16
+	    { "srifle_DMR_03_F", "", 41000, 16500, "" }, // Mk-1 EMR 7.62mm
+	    { "srifle_EBR_F", "", 45000, 16500, "" }, // Mk18 ABR 7.62mm
+	    { "LMG_03_F", "", 175000, 87500, "" }, // LIM-85 5.56mm
+	    { "srifle_DMR_02_DMS_F", "", 133000, 16500, "" }, // MAR-10 .338
             { "arifle_CTAR_blk_F", "", 30000, 15000, "" }, //car 5.8
             { "arifle_AK12U_F", "", 25000, 12500, "" }, //ak12u 
             { "arifle_AK12_GL_F", "", 25000,  12500, "" },// ak12u GL
@@ -85,13 +96,22 @@ class WeaponShops {
             //{ "arifle_AK12_GL_arid_F", "", 25000, "" },            
         };
         mags[] = {
+            { "16Rnd_9x21_Mag", "", 200, 100, "" },//p07/rook mag
+            { "10Rnd_9x21_Mag", "", 150, 75, "" }, //pm mag            
+            { "6Rnd_45ACP_Cylinder", "", 230, 115, "" },//zubr mag
+            { "9Rnd_45ACP_Mag", "", 250, 125, "" },//1911 mag
+            { "11Rnd_45ACP_Mag", "", 280, 140, "" },//4-five mag  
             { "30Rnd_556x45_Stanag", "", 600, 300, "" },
             { "30Rnd_762x39_Mag_F", "", 800, 400, "" }, //Apex DLC
+            { "30Rnd_762x39_AK12_Mag_F", "", 800, 400, "" },
             { "30Rnd_545x39_Mag_F", "", 500, 250, "" }, //Apex DLC
             { "30Rnd_65x39_caseless_green", "", 750, 375, "" },
             { "10Rnd_762x54_Mag", "", 500, 250, "" },
             { "20Rnd_556x45_UW_mag", "", 500, 250, "" },
             { "30Rnd_580x42_Mag_F", "", 600, 300, "" }, //Apex DLC
+	    { "20Rnd_762x51_Mag", "", 700, 400, "" }, //Mk1-18 Mags
+	    { "200Rnd_556x45_Box_Red_F", "", 1600, 1300, "" }, //LIM-85 Box rounds
+	    { "10Rnd_338_Mag", "", 2600, 2100, "" }, //Apex DLC
             //{ "30Rnd_762x39_AK12_Lush_Mag_F", "", 250, 60, "" },
             //{ "30Rnd_762x39_AK12_Lush_Mag_Tracer_F", "", 250, 60, "" },
             { "UGL_FlareWhite_F", "", 400, 200, "" },
@@ -112,6 +132,7 @@ class WeaponShops {
             //{ "30Rnd_762x39_AK12_Lush_Mag_Tracer_F", "", 250, 60, "" },
         };
         accs[] = {
+            { "acc_flashlight_pistol", "", 1000, 500, "" },//Pistol Flashlight
             { "optic_ACO_grn", "", 3500, 1750, "" },
             { "optic_Holosight", "", 3600, 1800, "" },
             { "optic_Hamr", "", 7500, 3750, "" },
@@ -137,7 +158,10 @@ class WeaponShops {
             { "optic_Arco_lush_F", "", 1000, 500, "" },
             { "optic_Arco_ghex_F", "", 1000, 500, "" },
             { "optic_AMS_snd", "", 1000, 500, "" },
-            { "optic_Arco", "", 1000, 500, "" }
+            { "optic_Arco", "", 1000, 500, "" },
+	    { "muzzle_snds_B", "", 2100, 1800, "" }, // 7.62mm Supressor
+	    { "muzzle_snds_M", "", 3500, 3000, "" }, // 5.56mm Supressor
+	    { "muzzle_snds_338_black", "", 5500, 5000, "" } // .338 Supressor
         };
     };
 
