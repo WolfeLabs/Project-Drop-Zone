@@ -71,6 +71,10 @@ class WeaponShops {
             { "arifle_AKM_F", "", 22000, 11000, "" }, //akm 7.62
             { "arifle_ARX_blk_F", "", 22000, 11000, "" }, //type 115
             { "arifle_SPAR_01_blk_F", "", 33000, 16500, "" }, // spar16
+			{ "srifle_DMR_03_F", "", 41000, 16500, "" }, // Mk-1 EMR 7.62mm
+			{ "srifle_EBR_F", "", 45000, 16500, "" }, // Mk18 ABR 7.62mm
+			{ "LMG_03_F", "", 115500, 16500, "" }, // LIM-85 5.56mm
+			{ "srifle_DMR_02_DMS_F", "", 133000, 16500, "" }, // MAR-10 .338
             { "arifle_CTAR_blk_F", "", 30000, 15000, "" }, //car 5.8
             { "arifle_AK12U_F", "", 25000, 12500, "" }, //ak12u 
             { "arifle_AK12_GL_F", "", 25000,  12500, "" },// ak12u GL
@@ -92,6 +96,9 @@ class WeaponShops {
             { "10Rnd_762x54_Mag", "", 500, 250, "" },
             { "20Rnd_556x45_UW_mag", "", 500, 250, "" },
             { "30Rnd_580x42_Mag_F", "", 600, 300, "" }, //Apex DLC
+			{ "20Rnd_762x51_Mag", "", 700, 400, "" }, //Mk1-18 Mags
+			{ "200Rnd_556x45_Box_Red_F", "", 1600, 1300, "" }, //LIM-85 Box rounds
+			{ "10Rnd_338_Mag", "", 2600, 2100, "" }, //Apex DLC
             //{ "30Rnd_762x39_AK12_Lush_Mag_F", "", 250, 60, "" },
             //{ "30Rnd_762x39_AK12_Lush_Mag_Tracer_F", "", 250, 60, "" },
             { "UGL_FlareWhite_F", "", 400, 200, "" },
@@ -137,7 +144,10 @@ class WeaponShops {
             { "optic_Arco_lush_F", "", 1000, 500, "" },
             { "optic_Arco_ghex_F", "", 1000, 500, "" },
             { "optic_AMS_snd", "", 1000, 500, "" },
-            { "optic_Arco", "", 1000, 500, "" }
+            { "optic_Arco", "", 1000, 500, "" },
+			{ "muzzle_snds_B", "", 2100, 1800, "" }, // 7.62mm Supressor
+			{ "muzzle_snds_M", "", 3500, 3000, "" }, // 5.56mm Supressor
+			{ "muzzle_snds_338_black", "", 5500, 5000, "" } // .338 Supressor
         };
     };
 
