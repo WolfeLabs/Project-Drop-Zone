@@ -595,7 +595,16 @@ class LifeCfgVehicles {
             }, "" },
             { "Police 1", "cop", {
                 "textures\COPS\veh\police_offroad.paa"
-            }, "" },			
+            }, "" },		
+            { "Kavala Offroad", "cop", {
+                "textures\COPS\veh\police_offroadK.paa"
+            }, "" },
+            { "Athira Offroad", "cop", {
+                "textures\COPS\veh\police_offroadA.paa"
+            }, "" },
+            { "Pyrgos Offroad", "cop", {
+                "textures\COPS\veh\police_offroadP.paa"
+            }, "" },                                    	
             { "Police", "cop", {
                 "#(ai,64,64,1)Fresnel(1.3,7)"
             }, "" }
@@ -669,9 +678,15 @@ will modify the virtual space and the price of the vehicle, but other informatio
 			{ "Police 1", "cop", {
                 "textures\COPS\veh\police_hatchback.paa"
             }, "" },
-            { "Police", "cop", {
-                "#(ai,64,64,1)Fresnel(1.3,7)"
-            }, "" }
+			{ "Kavala Hatchback", "cop", {
+                "textures\COPS\veh\police_hatchbackK.paa"
+            }, "" },
+			{ "Athira Hatchback", "cop", {
+                "textures\COPS\veh\police_hatchbackA.paa"
+            }, "" },
+			{ "Pyrgos Hatchback", "cop", {
+                "textures\COPS\veh\police_hatchbackP.paa"
+            }, "" }                                 
         };
     };
 
