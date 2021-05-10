@@ -593,20 +593,8 @@ class LifeCfgVehicles {
             { "Taxi", "civ", {
                 "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
             }, "" },
-            { "Police 1", "cop", {
+            { "PD", "cop", {
                 "textures\COPS\veh\police_offroad.paa"
-            }, "" },		
-            { "Kavala Offroad", "cop", {
-                "textures\COPS\veh\police_offroadK.paa"
-            }, "" },
-            { "Athira Offroad", "cop", {
-                "textures\COPS\veh\police_offroadA.paa"
-            }, "" },
-            { "Pyrgos Offroad", "cop", {
-                "textures\COPS\veh\police_offroadP.paa"
-            }, "" },                                    	
-            { "Police", "cop", {
-                "#(ai,64,64,1)Fresnel(1.3,7)"
             }, "" }
         };
     };
@@ -677,16 +665,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },
 			{ "Police 1", "cop", {
                 "textures\COPS\veh\police_hatchback.paa"
-            }, "" },
-			{ "Kavala Hatchback", "cop", {
-                "textures\COPS\veh\police_hatchbackK.paa"
-            }, "" },
-			{ "Athira Hatchback", "cop", {
-                "textures\COPS\veh\police_hatchbackA.paa"
-            }, "" },
-			{ "Pyrgos Hatchback", "cop", {
-                "textures\COPS\veh\police_hatchbackP.paa"
-            }, "" }                                 
+            }, "" }                              
         };
     };
 
@@ -817,15 +796,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Police", "cop", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_02_co.paa"
             }, "" },
-			{ "Kavala PD", "cop", {
-                "textures\COPS\veh\police_suvK.paa"
-            }, "" },
-			{ "Athira PD", "cop", {
-                "textures\COPS\veh\police_suvA.paa"
-            }, "" },
-			{ "Pyrgos PD", "cop", {
-                "textures\COPS\veh\police_suvP.paa"
-            }, "" }                        
+			{ "PD", "cop", {
+                "textures\COPS\veh\police_suv.paa"
+            }, "" }        
         };
     };
 
