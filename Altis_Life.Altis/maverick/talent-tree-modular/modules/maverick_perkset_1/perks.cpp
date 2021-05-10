@@ -293,7 +293,7 @@ class perk_processamount_1 {
 	color[] = {1,1,1,1};
 };
 
-class perk_processamount_2 {
+/* class perk_processamount_2 {
 	displayName = "Process Amount 2";
 	requiredPerkPoints = 12;
 	requiredLevel = 18;
@@ -317,7 +317,7 @@ class perk_processamount_3 {
 	limitToSides[] = {"CIV"};
 	color[] = {1,1,1,1};
 };
-
+ */
 	//Revive Speed
 class perk_Revive_1 {
 	displayName = "Revive 1";
