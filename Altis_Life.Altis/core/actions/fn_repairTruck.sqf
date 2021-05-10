@@ -34,7 +34,7 @@ if ((_veh isKindOf "Car") || (_veh isKindOf "Ship") || (_veh isKindOf "Air")) th
             };
 
             uiSleep 0.27;
-            _cP = _cP + 0.01;
+            _cP = _cP + (0.01 * (missionNamespace getVariable ["mav_ttm_var_repairMultiplier", 1]));
             _progress progressSetPosition _cP;
             _pgText ctrlSetText format ["%3 (%1%2)...",round(_cP * 100),"%",_upp];
             if (_cP >= 1) exitWith {};
@@ -67,5 +67,6 @@ if ((_veh isKindOf "Car") || (_veh isKindOf "Ship") || (_veh isKindOf "Air")) th
 
         _veh setDamage 0;
         titleText[localize "STR_NOTF_RepairedVehicle","PLAIN"];
+        ["RepairComplete"] spawn mav_ttm_fnc_addExp;
     };
 };

@@ -15,4 +15,6 @@ if (isNull _unit || {!(_unit isEqualTo life_ticket_unit)}) exitWith {}; //NO
 if (isNull _cop || {!(_cop isEqualTo player)}) exitWith {}; //Double NO
 
 BANK = BANK + _value;
+["citation"] spawn mav_ttm_fnc_addExp;
+
 [1] call SOCK_fnc_updatePartial;

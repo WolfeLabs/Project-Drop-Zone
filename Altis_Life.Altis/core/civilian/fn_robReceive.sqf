@@ -18,6 +18,9 @@ if (_cash isEqualTo 0) exitWith {titleText[localize "STR_Civ_RobFail","PLAIN"]};
 CASH = CASH + _cash;
 [0] call SOCK_fnc_updatePartial;
 titleText[format [localize "STR_Civ_Robbed",[_cash] call life_fnc_numberText],"PLAIN"];
+["robtrue"] spawn mav_ttm_fnc_addExp;
+
+
 
 if (LIFE_SETTINGS(getNumber,"player_moneyLog") isEqualTo 1) then {
     if (LIFE_SETTINGS(getNumber,"battlEye_friendlyLogging") isEqualTo 1) then {
