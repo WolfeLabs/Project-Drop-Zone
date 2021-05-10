@@ -174,6 +174,32 @@ switch (_type) do
 		[true, "red", [-0.4, -4.95, 0.155]] call _attach;
 		[false, "blue", [0.4, -4.95, 0.155]] call _attach;
 	};
+
+    //air
+    case "B_Heli_Light_01_F":
+    {
+        [false, "red", [0.75, 1.599, -1.323]] call _attach; //pass skid
+        [true, "blue", [-0.75, 1.599, -1.323]] call _attach; //driver skid
+        [false, "red", [-0.9, -3.051, 0.177]] call _attach; //driver tail
+        [true, "blue", [0.9, -3.051, 0.177]] call _attach; //pass tail
+    };
+
+      case "B_Heli_Transport_01_F":
+    {
+        [false, "red", [0.5, 6.749, -0.723]] call _attach; //pass front
+        [true, "blue", [-0.5, 6.749, -0.723]] call _attach; //driver front
+    };
+
+      case "I_Heli_light_03_unarmed_F":
+    {
+        [false, "red", [0.5, 3.75, -1.023]] call _attach; //pass front
+        [true, "blue", [-0.5, 3.75, -1.023]] call _attach; //driver front
+        [true, "white", [0, -3.35, -0.923]] call _attach; //driver front
+    };
+
+
+//End of lights case value
+
 };
 
 _lightsOn = true;
