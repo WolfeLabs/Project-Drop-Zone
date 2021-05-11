@@ -112,6 +112,16 @@ class citation {
     message = "Quota Meet"
 };
 
+class OfficerDutyFed {
+    expToAdd = 45;
+    message = "On-Duty Around Fed"
+};
+
+class OfficerDuty {
+    expToAdd = 25;
+    message = "On-Duty"
+};
+
 //admin use only
 class PowerLevel {
     expToAdd = 200;

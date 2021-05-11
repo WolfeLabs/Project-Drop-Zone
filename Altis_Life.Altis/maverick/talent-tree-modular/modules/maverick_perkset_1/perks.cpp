@@ -27,7 +27,7 @@ class perk_gunsspecialist_lessRecoil_1 {
 	subtitle = "Level 5 Required, 5 Perk Points";
 	description = "Learn to control weapons better and lower the noticable recoil<br/><br/><t color='#10FF45'>-5% less recoil</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_recoilCompensation_1.sqf";
-	limitToSides[] = {};
+	limitToSides[] = {"CIV","WEST"};
 	color[] = {1,1,1,1};
 };
 
@@ -39,7 +39,7 @@ class perk_gunsspecialist_lessRecoil_2 {
 	subtitle = "Level 16 Required, 6 Perk Points";
 	description = "Learn to control weapons better and lower the noticable recoil<br/><br/><t color='#10FF45'>-10% less recoil</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_recoilCompensation_2.sqf";
-	limitToSides[] = {};
+	limitToSides[] = {"CIV","WEST"};
 	color[] = {1,1,1,1};
 };
 
@@ -51,7 +51,7 @@ class perk_gunsspecialist_lessRecoil_3 {
 	subtitle = "Level 25 Required, 7 Perk Points";
 	description = "Learn to control weapons better and lower the noticable recoil<br/><br/><t color='#10FF45'>-20% less recoil</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_recoilCompensation_3.sqf";
-	limitToSides[] = {};
+	limitToSides[] = {"CIV","WEST"};
 	color[] = {1,1,1,1};
 };
 
