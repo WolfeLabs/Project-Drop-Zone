@@ -10,7 +10,7 @@ link1[] = {1,2};
 link2[] = {2,3};
 link3[] = {3,2};
 globals[] = {0.000000,0,0,0,0,640,480,1,26,6316128,1,-558.619873,407.034668,408.163269,-391.872925,1067,884,1};
-window[] = {2,-1,-1,-1,-1,870,-1868,-428,52,3,1085};
+window[] = {2,-1,-1,-32000,-32000,1010,105,1545,192,3,1085};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -64,7 +64,7 @@ class FSM
                                         action=/*%FSM<ACTION""">*/"if (!alive player) then {" \n
                                          "    systemChat localize ""STR_FSM_MissedPay"";" \n
                                          "} else {" \n
-                                         "        if(playerSide isEqualTo west) then {" \n
+                                         "        if(playerSide isEqualTo west || playerSide isEqualTo independent ) then {" \n
                                          "			life_atmbank = life_atmbank + (call life_paycheck);" \n
                                          "			[""OfficerDuty""] spawn mav_ttm_fnc_addExp;" \n
                                          "			systemChat format [localize ""STR_FSM_ReceivedPay"",[(call life_paycheck)] call life_fnc_numberText];" \n
