@@ -16,6 +16,8 @@
 //CIV COLOR RGBA 	 1,1,1,1
 //Civ side is CIV
 
+//Emergency Color RGBA 1,0.6,0.4,1
+
 // -- Weapon related perks
 class perk_gunsspecialist_lessRecoil_1 {
 	displayName = "Recoil Compensation";
@@ -253,7 +255,7 @@ class perk_repairSpeed_1 {
 	description = "Learn to repair more efficiently<br/><br/><t color='#10FF45'>+10% faster repair</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_repairSpeed_1.sqf";
 	limitToSides[] = {"WEST","GUER"};
-	color[] = {1,1,1,1};
+	color[] = {1,0.6,0.4,1};
 };
 
 class perk_repairSpeed_2 {
@@ -265,7 +267,7 @@ class perk_repairSpeed_2 {
 	description = "Learn to repair more efficiently<br/><br/><t color='#10FF45'>+15% faster repair</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_repairSpeed_2.sqf";
 	limitToSides[] = {"WEST","GUER"};
-	color[] = {1,1,1,1};
+	color[] = {1,0.6,0.4,1};
 };
 
 class perk_repairSpeed_3 {
@@ -277,7 +279,7 @@ class perk_repairSpeed_3 {
 	description = "Learn to repair more efficiently<br/><br/><t color='#10FF45'>+25% faster repair</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_repairSpeed_3.sqf";
 	limitToSides[] = {"WEST","GUER"};
-	color[] = {1,1,1,1};
+	color[] = {1,0.6,0.4,1};
 };
 
 // increase process amount
