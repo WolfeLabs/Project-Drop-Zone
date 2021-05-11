@@ -252,7 +252,7 @@ class perk_repairSpeed_1 {
 	subtitle = "Level 4 Required, 3 Perk Points";
 	description = "Learn to repair more efficiently<br/><br/><t color='#10FF45'>+10% faster repair</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_repairSpeed_1.sqf";
-	limitToSides[] = {"CIV"};
+	limitToSides[] = {"WEST","GUER"};
 	color[] = {1,1,1,1};
 };
 
@@ -264,7 +264,7 @@ class perk_repairSpeed_2 {
 	subtitle = "Level 7 Required, 3 Perk Points";
 	description = "Learn to repair more efficiently<br/><br/><t color='#10FF45'>+15% faster repair</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_repairSpeed_2.sqf";
-	limitToSides[] = {"CIV"};
+	limitToSides[] = {"WEST","GUER"};
 	color[] = {1,1,1,1};
 };
 
@@ -276,7 +276,7 @@ class perk_repairSpeed_3 {
 	subtitle = "Level 17 Required, 4 Perk Points";
 	description = "Learn to repair more efficiently<br/><br/><t color='#10FF45'>+25% faster repair</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_repairSpeed_3.sqf";
-	limitToSides[] = {"CIV"};
+	limitToSides[] = {"WEST","GUER"};
 	color[] = {1,1,1,1};
 };
 
