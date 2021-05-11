@@ -16,6 +16,8 @@
 //CIV COLOR RGBA 	 1,1,1,1
 //Civ side is CIV
 
+//Emergency Color RGBA 1,0.6,0.4,1
+
 // -- Weapon related perks
 class perk_gunsspecialist_lessRecoil_1 {
 	displayName = "Recoil Compensation";
@@ -25,7 +27,7 @@ class perk_gunsspecialist_lessRecoil_1 {
 	subtitle = "Level 5 Required, 5 Perk Points";
 	description = "Learn to control weapons better and lower the noticable recoil<br/><br/><t color='#10FF45'>-5% less recoil</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_recoilCompensation_1.sqf";
-	limitToSides[] = {};
+	limitToSides[] = {"CIV","WEST"};
 	color[] = {1,1,1,1};
 };
 
@@ -37,7 +39,7 @@ class perk_gunsspecialist_lessRecoil_2 {
 	subtitle = "Level 16 Required, 6 Perk Points";
 	description = "Learn to control weapons better and lower the noticable recoil<br/><br/><t color='#10FF45'>-10% less recoil</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_recoilCompensation_2.sqf";
-	limitToSides[] = {};
+	limitToSides[] = {"CIV","WEST"};
 	color[] = {1,1,1,1};
 };
 
@@ -49,7 +51,7 @@ class perk_gunsspecialist_lessRecoil_3 {
 	subtitle = "Level 25 Required, 7 Perk Points";
 	description = "Learn to control weapons better and lower the noticable recoil<br/><br/><t color='#10FF45'>-20% less recoil</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_recoilCompensation_3.sqf";
-	limitToSides[] = {};
+	limitToSides[] = {"CIV","WEST"};
 	color[] = {1,1,1,1};
 };
 
@@ -253,7 +255,7 @@ class perk_repairSpeed_1 {
 	description = "Learn to repair more efficiently<br/><br/><t color='#10FF45'>+10% faster repair</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_repairSpeed_1.sqf";
 	limitToSides[] = {"WEST","GUER"};
-	color[] = {1,1,1,1};
+	color[] = {1,0.6,0.4,1};
 };
 
 class perk_repairSpeed_2 {
@@ -265,7 +267,7 @@ class perk_repairSpeed_2 {
 	description = "Learn to repair more efficiently<br/><br/><t color='#10FF45'>+15% faster repair</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_repairSpeed_2.sqf";
 	limitToSides[] = {"WEST","GUER"};
-	color[] = {1,1,1,1};
+	color[] = {1,0.6,0.4,1};
 };
 
 class perk_repairSpeed_3 {
@@ -277,7 +279,7 @@ class perk_repairSpeed_3 {
 	description = "Learn to repair more efficiently<br/><br/><t color='#10FF45'>+25% faster repair</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_repairSpeed_3.sqf";
 	limitToSides[] = {"WEST","GUER"};
-	color[] = {1,1,1,1};
+	color[] = {1,0.6,0.4,1};
 };
 
 // increase process amount
