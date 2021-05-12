@@ -286,8 +286,8 @@ class VirtualItems {
         variable = "blastingCharge";
         displayName = "STR_Item_BCharge";
         weight = 15;
-        buyPrice = 35000;
-        sellPrice = 10000;
+        buyPrice = 250000;
+        sellPrice = 100000;
         illegal = true;
         edible = -1;
         drinkable = -1;
