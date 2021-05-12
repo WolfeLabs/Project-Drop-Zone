@@ -306,23 +306,52 @@ class Clothing {
         side = "med";
         uniforms[] = {
             { "NONE", $STR_C_Remove_uniforms, 0, "" },
-            { "U_Rangemaster", $STR_C_EMS_uniforms, 50, "" }
+            { "U_Rangemaster", $STR_C_EMS_uniforms, 50, "" },
+            { "U_C_ConstructionCoverall_Vrana_F", $STR_C_FIRE_uniforms, 50, "" },
+            { "U_C_ConstructionCoverall_Black_F", $STR_C_FIRE_uniforms, 50, "" },
+            { "U_I_Wetsuit" , $STR_C_RESCUE_uniforms, 50, "" },
+            { "U_I_E_ParadeUniform_01_LDF_decorated_F", $STR_C_EMSDRESS_uniforms, 50, "" },
+            { "U_I_ParadeUniform_01_AAF_decorated_F", $STR_C_FIREDRESS_uniforms, 50, "" },               
+            { "U_C_Paramedic_01_F";,"", 100, "" }
         };
         headgear[] = {
             { "NONE", $STR_C_Remove_headgear, 0, "" },
-            { "H_Cap_blu", "", 10, "" }
+            { "H_Cap_red", "", 10, "" },
+            { "H_Cap_blu", "", 10, "" },
+            { "H_ParadeDressCap_01_LDF_F", "$STR_C_EMSDRESS_uniforms", 10, "" },
+            { "H_ParadeDressCap_01_AAF_F", "$STR_C_FIREHAT_uniforms", 10, "" },
+            { "H_Cap_marshal", "", 10, "" }
         };
         goggles[] = {
             { "NONE", $STR_C_Remove_goggles, 0, "" },
+            { "G_RegulatorMask_F", "", 10, "" },
+            { "G_Respirator_white_F", "", 10, "" },
             { "G_Shades_Blue", "", 10, "" }
         };
         vests[] = {
-            { "NONE", $STR_C_Remove_vests, 0, "" }
+            { "NONE", "", 10, "" },
+            { "V_DeckCrew_red_F", $STR_C_EMS_vest  , 10, "call life_mediclevel >= 2" },
+            { "V_DeckCrew_white_F", $STR_C_EMS_vest  , 10, "call life_mediclevel >= 2" },
+            { "V_Safety_yellow_F", "", 10, "" },
+            { "V_Safety_orange_F", "", 10, "" },
+            { "V_Safety_blue_F", "", 10, "" },
+            { "V_LegStrapBag_black_F", "", 10, "" },
+            { "V_RebreatherB", "", 10, "" },
+            
         };
         backpacks[] = {
             { "NONE", $STR_C_Remove_backpacks, 0, "" },
-            { "B_FieldPack_oli", $STR_C_EMS_backpacks, 3000, "" },
-			{ "B_Carryall_cbr", "Invisible Carryall", 3000, "" }
+            { "B_FieldPack_oucamo", $STR_C_EMS_backpacks, 3000, "" },
+			{ "B_SCBA_01_F", "", 3000, "" },
+            { "B_CivilianBackpack_01_Sport_Red_F", "", 3000, "" },
+            { "B_CivilianBackpack_01_Sport_Blue_F", "", 3000, "" },
+            { "B_ViperLightHarness_blk_F", "", 3000, "" },
+            { "B_LegStrapBag_black_F", "", 3000, "" },
+            { "B_CivilianBackpack_01_Everyday_Vrana_F", "", 3000, "" },
+            { "B_Messenger_Black_F", "", 3000, "" },
+            { "B_Messenger_Gray_F", "", 3000, "" },
+            { "B_Carryall_cbr", "", 3000, "" },
+
         };
     };
 
