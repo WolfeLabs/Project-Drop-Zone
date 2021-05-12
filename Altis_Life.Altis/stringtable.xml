@@ -8290,6 +8290,15 @@
             <Polish>Masz już klucze do tego pojazdu.</Polish>
 			<Chinesesimp>你已经获得载具钥匙。</Chinesesimp>
         </Key>
+        <Key ID="STR_ISTR_Jaws">
+	        <Original>Using Jaws Of Life On: %1</Original>
+        </Key>
+        <Key ID="STR_ISTR_Jaws_Success">
+	        <Original>The Jaws Of Life Where Successful!</Original>
+        </Key>	
+            <Key ID ="STR_vInAct_Jaws">
+	        <Original>Jaws Of Life</Original>		
+        </Key>	
         <Key ID="STR_ISTR_Lock_Process">
             <Original>Lock-picking %1</Original>
             <Czech>Lockpicking %1</Czech>
@@ -9337,6 +9346,18 @@
             <Polish>Wyłącz światło</Polish>
 			<Chinesesimp>把灯打开</Chinesesimp>
         </Key>
+        <Key ID="STR_NOTF_MorphineInj">
+	        <Original>You have administered morphine!</Original>
+        </Key>
+        <Key ID="STR_NOTF_Morphine">
+            <Original>You are administering morphine!</Original>
+        </Key>
+        <Key ID="STR_Item_Morphine">
+            <Original>Morphine Injector</Original>
+        </Key>
+        <Key ID="STR_pAct_Inject">
+            <Original>Inject Morphine</Original>
+        </Key>
     </Package>
     <Package name="Vehicle_Interaction">
         <Key ID="STR_vInAct_Title">
@@ -10316,6 +10337,9 @@
             <Portuguese>Você não recebeu seu pagamento pois estava morto.</Portuguese>
             <Polish>Ominęła cię wypłata ponieważ byłeś martwy.</Polish>
 			<Chinesesimp>因为你死了，你错过了薪水。</Chinesesimp>
+        </Key>
+        <Key ID="STR_FSM_MissedReward">
+            <Original>You have missed a Experience Reward because you were dead.</Original>
         </Key>
         <Key ID="STR_FSM_ReceivedPay">
             <Original>You have received a paycheck of $%1.</Original>

@@ -20,6 +20,10 @@ if (playerSide isEqualTo west && {player getVariable ["isEscorting",false]}) exi
 if (playerSide isEqualTo civilian && {player getVariable ["isEscorting",false]}) exitWith {
     [] call zipties_fnc_zip_interaction;
 };
+// add med player interaction
+if (playerSide isEqualTo independent && {player getVariable ["isEscorting",false]}) exitWith {
+    [] call life_fnc_medicInteractionMenu;
+};
 
 if (LIFE_SETTINGS(getNumber,"global_ATM") isEqualTo 1) then{
     //Check if the player is near an ATM.

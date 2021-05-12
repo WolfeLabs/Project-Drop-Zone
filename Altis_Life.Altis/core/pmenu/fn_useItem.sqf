@@ -143,6 +143,13 @@ switch (_item) do {
         }; 
     }; 
 
+    case (_item isEqualTo "morphine"): {
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[] spawn life_fnc_morphine;
+		};
+	};
+
  /*    case "cocaine_processed":{
         
     } */

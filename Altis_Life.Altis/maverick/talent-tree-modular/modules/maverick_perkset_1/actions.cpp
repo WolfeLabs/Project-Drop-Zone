@@ -124,6 +124,11 @@ class PowerLevel {
 	message = "Experence Reward";
 };
 
+class PlayReward {
+    expToAdd = 50;
+    message = "Thanks For Playing Project Drop Zone!";
+};
+
 class Example {
     expToAdd = 100;
 	message = "Customizable Message";
