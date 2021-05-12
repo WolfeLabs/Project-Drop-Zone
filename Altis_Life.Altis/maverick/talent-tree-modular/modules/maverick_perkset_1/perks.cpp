@@ -178,7 +178,7 @@ class perk_HealthInsurance_1 {
 	requiredLevel = 2;
 	requiredPerk = "";
 	subtitle = "Level 2 Required, 2 Perk Points";
-	description = "Health Insurance that reduces revive cost when medic revives. <br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+20% Reduced Revive and Hospital Cost</t>";
+	description = "Health Insurance that reduces revive cost when medic revives. <br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+20% Reduced a</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_CanadaHealthInsurance_1.sqf";
 	limitToSides[] = {};
 	color[] = {1,1,1,1};
@@ -244,6 +244,119 @@ class perk_gatheringspeed_3 {
 	limitToSides[] = {"CIV"};
 	color[] = {1,1,1,1};
 };
+
+// -- robstore
+class perk_robstore_1 {
+	displayName = "Quick Criminal";
+	requiredPerkPoints = 2;
+	requiredLevel = 5;
+	requiredPerk = "";
+	subtitle = "Level 5 Required, 2 Perk Points";
+	description = "Reduce the time required to rob <br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+15% Time Reduced</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_robstore_1.sqf";
+	limitToSides[] = {"CIV"};
+	color[] = {1,1,1,1};
+};
+
+class perk_robstore_2 {
+	displayName = "Quick Criminal 2";
+	requiredPerkPoints = 3;
+	requiredLevel = 12;
+	requiredPerk = "perk_robstore_1";
+	subtitle = "Level 12 Required, 3 Perk Points";
+	description = "Reduce the time required to rob <br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+35% Time Reduced</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_robstore_2.sqf";
+	limitToSides[] = {"CIV"};
+	color[] = {1,1,1,1};
+};
+
+class perk_robstore_3 {
+	displayName = "Quick Criminal 3";
+	requiredPerkPoints = 6;
+	requiredLevel = 16;
+	requiredPerk = "perk_robstore_2";
+	subtitle = "Level 16 Required, 6 Perk Points";
+	description = "Reduce the time required to rob <br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+65% Time Reduced</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_robstore_3.sqf";
+	limitToSides[] = {"CIV"};
+	color[] = {1,1,1,1};
+};
+
+// -- robstorereward
+class perk_robstorereward_1 {
+	displayName = "Higher Robbery Score 1";
+	requiredPerkPoints = 2;
+	requiredLevel = 5;
+	requiredPerk = "";
+	subtitle = "Level 5 Required, 2 Perk Points";
+	description = "Increase Score Ammount <br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+15% Increased Score</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_pdbounty_1.sqf";
+	limitToSides[] = {"CIV"};
+	color[] = {1,1,1,1};
+};
+
+class perk_robstorereward_2 {
+	displayName = "Higher Robbery Score 2";
+	requiredPerkPoints = 3;
+	requiredLevel = 12;
+	requiredPerk = "perk_robstorereward_1";
+	subtitle = "Level 12 Required, 3 Perk Points";
+	description = "Increase Score Ammount <br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+35% Increased Score</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_pdbounty_2.sqf";
+	limitToSides[] = {"CIV"};
+	color[] = {1,1,1,1};
+};
+
+class perk_robstorereward_3 {
+	displayName = "Higher Robbery Score 3";
+	requiredPerkPoints = 6;
+	requiredLevel = 18;
+	requiredPerk = "perk_robstorereward_2";
+	subtitle = "Level 18 Required, 6 Perk Points";
+	description = "Increase Score Ammount <br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+65% Increased Score</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_pdbounty_3.sqf";
+	limitToSides[] = {"CIV"};
+	color[] = {1,1,1,1};
+};
+
+//rob alarm
+
+class perk_robalarm_1 {
+	displayName = "Silent Criminal 1";
+	requiredPerkPoints = 2;
+	requiredLevel = 6;
+	requiredPerk = "";
+	subtitle = "Level 6 Required, 2 Perk Points";
+	description = "Reduce the chance in setting off the silent alarm alerting the cops! <br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+20% Reduced Chance to Triger Cop Alert</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_robalarm_1.sqf";
+	limitToSides[] = {};
+	color[] = {1,1,1,1};
+};
+
+class perk_robalarm_2 {
+	displayName = "Silent Criminal 2";
+	requiredPerkPoints = 4;
+	requiredLevel = 9;
+	requiredPerk = "perk_robalarm_1";
+	subtitle = "Level 9 Required, 4 Perk Points";
+	description = "Reduce the chance in setting off the silent alarm alerting the cops! <br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+40% Reduced Chance to Triger Cop Alert</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_robalarm_2.sqf";
+	limitToSides[] = {};
+	color[] = {1,1,1,1};
+};
+
+class perk_robalarm_3 {
+	displayName = "Silent Criminal 3";
+	requiredPerkPoints = 4;
+	requiredLevel = 12;
+	requiredPerk = "perk_robalarm_2";
+	subtitle = "Level 12 Required, 4 Perk Points";
+	description = "Reduce the chance in setting off the silent alarm alerting the cops! <br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+60% Reduced Chance to Triger Cop Alert</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_robalarm_3.sqf";
+	limitToSides[] = {};
+	color[] = {1,1,1,1};
+};
+
 
 /*
 	///////////////////////////////////////////////
@@ -419,7 +532,7 @@ class perk_pdbounty_1 {
 	requiredLevel = 2;
 	requiredPerk = "";
 	subtitle = "Level 2 Required, 2 Perk Points";
-	description = "Receive more money on an arrest bounty <br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+25% more money per arrest</t>";
+	description = "Receive more money on an arrest bounty <br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+15% more money per arrest</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_pdbounty_1.sqf";
 	limitToSides[] = {"WEST"};
 	color[] = {0.294,0.294,0.956,1};
@@ -431,7 +544,7 @@ class perk_pdbounty_2 {
 	requiredLevel = 8;
 	requiredPerk = "perk_pdbounty_1";
 	subtitle = "Level 8 Required, 3 Perk Points";
-	description = "Receive more money on an arrest bounty <br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+50% more money per arrest</t>";
+	description = "Receive more money on an arrest bounty <br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+35% more money per arrest</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_pdbounty_2.sqf";
 	limitToSides[] = {"WEST"};
 	color[] = {0.294,0.294,0.956,1};
@@ -443,7 +556,7 @@ class perk_pdbounty_3 {
 	requiredLevel = 21;
 	requiredPerk = "perk_pdbounty_2";
 	subtitle = "Level 21 Required, 6 Perk Points";
-	description = "Receive more money on an arrest bounty <br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+100% more money per arrest</t>";
+	description = "Receive more money on an arrest bounty <br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+65% more money per arrest</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_pdbounty_3.sqf";
 	limitToSides[] = {"WEST"};
 	color[] = {0.294,0.294,0.956,1};
