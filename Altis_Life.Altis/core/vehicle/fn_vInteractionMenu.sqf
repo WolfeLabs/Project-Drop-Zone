@@ -39,9 +39,7 @@ _Btn1 ctrlSetText localize "STR_vInAct_Repair";
 _Btn1 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_repairTruck; closeDialog 0;";
 
 if ((life_inv_toolkit >= 1) && {alive life_vInact_curTarget} && {([life_vInact_curTarget] call life_fnc_isDamaged)}) then {_Btn1 ctrlEnable true;} else {_Btn1 ctrlEnable false;};
-_Btn4 ctrlSetText localize "STR_vInAct_PullOut";
-_Btn4 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_pulloutAction; closeDialog 0;";
-if (crew _curTarget isEqualTo []) then {_Btn4 ctrlEnable false;};
+
 if (playerSide isEqualTo west) then {
     _Btn2 ctrlSetText localize "STR_vInAct_Registration";
     _Btn2 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_searchVehAction; closeDialog 0;";
@@ -55,7 +53,7 @@ if (playerSide isEqualTo west) then {
 
     _Btn5 ctrlSetText localize "STR_vInAct_Impound";
     _Btn5 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_impoundAction; closeDialog 0;";
-
+	
     if (_curTarget isKindOf "Ship") then {
         _Btn6 ctrlSetText localize "STR_vInAct_PushBoat";
         _Btn6 buttonSetAction "[] spawn life_fnc_pushObject; closeDialog 0;";
@@ -73,9 +71,9 @@ if (playerSide isEqualTo west) then {
             if (alive _curTarget && {crew _curTarget isEqualTo []} && {canMove _curTarget}) then { _Btn6 ctrlEnable false;} else {_Btn6 ctrlEnable true;};
         };
     };
+}; 
 
-} else {
-
+if (playerSide isEqualTo civilian) then {
     if (_curTarget isKindOf "Ship") then {
         _Btn2 ctrlSetText localize "STR_vInAct_PushBoat";
         _Btn2 buttonSetAction "[] spawn life_fnc_pushObject; closeDialog 0;";
@@ -126,6 +124,37 @@ if (playerSide isEqualTo west) then {
         };
     };
 
+    _Btn4 ctrlShow false;
     _Btn5 ctrlShow false;
     _Btn6 ctrlShow false;
 };
+
+if (playerSide isEqualTo independent) then {
+
+    _Btn2 ctrlSetText localize "STR_vInAct_PullOut";
+    _Btn2 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_pulloutAction; closeDialog 0;";
+    if (crew _curTarget isEqualTo []) then {_Btn4 ctrlEnable false;};
+
+    	
+    _Btn4 ctrlSetText localize "STR_vInAct_Jaws";
+    _Btn4 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_jaws; closeDialog 0;";	
+
+    if (_curTarget isKindOf "Ship") then {
+        _Btn6 ctrlSetText localize "STR_vInAct_PushBoat";
+        _Btn6 buttonSetAction "[] spawn life_fnc_pushObject; closeDialog 0;";
+        if (_curTarget isKindOf "Ship" && {local _curTarget} && {crew _curTarget isEqualTo []}) then { _Btn6 ctrlEnable true;} else {_Btn6 ctrlEnable false};
+    } else {
+        if (!isNil "_id") then {
+            if !(_id in getDLCs 1) then {
+                _Btn6 ctrlSetText localize "STR_vInAct_GetInVehicle";
+                _Btn6 buttonSetAction "player moveInDriver life_vInact_curTarget; closeDialog 0;";
+                if (crew _curTarget isEqualTo [] && {canMove _curTarget} && {locked _curTarget isEqualTo 0}) then {_Btn6 ctrlEnable true;} else {_Btn6 ctrlEnable false};
+            };
+        } else {
+            _Btn6 ctrlSetText localize "STR_vInAct_Unflip";
+            _Btn6 buttonSetAction "life_vInact_curTarget setPos [getPos life_vInact_curTarget select 0, getPos life_vInact_curTarget select 1, (getPos life_vInact_curTarget select 2)+0.5]; closeDialog 0;";
+            if (alive _curTarget && {crew _curTarget isEqualTo []} && {canMove _curTarget}) then { _Btn6 ctrlEnable false;} else {_Btn6 ctrlEnable true;};
+        };
+    };
+	_btn4 ctrlShow false;	
+}; 

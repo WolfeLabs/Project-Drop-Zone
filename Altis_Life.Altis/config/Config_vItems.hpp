@@ -20,7 +20,7 @@ class VirtualShops {
         name = "STR_Shops_Market";
         side = "med";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "toolkit", "fuelFull", "peach", "defibrillator" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "toolkit", "fuelFull", "peach", "defibrillator", "morphine" };
     };
 
    class MedWeed {
@@ -643,6 +643,17 @@ class VirtualItems {
             edible = -1;  
             icon = "icons\ico_Methp.paa";  
         }; 
+
+    class morphine {
+        variable = "morphine";
+        displayName = "STR_Item_Morphine";
+        weight = 1;
+        buyPrice = 0;
+        sellPrice = 0;
+        illegal = false;
+        edible = -1;
+        icon = "icons\Morphine.paa";
+};
 
 
 
