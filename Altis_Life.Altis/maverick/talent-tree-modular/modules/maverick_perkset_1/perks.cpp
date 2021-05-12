@@ -506,7 +506,7 @@ class perk_impound_2 {
 	requiredLevel = 8;
 	requiredPerk = "perk_impound_1";
 	subtitle = "Level 8 Required, 4 Perk Points";
-	description = "Become friends with the guy for the Impound Lot<br/><br/><t color='#10FF45'>+15% faster Impound Call</t>";
+	description = "Become friends with the guy form the Impound Lot<br/><br/><t color='#10FF45'>+15% faster Impound Call</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_lockpickSpeed_2.sqf";
 	limitToSides[] = {"WEST"};
 	color[] = {0.294,0.294,0.956,1};
