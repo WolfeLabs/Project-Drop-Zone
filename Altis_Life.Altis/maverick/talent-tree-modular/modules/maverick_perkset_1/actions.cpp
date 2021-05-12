@@ -121,7 +121,7 @@ class OfficerDuty {
 //admin use only
 class PowerLevel {
     expToAdd = 200;
-	message = "Experence Reward";
+	message = "Experience Reward";
 };
 
 class Example {
