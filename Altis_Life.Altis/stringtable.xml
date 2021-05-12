@@ -10338,6 +10338,9 @@
             <Polish>Ominęła cię wypłata ponieważ byłeś martwy.</Polish>
 			<Chinesesimp>因为你死了，你错过了薪水。</Chinesesimp>
         </Key>
+        <Key ID="STR_FSM_MissedReward">
+            <Original>You have missed a Experience Reward because you were dead.</Original>
+        </Key>
         <Key ID="STR_FSM_ReceivedPay">
             <Original>You have received a paycheck of $%1.</Original>
             <Czech>Dostali jste výplatu ve výši $ %1.</Czech>

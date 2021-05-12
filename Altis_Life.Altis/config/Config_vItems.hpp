@@ -652,6 +652,7 @@ class VirtualItems {
         sellPrice = 0;
         illegal = false;
         edible = -1;
+        drinkable = -1;
         icon = "icons\Morphine.paa";
 };
 
