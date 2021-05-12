@@ -68,10 +68,13 @@ if (count crew _vehicle isEqualTo 0) then {
                 BANK = BANK - _value;
             } else {
                 hint format [localize "STR_NOTF_Impounded",_type,[_value] call life_fnc_numberText];
-                BANK = BANK + _value;
+                BANK = BANK + _value; //add MTT edit here 
+                ["impound"] spawn mav_ttm_fnc_addExp;
             };
             if (BANK < 0) then {BANK = 0;};
             [1] call SOCK_fnc_updatePartial;
+            
+
     };
 } else {
     hint localize "STR_NOTF_ImpoundingCancelled";

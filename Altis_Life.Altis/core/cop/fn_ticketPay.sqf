@@ -32,6 +32,7 @@ if (CASH < life_ticket_val) exitWith {
 };
 
 CASH = CASH - life_ticket_val;
+["civup"] spawn mav_ttm_fnc_addExp;
 [0] call SOCK_fnc_updatePartial;
 life_ticket_paid = true;
 

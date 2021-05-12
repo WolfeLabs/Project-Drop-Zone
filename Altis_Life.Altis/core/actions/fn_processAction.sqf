@@ -109,17 +109,18 @@ if (_hasLicense) then {
     } count _oldItem;
 
     {
-        [true,(_x select 0),((_x select 1)*(_minimumConversions))] call life_fnc_handleInv;
+        [true,(_x select 0),((_x select 1)*(_minimumConversions))*(missionNamespace getVariable ["mav_ttm_var_process_amount", 1])] call life_fnc_handleInv;
     } count _newItem;
 
     "progressBar" cutText ["","PLAIN"];
     if (_minimumConversions isEqualTo (_totalConversions call BIS_fnc_lowestNum)) then {hint localize "STR_NOTF_ItemProcess";} else {hint localize "STR_Process_Partial";};
     life_is_processing = false; life_action_inUse = false;
 } else {
-    if (CASH < _cost) exitWith {hint format [localize "STR_Process_License",[_cost] call life_fnc_numberText]; "progressBar" cutText ["","PLAIN"]; life_is_processing = false; life_action_inUse = false;}; ["ItemProcessed"] spawn mav_ttm_fnc_addExp;
+    if (CASH < _cost) exitWith {hint format [localize "STR_Process_License",[_cost] call life_fnc_numberText]; "progressBar" cutText ["","PLAIN"]; life_is_processing = false; life_action_inUse = false;};
+
     for "_i" from 0 to 1 step 0 do {
         uiSleep  0.9;
-       _cP = _cP + (0.01 * (missionNamespace getVariable ["mav_ttm_var_processMultiplier", 1]));
+        _cP = _cP + 0.01;
         _progress progressSetPosition _cP;
         _pgText ctrlSetText format ["%3 (%1%2)...",round(_cP * 100),"%",_upp];
         if (_cP >= 1) exitWith {};
@@ -127,7 +128,7 @@ if (_hasLicense) then {
     };
 
     if (player distance _vendor > 10) exitWith {hint localize "STR_Process_Stay"; "progressBar" cutText ["","PLAIN"]; life_is_processing = false; life_action_inUse = false;};
-    if (CASH < _cost) exitWith {hint format [localize "STR_Process_License",[_cost] call life_fnc_numberText]; "progressBar" cutText ["","PLAIN"]; life_is_processing = false; life_action_inUse = false;}; ["ItemProcessed"] spawn mav_ttm_fnc_addExp;
+    if (CASH < _cost) exitWith {hint format [localize "STR_Process_License",[_cost] call life_fnc_numberText]; "progressBar" cutText ["","PLAIN"]; life_is_processing = false; life_action_inUse = false;};
 
     {
         [false,(_x select 0),((_x select 1)*(_minimumConversions))] call life_fnc_handleInv;
@@ -143,4 +144,5 @@ if (_hasLicense) then {
     [0] call SOCK_fnc_updatePartial;
     life_is_processing = false;
     life_action_inUse = false;
+    ["ItemProcessed"] spawn mav_ttm_fnc_addExp
 };
