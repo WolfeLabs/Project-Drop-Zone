@@ -80,7 +80,7 @@ class Life_Settings {
     gang_area[] = {"gang_area_1","gang_area_2","gang_area_3"}; //Variable of gang zone markers  
 
     /* Housing System Configurations */
-    house_limit = 3; //Maximum number of houses a player can own.
+    house_limit = 3 + (missionNamespace getVariable ["mav_ttm_var_realestate", 1]); //Maximum number of houses a player can own.
     houseGarage_buyPrice = 1000000;
     houseGarage_sellPrice = 350000;
 
