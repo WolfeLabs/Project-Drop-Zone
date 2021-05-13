@@ -574,6 +574,18 @@ class VirtualItems {
         icon = "icons\ico_marijuana.paa";
     };
 
+    class morphine {
+        variable = "morphine";
+        displayName = "STR_Item_Morphine";
+        weight = 1;
+        buyPrice = 10;
+        sellPrice = 1;
+        illegal = false;
+        edible = -1;
+        drinkable = -1;
+        icon = "icons\ico_morphine.paa";
+    };
+
     class cocaine_unprocessed {
         variable = "cocaineUnprocessed";
         displayName = "STR_Item_CocaineU";
@@ -644,17 +656,7 @@ class VirtualItems {
             icon = "icons\ico_Methp.paa";  
         }; 
 
-    class morphine {
-        variable = "morphine";
-        displayName = "STR_Item_Morphine";
-        weight = 1;
-        buyPrice = 10;
-        sellPrice = 1;
-        illegal = false;
-        edible = -1;
-        drinkable = -1;
-        icon = "icons\ico_morphine.paa";
-};
+  
 
 
 
