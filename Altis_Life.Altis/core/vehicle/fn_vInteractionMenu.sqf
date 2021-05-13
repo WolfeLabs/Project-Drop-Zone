@@ -130,12 +130,7 @@ if (playerSide isEqualTo civilian) then {
 };
 
 if (playerSide isEqualTo independent) then {
-
-    _Btn2 ctrlSetText localize "STR_vInAct_PullOut";
-    _Btn2 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_pulloutAction; closeDialog 0;";
-    if (crew _curTarget isEqualTo []) then {_Btn4 ctrlEnable false;};
-
-    	
+   	
     _Btn4 ctrlSetText localize "STR_vInAct_Jaws";
     _Btn4 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_jaws; closeDialog 0;";	
 
@@ -156,5 +151,8 @@ if (playerSide isEqualTo independent) then {
             if (alive _curTarget && {crew _curTarget isEqualTo []} && {canMove _curTarget}) then { _Btn6 ctrlEnable false;} else {_Btn6 ctrlEnable true;};
         };
     };
-	_btn4 ctrlShow false;	
+     _Btn2 ctrlShow false;
+	 _Btn3 ctrlShow false;
+     _Btn5 ctrlShow false;
+     _Btn6 ctrlShow false;	
 }; 

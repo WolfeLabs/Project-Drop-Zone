@@ -16,11 +16,11 @@
 #define Btn8 37457
 #define Title 37401
 
-private ["_display","_curTarget","_seizeRank","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7","_Btn8"];
+private ["_display","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7","_Btn8"];
 
 disableSerialization;
 _curTarget = param [0,objNull,[objNull]];
-_seizeRank = LIFE_SETTINGS(getNumber,"seize_minimum_rank");
+
 
 if (player getVariable ["Escorting", false]) then {
     if (isNull _curTarget) exitWith {closeDialog 0;}; //Bad target

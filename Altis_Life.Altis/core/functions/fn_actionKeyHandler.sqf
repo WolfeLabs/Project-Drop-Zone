@@ -106,6 +106,9 @@ if (isPlayer _curObject && _curObject isKindOf "CAManBase") then {
     if ((_curObject getVariable ["ziptied",true]) && !dialog) then {
     [_curObject] call zipties_fnc_zip_interaction;
     };
+    if ((_curObject getVariable ["restrained",false]) && !dialog && playerSide isEqualTo independent) then {
+        [_curObject] call life_fnc_medicInteractionMenu;
+    };
 } else {
     //OK, it wasn't a player so what is it?
     private ["_isVehicle","_miscItems","_money","_list"];

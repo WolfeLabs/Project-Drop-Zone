@@ -118,7 +118,7 @@ class Life_Settings {
     paycheck_civ = 3000; //Payment for civillians
     paycheck_med = 6000; //Payment for medics
     
-    playing_RewardPeriod = 30; // scaled in minutes 
+    playing_RewardPeriod = 1; // scaled in minutes 
     paycheck_period = 5; //Scaled in minutes
     bank_transferTax = .05; //Tax that player pays when transferring money from ATM. Tax = Amount * multiplier
 

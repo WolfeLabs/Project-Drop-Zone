@@ -648,12 +648,12 @@ class VirtualItems {
         variable = "morphine";
         displayName = "STR_Item_Morphine";
         weight = 1;
-        buyPrice = 0;
-        sellPrice = 0;
+        buyPrice = 10;
+        sellPrice = 1;
         illegal = false;
         edible = -1;
         drinkable = -1;
-        icon = "icons\Morphine.paa";
+        icon = "icons\ico_morphine.paa";
 };
 
 
