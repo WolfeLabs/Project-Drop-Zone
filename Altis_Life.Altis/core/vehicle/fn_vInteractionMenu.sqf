@@ -153,6 +153,5 @@ if (playerSide isEqualTo independent) then {
     };
      _Btn2 ctrlShow false;
 	 _Btn3 ctrlShow false;
-     _Btn5 ctrlShow false;
-     _Btn6 ctrlShow false;	
+     _Btn5 ctrlShow false; 
 }; 
