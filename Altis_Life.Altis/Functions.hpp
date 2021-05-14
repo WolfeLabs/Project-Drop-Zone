@@ -71,6 +71,8 @@ class Life_Client_Core {
         class surrender {};
         class ticketAction {};
         class unrestrain {};
+        class jaws {}; //medic jaws of life
+        class injectAction {}; //medic morphine interaction menu
     };
 
     class Admin {
@@ -275,11 +277,13 @@ class Life_Client_Core {
         class fkndrugs {};        
         class cocaine {};
         class Heroin {};
+        class morphine {};//medic interaction menu
     };
 
     class Medical_System {
         file = "core\medical";
         class deathScreen {};
+        class medicInteractionMenu {}; //medic interaction menu
         class medicLights {};
         class medicMarkers {};
         class medicRequest {};

@@ -8290,6 +8290,15 @@
             <Polish>Masz już klucze do tego pojazdu.</Polish>
 			<Chinesesimp>你已经获得载具钥匙。</Chinesesimp>
         </Key>
+        <Key ID="STR_ISTR_Jaws">
+	        <Original>Using Jaws Of Life On: %1</Original>
+        </Key>
+        <Key ID="STR_ISTR_Jaws_Success">
+	        <Original>The Jaws Of Life Where Successful!</Original>
+        </Key>	
+            <Key ID ="STR_vInAct_Jaws">
+	        <Original>Jaws Of Life</Original>		
+        </Key>	
         <Key ID="STR_ISTR_Lock_Process">
             <Original>Lock-picking %1</Original>
             <Czech>Lockpicking %1</Czech>
@@ -9337,6 +9346,18 @@
             <Polish>Wyłącz światło</Polish>
 			<Chinesesimp>把灯打开</Chinesesimp>
         </Key>
+        <Key ID="STR_NOTF_MorphineInj">
+	        <Original>You have administered morphine!</Original>
+        </Key>
+        <Key ID="STR_NOTF_Morphine">
+            <Original>You are administering morphine!</Original>
+        </Key>
+        <Key ID="STR_Item_Morphine">
+            <Original>Morphine Injector</Original>
+        </Key>
+        <Key ID="STR_pAct_Inject">
+            <Original>Inject Morphine</Original>
+        </Key>
     </Package>
     <Package name="Vehicle_Interaction">
         <Key ID="STR_vInAct_Title">
@@ -10316,6 +10337,9 @@
             <Portuguese>Você não recebeu seu pagamento pois estava morto.</Portuguese>
             <Polish>Ominęła cię wypłata ponieważ byłeś martwy.</Polish>
 			<Chinesesimp>因为你死了，你错过了薪水。</Chinesesimp>
+        </Key>
+        <Key ID="STR_FSM_MissedReward">
+            <Original>You have missed a Experience Reward because you were dead.</Original>
         </Key>
         <Key ID="STR_FSM_ReceivedPay">
             <Original>You have received a paycheck of $%1.</Original>
@@ -11770,12 +11794,73 @@
             <Czech>EMS Uniform</Czech>
             <Spanish>EMS Uniform</Spanish>
             <Russian>EMS Uniform</Russian>
-            <German>Sanitäter Uniform</German>
-            <French>Uniforme du SAMU</French>
             <Italian>EMS Uniform</Italian>
             <Portuguese>EMS Uniform</Portuguese>
             <Polish>EMS Uniform</Polish>
 			<Chinesesimp>医疗制服</Chinesesimp>
+        </Key>
+        <Key ID="STR_C_FIRE_uniforms">
+            <Original>FIRE Uniform</Original>
+            <Czech>FIRE Uniform</Czech>
+            <Spanish>FIRE Uniform</Spanish>
+            <Russian>FIRE Uniform</Russian>
+            <Italian>FIRE Uniform</Italian>
+            <Portuguese>FIRE Uniform</Portuguese>
+            <Polish>FIRE Uniform</Polish>
+        </Key>
+        <Key ID="STR_C_RESCUE_uniforms">
+            <Original>RESCUE Wetsuit</Original>
+            <Czech>RESCUE Wetsuit</Czech>
+            <Spanish>RESCUE Wetsuit</Spanish>
+            <Russian>RESCUE Wetsuit</Russian>
+            <Italian>RESCUE Wetsuit</Italian>
+            <Portuguese>RESCUE Wetsuit</Portuguese>
+            <Polish>RESCUE Wetsuit</Polish>
+        </Key>
+         <Key ID="STR_C_EMSDRESS_uniforms">
+            <Original>EMS Parade Dress</Original>
+            <Czech>EMS Parade Dress</Czech>
+            <Spanish>EMS Parade Dress</Spanish>
+            <Russian>EMS Parade Dress</Russian>
+            <Italian>EMS Parade Dress</Italian>
+            <Portuguese>EMS Parade Dress</Portuguese>
+            <Polish>EMS Parade Dress</Polish>
+        </Key>
+        <Key ID="STR_C_EMSHAT_uniforms">
+            <Original>EMS Parade Dress Hat</Original>
+            <Czech>EMS Parade Dress Hat</Czech>
+            <Spanish>EMS Parade Dress Hat</Spanish>
+            <Russian>EMS Parade Dress Hat</Russian>
+            <Italian>EMS Parade Dress Hat</Italian>
+            <Portuguese>EMS Parade Dress Hat</Portuguese>
+            <Polish>EMS Parade Dress Hat</Polish>
+        </Key>
+        <Key ID="STR_C_FIREDRESS_uniforms">
+            <Original>FIRE Parade Dress</Original>
+            <Czech>FIRE Parade Dress</Czech>
+            <Spanish>FIRE Parade Dress</Spanish>
+            <Russian>FIRE Parade Dress</Russian>
+            <Italian>FIRE Parade Dress</Italian>
+            <Portuguese>FIRE Parade Dress</Portuguese>
+            <Polish>FIRE Parade Dress</Polish>
+        </Key>
+        <Key ID="STR_C_EMS_vest">
+            <Original>Paramedic Vest</Original>
+            <Czech>Paramedic Vest</Czech>
+            <Spanish>Paramedic Vest</Spanish>
+            <Russian>Paramedic Vest</Russian>
+            <Italian>Paramedic Vest</Italian>
+            <Portuguese>Paramedic Vest</Portuguese>
+            <Polish>Paramedic Vest</Polish>
+        </Key>
+         <Key ID="STR_C_FIREHAT_uniforms">
+            <Original>FIRE Parade Dress Hat</Original>
+            <Czech>FIRE Parade Dress Hat</Czech>
+            <Spanish>FIRE Parade Dress Hat</Spanish>
+            <Russian>FIRE Parade Dress Hat</Russian>
+            <Italian>FIRE Parade Dress Hat</Italian>
+            <Portuguese>FIRE Parade Dress Hat</Portuguese>
+            <Polish>FIRE Parade Dress Hat</Polish>
         </Key>
         <Key ID="STR_C_EMS_backpacks">
             <Original>EMS Backpack</Original>
