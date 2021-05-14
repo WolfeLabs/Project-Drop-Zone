@@ -17,6 +17,7 @@ class CfgRemoteExec {
         jip = 1;
 
         #include "maverick\maverick_remoteExec_master.cpp"
+        #include "CBX\CBXCfgRemoteExec.hpp"
 
         /* Client only functions */
         F(life_fnc_AAN,CLIENT)

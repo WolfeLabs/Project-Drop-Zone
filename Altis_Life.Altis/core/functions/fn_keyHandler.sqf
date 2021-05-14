@@ -220,7 +220,7 @@ switch (_code) do {
     //Y Player Menu
     case 21: {
         if (!_alt && !_ctrlKey && !dialog && !(player getVariable ["restrained",false]) && !(player getVariable ["ziptied",false]) && {!life_action_inUse}) then {
-            [] call life_fnc_p_openMenu;
+            [] spawn CBX_fnc_openPhone;
         };
     };
 

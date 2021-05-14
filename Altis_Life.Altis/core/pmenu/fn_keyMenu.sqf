@@ -10,11 +10,11 @@
 private ["_display","_vehicles","_plist","_near_units","_pic","_name","_text","_color","_index"];
 disableSerialization;
 
-waitUntil {!isNull (findDisplay 2700)};
-_display = findDisplay 2700;
-_vehicles = _display displayCtrl 2701;
+waitUntil {!isNull (findDisplay 2504)};
+_display = findDisplay 2504;
+_vehicles = _display displayCtrl 2400;
 lbClear _vehicles;
-_plist = _display displayCtrl 2702;
+_plist = _display displayCtrl 2100;
 lbClear _plist;
 _near_units = [];
 

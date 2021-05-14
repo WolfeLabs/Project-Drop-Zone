@@ -1,0 +1,6 @@
+#include "dialogs\inventory.hpp"
+#include "dialogs\key_chain.hpp"
+#include "dialogs\licenses.hpp"
+#include "dialogs\mainDialog.hpp"
+#include "dialogs\phone.hpp"
+#include "dialogs\money.hpp"

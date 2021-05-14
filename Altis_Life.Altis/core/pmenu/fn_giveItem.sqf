@@ -10,21 +10,21 @@
     inventory.
 */
 
-ctrlShow [2002,false];
+ctrlShow [2402,false];
 
 call {
-    private _value = ctrlText 2010;
+    private _value = ctrlText 2403;
 
-    if ((lbCurSel 2023) isEqualTo -1) exitWith {
+    if ((lbCurSel 2100) isEqualTo -1) exitWith {
         hint localize "STR_NOTF_noOneSelected";
     };
 
-    if ((lbCurSel 2005) isEqualTo -1) exitWith {
+    if ((lbCurSel 2405) isEqualTo -1) exitWith {
         hint localize "STR_NOTF_didNotSelectItemToGive";
     };
 
 
-    private _unit = lbData [2023, lbCurSel 2023];
+    private _unit = lbData [2100, lbCurSel 2100];
     _unit = call compile format ["%1",_unit];
 
     if (isNil "_unit") exitWith {
@@ -32,7 +32,7 @@ call {
     };
     if (isNull _unit || {_unit isEqualTo player}) exitWith {};
 
-    private _item = lbData [2005, lbCurSel 2005];
+    private _item = lbData [2405, lbCurSel 2405];
 
     if !([_value] call TON_fnc_isnumber) exitWith {
         hint localize "STR_NOTF_notNumberFormat";
@@ -48,7 +48,7 @@ call {
     private _type = M_CONFIG(getText,"VirtualItems",_item,"displayName");
     hint format [localize "STR_NOTF_youGaveItem", _unit getVariable ["realname", name _unit], _value, localize _type];
 
-    [] call life_fnc_p_updateMenu;
+    [] call CBX_fnc_inventoryMenu;
 };
 
-ctrlShow[2002,true];
+ctrlShow[2402,true];

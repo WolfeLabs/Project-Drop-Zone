@@ -7,8 +7,8 @@
 */
 disableSerialization;
 
-private _dialog = findDisplay 2700;
-private _list = _dialog displayCtrl 2701;
+private _dialog = findDisplay 2504;
+private _list = _dialog displayCtrl 2400;
 private _sel = lbCurSel _list;
 
 if (_sel isEqualTo -1) exitWith {

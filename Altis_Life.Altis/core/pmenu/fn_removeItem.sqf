@@ -9,8 +9,8 @@
 */
 private ["_data","_value","_obj"];
 disableSerialization;
-_data = lbData[2005,(lbCurSel 2005)];
-_value = ctrlText 2010;
+_data = lbData[2405,(lbCurSel 2405)];
+_value = ctrlText 2403;
 
 if (_data isEqualTo "") exitWith {hint localize "STR_NOTF_didNotSelectToRemove";};
 if (!([_value] call TON_fnc_isnumber)) exitWith {hint localize "STR_NOTF_notNumberFormat";};
@@ -21,4 +21,4 @@ if (!([false,_data,(parseNumber _value)] call life_fnc_handleInv)) exitWith {hin
 
 hint format [localize "STR_NOTF_removedFromInventory",(parseNumber _value),(localize ITEM_NAME(_data))];
 
-[] call life_fnc_p_updateMenu;
+[] call CBX_fnc_inventoryMenu;
