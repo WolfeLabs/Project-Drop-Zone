@@ -108,7 +108,7 @@ class impound {
 };
 
 class citation {
-    expToAdd = 2;
+    expToAdd = 10;
     message = "Quota Meet"
 };
 
