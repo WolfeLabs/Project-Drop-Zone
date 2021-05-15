@@ -45,7 +45,7 @@ onUnLoad = "";
 			w = 0.139209 * safezoneW;
 			h = 0.1716 * safezoneH;
 		};
-		class PlayerList: Life_RscCombo
+		class playerlist: Life_RscCombo
 		{
 			idc = 2100;
 			x = 0.496906 * safezoneW + safezoneX;
