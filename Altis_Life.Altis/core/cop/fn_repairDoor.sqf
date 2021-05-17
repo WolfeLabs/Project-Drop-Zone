@@ -39,10 +39,10 @@ _progressBar progressSetPosition 0.01;
 _cP = 0.01;
 
 switch (typeOf _building) do {
-    case "Land_Dome_Big_F": {_cpRate = 0.008;};
+    case "Land_Dome_Big_F": {_cpRate = (0.008 * (missionNamespace getVariable ["mav_ttm_var_lockpickMultiplier", 1]);)};
     case "Land_Medevac_house_V1_F";
-    case "Land_Research_house_V1_F": {_cpRate = 0.005;};
-    default {_cpRate = 0.08;}
+    case "Land_Research_house_V1_F": {_cpRate = (0.005 * (missionNamespace getVariable ["mav_ttm_var_lockpickMultiplier", 1]));};
+    default {_cpRate = (0.08 * (missionNamespace getVariable ["mav_ttm_var_lockpickMultiplier", 1]));}
 };
 
 for "_i" from 0 to 1 step 0 do {

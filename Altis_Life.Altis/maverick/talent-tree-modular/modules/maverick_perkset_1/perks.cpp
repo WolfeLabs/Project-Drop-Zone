@@ -136,7 +136,7 @@ class perk_locksmith_1 {
 	requiredLevel = 7;
 	requiredPerk = "";
 	subtitle = "Level 7 Required, 5 Perk Points";
-	description = "Learn to pick locks more efficiently and reduce lockpicking times on vehicles<br/><br/><t color='#10FF45'>+10% faster lockpicking</t>";
+	description = "Learn to pick locks more efficiently and reduce lockpicking times on vehicles<br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+10% faster lockpicking</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_lockpickSpeed_1.sqf";
 	limitToSides[] = {"CIV"};
 	color[] = {1,1,1,1};
@@ -148,7 +148,7 @@ class perk_locksmith_2 {
 	requiredLevel = 16;
 	requiredPerk = "perk_locksmith_1";
 	subtitle = "Level 16 Required, 6 Perk Points";
-	description = "Learn to pick locks more efficiently and reduce lockpicking times on vehicles<br/><br/><t color='#10FF45'>+15% faster lockpicking</t>";
+	description = "Learn to pick locks more efficiently and reduce lockpicking times on vehicles<br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+15% faster lockpicking</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_lockpickSpeed_2.sqf";
 	limitToSides[] = {"CIV"};
 	color[] = {1,1,1,1};
@@ -160,7 +160,7 @@ class perk_locksmith_3 {
 	requiredLevel = 28;
 	requiredPerk = "perk_locksmith_2";
 	subtitle = "Level 28 Required, 4 Perk Points";
-	description = "Learn to pick locks more efficiently and reduce lockpicking times on vehicles <br/><br/><t color='#10FF45'>+25% faster lockpicking</t>";
+	description = "Learn to pick locks more efficiently and reduce lockpicking times on vehicles<br/> (Relog for talent to take effect)  <br/><br/><t color='#10FF45'>+25% faster lockpicking</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_lockpickSpeed_3.sqf";
 	limitToSides[] = {"CIV"};
 	color[] = {1,1,1,1};
@@ -329,7 +329,7 @@ class perk_robalarm_1 {
 	subtitle = "Level 6 Required, 2 Perk Points";
 	description = "Reduce the chance in setting off the silent alarm alerting the cops! <br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+20% Reduced Chance to Triger Cop Alert</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_robalarm_1.sqf";
-	limitToSides[] = {};
+	limitToSides[] = {"CIV"};
 	color[] = {1,1,1,1};
 };
 
@@ -341,7 +341,7 @@ class perk_robalarm_2 {
 	subtitle = "Level 9 Required, 4 Perk Points";
 	description = "Reduce the chance in setting off the silent alarm alerting the cops! <br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+40% Reduced Chance to Triger Cop Alert</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_robalarm_2.sqf";
-	limitToSides[] = {};
+	limitToSides[] = {"CIV"};
 	color[] = {1,1,1,1};
 };
 
@@ -353,7 +353,7 @@ class perk_robalarm_3 {
 	subtitle = "Level 12 Required, 4 Perk Points";
 	description = "Reduce the chance in setting off the silent alarm alerting the cops! <br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+60% Reduced Chance to Triger Cop Alert</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_robalarm_3.sqf";
-	limitToSides[] = {};
+	limitToSides[] = {"CIV"};
 	color[] = {1,1,1,1};
 };
 
@@ -364,7 +364,7 @@ class perk_realestate_1 {
 	requiredLevel = 10;
 	requiredPerk = "";
 	subtitle = "Level 10 Required, 5 Perk Points";
-	description = "Gain access to own more property <br/> (Relog for talent to take effect)<br/><br/><t color='#10FF45'>+1 Extra Property per Level</t>";
+	description = "Gain access to own more property <br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+1 Extra Property per Level</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_realestate_1.sqf";
 	limitToSides[] = {"CIV"};
 	color[] = {1,1,1,1};
@@ -376,7 +376,7 @@ class perk_realestate_2 {
 	requiredLevel = 20;
 	requiredPerk = "perk_realestate_1";
 	subtitle = "Level 20 Required, 8 Perk Points";
-	description = "Gain access to own more property <br/> (Relog for talent to take effect)<br/><br/><t color='#10FF45'>+1 Extra Property per Level</t>";
+	description = "Gain access to own more property <br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+1 Extra Property per Level</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_realestate_2.sqf";
 	limitToSides[] = {"CIV"};
 	color[] = {1,1,1,1};
@@ -388,7 +388,7 @@ class perk_realestate_3 {
 	requiredLevel = 25;
 	requiredPerk = "perk_realestate_2";
 	subtitle = "Level 25 Required, 12 Perk Points";
-	description = "Gain access to own more property <br/> (Relog for talent to take effect)<br/><br/><t color='#10FF45'>+1 Extra Property per Level</t>";
+	description = "Gain access to own more property <br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+1 Extra Property per Level</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_realestate_3.sqf";
 	limitToSides[] = {"CIV"};
 	color[] = {1,1,1,1};
@@ -401,7 +401,7 @@ class perk_processamount_1 {
 	requiredLevel = 12;
 	requiredPerk = "";
 	subtitle = "Level 12 Required, 8 Perk Points";
-	description = "Process amount increased By:<br/><br/><t color='#38FF3F'> 200% </t>";
+	description = "Process amount increased By:<br/> (Relog for talent to take effect) <br/><br/><t color='#38FF3F'> 200% </t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_Process_amount_1.sqf";
 	limitToSides[] = {"CIV"};
 	color[] = {1,1,1,1};
@@ -450,6 +450,7 @@ class perk_repairSpeed_3 {
 	color[] = {1,0.6,0.4,1};
 };
 
+	//EMS Perks
 	//Revive Speed
 class perk_Revive_1 {
 	displayName = "Revive ";
@@ -457,7 +458,7 @@ class perk_Revive_1 {
 	requiredLevel = 2;
 	requiredPerk = "";
 	subtitle = "Level 2 Required, 2 Perk Points";
-	description = "Learn to Revive Patient's faster<br/><br/><t color='#10FF45'>+10% faster Revives</t>";
+	description = "Learn to Revive Patient's faster<br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+10% faster Revives</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_ReviveSpeed_1.sqf";
 	limitToSides[] = {"GUER"};
 	color[] = {0.878,0.298,0.298,1};
@@ -469,7 +470,7 @@ class perk_Revive_2 {
 	requiredLevel = 5;
 	requiredPerk = "perk_Revive_1";
 	subtitle = "Level 5 Required, 3 Perk Points";
-	description = "Learn to Revive Patient's faster<br/><br/><t color='#10FF45'>+15% faster Revives</t>";
+	description = "Learn to Revive Patient's faster<br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+15% faster Revives</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_ReviveSpeed_2.sqf";
 	limitToSides[] = {"GUER"};
 	color[] = {0.878,0.298,0.298,1};
@@ -481,7 +482,7 @@ class perk_Revive_3 {
 	requiredLevel = 10;
 	requiredPerk = "perk_Revive_2";
 	subtitle = "Level 10 Required, 4 Perk Points";
-	description = "Learn to Revive Patient's faster<br/><br/><t color='#10FF45'>+25% faster Revives</t>";
+	description = "Learn to Revive Patient's faster<br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+25% faster Revives</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_ReviveSpeed_3.sqf";
 	limitToSides[] = {"GUER"};
 	color[] = {0.878,0.298,0.298,1};
@@ -515,48 +516,49 @@ class perk_jawspeed_2 {
 class perk_jawspeed_3 {
 	displayName = "Jaws of Life Specialization 3";
 	requiredPerkPoints = 4;
-	requiredLevel = 17;
+	requiredLevel = 13;
 	requiredPerk = "perk_jawspeed_2";
-	subtitle = "Level 17 Required, 4 Perk Points";
+	subtitle = "Level 13 Required, 4 Perk Points";
 	description = "Learn to operate the Jaws more efficiently <br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+25% faster operation</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_gatheringSpeed_3.sqf";
 	limitToSides[] = {"GUER"};
 	color[] = {0.878,0.298,0.298,1};
 };
 
+//COP Perks
 
 // -- Faster Impounding
 class perk_impound_1 {
-	displayName = "impound";
+	displayName = "Impound";
 	requiredPerkPoints = 2;
 	requiredLevel = 3;
 	requiredPerk = "";
 	subtitle = "Level 3 Required, 2 Perk Points";
-	description = "Become a friend of a friend to some one in the Impound Lot<br/><br/><t color='#10FF45'>+10% faster Impound Call</t>";
+	description = "Become a friend of a friend to some one in the Impound Lot<br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+10% faster Impound Call</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_lockpickSpeed_1.sqf";
 	limitToSides[] = {"WEST"};
 	color[] = {0.294,0.294,0.956,1};
 };
 
 class perk_impound_2 {
-	displayName = "impound 2";
+	displayName = "Impound 2";
 	requiredPerkPoints = 4;
 	requiredLevel = 8;
 	requiredPerk = "perk_impound_1";
 	subtitle = "Level 8 Required, 4 Perk Points";
-	description = "Become friends with the guy form the Impound Lot<br/><br/><t color='#10FF45'>+15% faster Impound Call</t>";
+	description = "Become friends with the guy form the Impound Lot<br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+15% faster Impound Call</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_lockpickSpeed_2.sqf";
 	limitToSides[] = {"WEST"};
 	color[] = {0.294,0.294,0.956,1};
 };
 
 class perk_impound_3 {
-	displayName = "impound 3";
+	displayName = "Impound 3";
 	requiredPerkPoints = 6;
 	requiredLevel = 15;
 	requiredPerk = "perk_impound_2";
-	subtitle = "Level 28 Required, 4 Perk Points";
-	description = "Become Buddy, Buddy with the guy form the Impound Lot <br/><br/><t color='#10FF45'>+25% faster Impound Call</t>";
+	subtitle = "Level 15 Required, 4 Perk Points";
+	description = "Become Buddy, Buddy with the guy form the Impound Lot<br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+25% faster Impound Call</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_lockpickSpeed_3.sqf";
 	limitToSides[] = {"WEST"};
 	color[] = {0.294,0.294,0.956,1};
@@ -599,152 +601,114 @@ class perk_pdbounty_3 {
 	color[] = {0.294,0.294,0.956,1};
 };
 
-/* class perk_processamount_2 {
-	displayName = "Process Amount 2";
-	requiredPerkPoints = 12;
-	requiredLevel = 18;
-	requiredPerk = "perk_Processamount_1";
-	subtitle = "Level 18 Required, 12 Perk Points";
-	description = "Process amount increased By:<br/><br/><t color='#38FF3F'>400%</t>";
-	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_Process_amount_2.sqf";
-	limitToSides[] = {"CIV"};
-	color[] = {1,1,1,1};
+// -- Faster Cop Door repair
+class perk_copdoorrepair_1 {
+	displayName = "Secure Door";
+	requiredPerkPoints = 2;
+	requiredLevel = 3;
+	requiredPerk = "";
+	subtitle = "Level 3 Required, 2 Perk Points";
+	description = "Resecure Door After a Situation<br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+10% Faster Non-Fed Door Repairs</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_lockpickSpeed_1.sqf";
+	limitToSides[] = {"WEST"};
+	color[] = {0.294,0.294,0.956,1};
 };
 
-
-class perk_processamount_3 {
-	displayName = "Process Amount 3";
-	requiredPerkPoints = 16;
-	requiredLevel = 21;
-	requiredPerk = "perk_Processamount_2";
-	subtitle = "Level 21 Required, 16 Perk Points";
-	description = "Process amount increased By:<br/><br/><t color='#38FF3F'> 600%</t>";
-	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_Process_amount_3.sqf";
-	limitToSides[] = {"CIV"};
-	color[] = {1,1,1,1};
-};
-
-// --  general goods multiplier 
-class perk_generalgoodsincrease_1 {
-	displayName = "Process Managment";
-	requiredPerkPoints = 3;
-	requiredLevel = 7;
-	requiredPerk = "perk_processingSpeed_2";
-	subtitle = "Level 4 Required, 3 Perk Points";
-	description = "Learn to increase output<br/><br/><t color='#10FF45'>Random output 1-3</t>";
-	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_generalgoodsincrease_1.sqf";
-	limitToSides[] = {"CIV"};
-	color[] = {1,1,1,1};
-};
-
-class perk_impound_2 {
-	displayName = "impound 2";
+class perk_copdoorrepair_2 {
+	displayName = "Secure Door 2";
 	requiredPerkPoints = 4;
-	requiredLevel = 8;
-	requiredPerk = "perk_impound_1";
-	subtitle = "Level 8 Required, 4 Perk Points";
-	description = "Become friends with the guy form the Impound Lot<br/><br/><t color='#10FF45'>+15% faster Impound Call</t>";
+	requiredLevel = 6;
+	requiredPerk = "perk_copdoorrepair_1";
+	subtitle = "Level 6 Required, 4 Perk Points";
+	description = "Resecure Door After a Situation<br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+15% Faster Non-Fed Door Repairs</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_lockpickSpeed_2.sqf";
 	limitToSides[] = {"WEST"};
 	color[] = {0.294,0.294,0.956,1};
 };
 
-class perk_impound_3 {
-	displayName = "impound 3";
+class perk_copdoorrepair_3 {
+	displayName = "Secure Door 3";
 	requiredPerkPoints = 6;
 	requiredLevel = 15;
-	requiredPerk = "perk_impound_2";
-	subtitle = "Level 28 Required, 4 Perk Points";
-	description = "Become Buddy, Buddy with the guy form the Impound Lot <br/><br/><t color='#10FF45'>+25% faster Impound Call</t>";
+	requiredPerk = "perk_copdoorrepair_2";
+	subtitle = "Level 15 Required, 4 Perk Points";
+	description = "Resecure Door After a Situation<br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+25% Faster Non-Fed Door Repairs</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_lockpickSpeed_3.sqf";
 	limitToSides[] = {"WEST"};
 	color[] = {0.294,0.294,0.956,1};
 };
 
-// -- pdbounty
-class perk_pdbounty_1 {
-	displayName = "Arrest Bonus ";
+
+// -- Faster fedreserve
+class perk_fedreserve_1 {
+	displayName = "Federal Reserve Repairs";
 	requiredPerkPoints = 2;
-	requiredLevel = 2;
-	requiredPerk = "";
-	subtitle = "Level 2 Required, 2 Perk Points";
-	description = "Receive more money on an arrest bounty <br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+15% more money per arrest</t>";
-	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_pdbounty_1.sqf";
+	requiredLevel = 6;
+	requiredPerk = "perk_copdoorrepair_1";
+	subtitle = "Level 6 Required, 2 Perk Points";
+	description = "Resecure the Federal Reserve Building Doors<br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+10% Faster Federal Door Repairs</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_lockpickSpeed_1.sqf";
 	limitToSides[] = {"WEST"};
 	color[] = {0.294,0.294,0.956,1};
 };
 
-class perk_pdbounty_2 {
-	displayName = "Arrest Bonus 2";
-	requiredPerkPoints = 3;
-	requiredLevel = 8;
-	requiredPerk = "perk_pdbounty_1";
-	subtitle = "Level 8 Required, 3 Perk Points";
-	description = "Receive more money on an arrest bounty <br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+35% more money per arrest</t>";
-	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_pdbounty_2.sqf";
-	limitToSides[] = {"WEST"};
-	color[] = {0.294,0.294,0.956,1};
-};
-
-class perk_pdbounty_3 {
-	displayName = "Arrest Bonus 3";
-	requiredPerkPoints = 6;
-	requiredLevel = 21;
-	requiredPerk = "perk_pdbounty_2";
-	subtitle = "Level 21 Required, 6 Perk Points";
-	description = "Receive more money on an arrest bounty <br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+65% more money per arrest</t>";
-	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_pdbounty_3.sqf";
-	limitToSides[] = {"WEST"};
-	color[] = {0.294,0.294,0.956,1};
-};
-
-/* class perk_processamount_2 {
-	displayName = "Process Amount 2";
-	requiredPerkPoints = 12;
-	requiredLevel = 18;
-	requiredPerk = "perk_Processamount_1";
-	subtitle = "Level 18 Required, 12 Perk Points";
-	description = "Process amount increased By:<br/><br/><t color='#38FF3F'>400%</t>";
-	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_Process_amount_2.sqf";
-	limitToSides[] = {"CIV"};
-	color[] = {1,1,1,1};
-};
-
-
-class perk_processamount_3 {
-	displayName = "Process Amount 3";
-	requiredPerkPoints = 16;
-	requiredLevel = 21;
-	requiredPerk = "perk_Processamount_2";
-	subtitle = "Level 21 Required, 16 Perk Points";
-	description = "Process amount increased By:<br/><br/><t color='#38FF3F'> 600%</t>";
-	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_Process_amount_3.sqf";
-	limitToSides[] = {"CIV"};
-	color[] = {1,1,1,1};
-};
-
-class perk_Revive_2 {
-	displayName = "Revive 2";
-	requiredPerkPoints = 3;
-	requiredLevel = 5;
-	requiredPerk = "perk_Revive_1";
-	subtitle = "Level 5 Required, 3 Perk Points";
-	description = "Learn to Revive Patient's faster<br/><br/><t color='#10FF45'>+15% faster Revives</t>";
-	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_ReviveSpeed_2.sqf";
-	limitToSides[] = {"GUER"};
-	color[] = {0.878,0.298,0.298,1};
-};
-
-class perk_Revive_3 {
-	displayName = "Revive 3";
+class perk_fedreserve_2 {
+	displayName = "Federal Reserve Repairs 2";
 	requiredPerkPoints = 4;
-	requiredLevel = 10;
-	requiredPerk = "perk_Revive_2";
-	subtitle = "Level 10 Required, 4 Perk Points";
-	description = "Learn to Revive Patient's faster<br/><br/><t color='#10FF45'>+25% faster Revives</t>";
-	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_ReviveSpeed_3.sqf";
-	limitToSides[] = {"GUER"};
-	color[] = {0.878,0.298,0.298,1};
+	requiredLevel = 8;
+	requiredPerk = "perk_fedreserve_1";
+	subtitle = "Level 8 Required, 4 Perk Points";
+	description = "Resecure the Federal Reserve Building Doors<br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+15% Faster Federal Door Repairs</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_lockpickSpeed_2.sqf";
+	limitToSides[] = {"WEST"};
+	color[] = {0.294,0.294,0.956,1};
 };
 
+class perk_fedreserve_3 {
+	displayName = "Federal Reserve Repairs 3";
+	requiredPerkPoints = 6;
+	requiredLevel = 15;
+	requiredPerk = "perk_fedreserve_2";
+	subtitle = "Level 15 Required, 4 Perk Points";
+	description = "Resecure the Federal Reserve Building Doors<br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+25% Faster Federal Door Repairs</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_lockpickSpeed_3.sqf";
+	limitToSides[] = {"WEST"};
+	color[] = {0.294,0.294,0.956,1};
+};
 
+// -- Faster fedreserve Vault
+class perk_fedreservev_1 {
+	displayName = "Fed Reserve Vault Repairs";
+	requiredPerkPoints = 2;
+	requiredLevel = 8;
+	requiredPerk = "perk_fedreserve_2";
+	subtitle = "Level 8 Required, 2 Perk Points";
+	description = "Resecure the Federal Reserve Building Vault Doors<br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+10% Faster Federal Vault Door Repairs</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_lockpickSpeed_1.sqf";
+	limitToSides[] = {"WEST"};
+	color[] = {0.294,0.294,0.956,1};
+};
+
+class perk_fedreservev_2 {
+	displayName = "Fed Reserve Vault Repairs 2";
+	requiredPerkPoints = 4;
+	requiredLevel = 12;
+	requiredPerk = "perk_fedreservev_1";
+	subtitle = "Level 12 Required, 4 Perk Points";
+	description = "Resecure the Federal Reserve Building Vault Doors<br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+15% Faster Federal Vault Door Repairs</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_lockpickSpeed_2.sqf";
+	limitToSides[] = {"WEST"};
+	color[] = {0.294,0.294,0.956,1};
+};
+
+class perk_fedreservev_3 {
+	displayName = "Fed Reserve Vault Repairs 3";
+	requiredPerkPoints = 6;
+	requiredLevel = 17;
+	requiredPerk = "perk_fedreservev_2";
+	subtitle = "Level 17 Required, 4 Perk Points";
+	description = "Resecure the Federal Reserve Building Vault Doors<br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+25% Faster Federal Vault Door Repairs</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_lockpickSpeed_3.sqf";
+	limitToSides[] = {"WEST"};
+	color[] = {0.294,0.294,0.956,1};
+};
