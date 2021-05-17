@@ -586,6 +586,105 @@ class perk_processamount_3 {
 	color[] = {1,1,1,1};
 };
 
+// --  general goods multiplier 
+class perk_generalgoodsincrease_1 {
+	displayName = "Process Managment";
+	requiredPerkPoints = 3;
+	requiredLevel = 7;
+	requiredPerk = "perk_processingSpeed_2";
+	subtitle = "Level 4 Required, 3 Perk Points";
+	description = "Learn to increase output<br/><br/><t color='#10FF45'>Random output 1-3</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_generalgoodsincrease_1.sqf";
+	limitToSides[] = {"CIV"};
+	color[] = {1,1,1,1};
+};
+
+class perk_impound_2 {
+	displayName = "impound 2";
+	requiredPerkPoints = 4;
+	requiredLevel = 8;
+	requiredPerk = "perk_impound_1";
+	subtitle = "Level 8 Required, 4 Perk Points";
+	description = "Become friends with the guy form the Impound Lot<br/><br/><t color='#10FF45'>+15% faster Impound Call</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_lockpickSpeed_2.sqf";
+	limitToSides[] = {"WEST"};
+	color[] = {0.294,0.294,0.956,1};
+};
+
+class perk_impound_3 {
+	displayName = "impound 3";
+	requiredPerkPoints = 6;
+	requiredLevel = 15;
+	requiredPerk = "perk_impound_2";
+	subtitle = "Level 28 Required, 4 Perk Points";
+	description = "Become Buddy, Buddy with the guy form the Impound Lot <br/><br/><t color='#10FF45'>+25% faster Impound Call</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_lockpickSpeed_3.sqf";
+	limitToSides[] = {"WEST"};
+	color[] = {0.294,0.294,0.956,1};
+};
+
+// -- pdbounty
+class perk_pdbounty_1 {
+	displayName = "Arrest Bonus ";
+	requiredPerkPoints = 2;
+	requiredLevel = 2;
+	requiredPerk = "";
+	subtitle = "Level 2 Required, 2 Perk Points";
+	description = "Receive more money on an arrest bounty <br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+15% more money per arrest</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_pdbounty_1.sqf";
+	limitToSides[] = {"WEST"};
+	color[] = {0.294,0.294,0.956,1};
+};
+
+class perk_pdbounty_2 {
+	displayName = "Arrest Bonus 2";
+	requiredPerkPoints = 3;
+	requiredLevel = 8;
+	requiredPerk = "perk_pdbounty_1";
+	subtitle = "Level 8 Required, 3 Perk Points";
+	description = "Receive more money on an arrest bounty <br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+35% more money per arrest</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_pdbounty_2.sqf";
+	limitToSides[] = {"WEST"};
+	color[] = {0.294,0.294,0.956,1};
+};
+
+class perk_pdbounty_3 {
+	displayName = "Arrest Bonus 3";
+	requiredPerkPoints = 6;
+	requiredLevel = 21;
+	requiredPerk = "perk_pdbounty_2";
+	subtitle = "Level 21 Required, 6 Perk Points";
+	description = "Receive more money on an arrest bounty <br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+65% more money per arrest</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_pdbounty_3.sqf";
+	limitToSides[] = {"WEST"};
+	color[] = {0.294,0.294,0.956,1};
+};
+
+/* class perk_processamount_2 {
+	displayName = "Process Amount 2";
+	requiredPerkPoints = 12;
+	requiredLevel = 18;
+	requiredPerk = "perk_Processamount_1";
+	subtitle = "Level 18 Required, 12 Perk Points";
+	description = "Process amount increased By:<br/><br/><t color='#38FF3F'>400%</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_Process_amount_2.sqf";
+	limitToSides[] = {"CIV"};
+	color[] = {1,1,1,1};
+};
+
+
+class perk_processamount_3 {
+	displayName = "Process Amount 3";
+	requiredPerkPoints = 16;
+	requiredLevel = 21;
+	requiredPerk = "perk_Processamount_2";
+	subtitle = "Level 21 Required, 16 Perk Points";
+	description = "Process amount increased By:<br/><br/><t color='#38FF3F'> 600%</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_Process_amount_3.sqf";
+	limitToSides[] = {"CIV"};
+	color[] = {1,1,1,1};
+};
+
 class perk_Revive_2 {
 	displayName = "Revive 2";
 	requiredPerkPoints = 3;
