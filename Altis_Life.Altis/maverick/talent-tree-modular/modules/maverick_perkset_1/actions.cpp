@@ -112,7 +112,7 @@ class citation {
     message = "Quota Meet"
 };
 
- //passive paid every paycheck to EMS and PD
+//EXP set to a routine 
 class OfficerDuty {
     expToAdd = 25;
     message = "On-Duty"
