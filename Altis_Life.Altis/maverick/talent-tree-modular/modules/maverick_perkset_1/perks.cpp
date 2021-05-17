@@ -487,6 +487,44 @@ class perk_Revive_3 {
 	color[] = {0.878,0.298,0.298,1};
 };
 
+// -- Faster JOL
+class perk_jawspeed_1 {
+	displayName = "Jaws of Life Specialization";
+	requiredPerkPoints = 3;
+	requiredLevel = 4;
+	requiredPerk = "";
+	subtitle = "Level 4 Required, 3 Perk Points";
+	description = "Learn to operate the Jaws more efficiently <br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+10% faster operation</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_gatheringSpeed_1.sqf";
+	limitToSides[] = {"GUER"};
+	color[] = {0.878,0.298,0.298,1};
+};
+
+class perk_jawspeed_2 {
+	displayName = "Jaws of Life Specialization 2";
+	requiredPerkPoints = 3;
+	requiredLevel = 7;
+	requiredPerk = "perk_jawspeed_1";
+	subtitle = "Level 7 Required, 3 Perk Points";
+	description = "Learn to operate the Jaws more efficiently <br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+15% faster operation</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_gatheringSpeed_2.sqf";
+	limitToSides[] = {"GUER"};
+	color[] = {0.878,0.298,0.298,1};
+};
+
+class perk_jawspeed_3 {
+	displayName = "Jaws of Life Specialization 3";
+	requiredPerkPoints = 4;
+	requiredLevel = 17;
+	requiredPerk = "perk_jawspeed_2";
+	subtitle = "Level 17 Required, 4 Perk Points";
+	description = "Learn to operate the Jaws more efficiently <br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+25% faster operation</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_gatheringSpeed_3.sqf";
+	limitToSides[] = {"GUER"};
+	color[] = {0.878,0.298,0.298,1};
+};
+
+
 // -- Faster Impounding
 class perk_impound_1 {
 	displayName = "impound";

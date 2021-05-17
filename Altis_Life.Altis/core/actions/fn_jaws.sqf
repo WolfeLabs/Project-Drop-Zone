@@ -52,7 +52,7 @@ for "_i" from 0 to 1 step 0 do {
         _progressBar = _ui displayCtrl 38201;
         _titleText = _ui displayCtrl 38202;
     };
-    _cP = _cP + 0.01;
+    _cP = _cP + (0.01 * (missionNamespace getVariable ["mav_ttm_var_gatheringMultiplier", 1]));
     _progressBar progressSetPosition _cP;
     _titleText ctrlSetText format ["%3 (%1%2)...",round(_cP * 100),"%",_title];
 
@@ -82,4 +82,5 @@ if (!_isVehicle) then {
 } else {
     titleText[localize "STR_ISTR_Jaws_Success","PLAIN"];
     life_vehicles pushBack _curTarget;
+    ["jaws"] spawn mav_ttm_fnc_addExp;
 };

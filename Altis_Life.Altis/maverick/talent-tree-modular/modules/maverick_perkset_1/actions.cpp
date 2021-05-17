@@ -112,6 +112,13 @@ class citation {
     message = "Quota Meet"
 };
 
+//EMS Experience actions
+
+class jaws {
+    expToAdd = 15;
+    message = "Patient Access Achieved"
+};
+
 //EXP set to a routine 
 class OfficerDuty {
     expToAdd = 25;
