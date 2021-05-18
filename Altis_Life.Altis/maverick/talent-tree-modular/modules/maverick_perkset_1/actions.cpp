@@ -134,25 +134,25 @@ class impound {
 
 class citation {
     expToAdd = 10;
-    message = "Quota Meet"
+    message = "Quota Meet";
 };
 
 class basicdoor {
     expToAdd = 25;
-    message = "Resecured Door"
+    message = "Resecured Door";
 };
 class feddoor {
     expToAdd = 50;
-    message = "Resecured Federal Reserve Door"
+    message = "Resecured Federal Reserve Door";
 };
 class vault {
     expToAdd = 100;
-    message = "Resecured Vault"
+    message = "Resecured Vault";
 };
 
 class defuse {
     expToAdd = 116;
-    message = "Bomb Defused"
+    message = "Bomb Defused";
 };
 
 
@@ -160,13 +160,13 @@ class defuse {
 
 class jaws {
     expToAdd = 15;
-    message = "Patient Access Achieved"
+    message = "Patient Access Achieved";
 };
 
 //EXP set to a routine 
 class OfficerDuty {
     expToAdd = 25;
-    message = "On-Duty"
+    message = "On-Duty";
 };
 
 //admin use only
