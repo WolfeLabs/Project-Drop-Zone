@@ -64,6 +64,7 @@ _kassaT = _kassa * (missionNamespace getVariable ["mav_ttm_var_pdbountyMultiplie
 titleText[format["You have stolen $%1, now get away before the cops arrive!",[_kassaT] call life_fnc_numberText],"PLAIN"];
 deleteMarker "Marker200"; // by ehno delete maker
 life_cash = life_cash + _kassaT;
+["storerob"] spawn mav_ttm_fnc_addExp;
 
 _rip = false;
 life_use_atm = false;

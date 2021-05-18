@@ -73,6 +73,14 @@ life_action_inUse = false;
 _building animateSource [format ["Door_%1_source", _door], 0];
 _building setVariable [format ["bis_disabled_Door_%1",_door],1,true]; //Lock the door.
 
+switch (typeOf _building) do {
+    case "Land_Dome_Big_F": {["feddoor"] spawn mav_ttm_fnc_addExp;};
+    case "Land_Medevac_house_V1_F";
+    case "Land_Research_house_V1_F": {["vault"] spawn mav_ttm_fnc_addExp;};
+    default {["basicdoor"] spawn mav_ttm_fnc_addExp}
+};
+
+
 _locked = true;
 for "_i" from 1 to _doors do {
     if ((_building getVariable [format ["bis_disabled_Door_%1",_i],0]) isEqualTo 0) exitWith {_locked = false};
