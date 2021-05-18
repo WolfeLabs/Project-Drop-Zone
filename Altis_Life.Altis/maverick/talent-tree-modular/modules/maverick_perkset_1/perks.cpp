@@ -289,7 +289,7 @@ class perk_robstorereward_1 {
 	requiredLevel = 5;
 	requiredPerk = "";
 	subtitle = "Level 5 Required, 2 Perk Points";
-	description = "Increase Score Ammount <br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+15% Increased Score</t>";
+	description = "Increase Score Amount <br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+15% Increased Score</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_pdbounty_1.sqf";
 	limitToSides[] = {"CIV"};
 	color[] = {1,1,1,1};
@@ -301,7 +301,7 @@ class perk_robstorereward_2 {
 	requiredLevel = 12;
 	requiredPerk = "perk_robstorereward_1";
 	subtitle = "Level 12 Required, 3 Perk Points";
-	description = "Increase Score Ammount <br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+35% Increased Score</t>";
+	description = "Increase Score Amount <br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+35% Increased Score</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_pdbounty_2.sqf";
 	limitToSides[] = {"CIV"};
 	color[] = {1,1,1,1};
@@ -313,7 +313,7 @@ class perk_robstorereward_3 {
 	requiredLevel = 18;
 	requiredPerk = "perk_robstorereward_2";
 	subtitle = "Level 18 Required, 6 Perk Points";
-	description = "Increase Score Ammount <br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+65% Increased Score</t>";
+	description = "Increase Score Amount <br/> (Relog for talent to take effect) <br/><br/><t color='#10FF45'>+65% Increased Score</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_pdbounty_3.sqf";
 	limitToSides[] = {"CIV"};
 	color[] = {1,1,1,1};

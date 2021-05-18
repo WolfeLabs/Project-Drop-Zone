@@ -101,7 +101,7 @@ switch (_page) do {
 						};
 				
 
-						
+                            _Btn1 ctrlShow false;
 							_Btn2 ctrlSetText localize "STR_pAct_Inject";
                             _Btn2 buttonSetAction "[life_pInact_curTarget] call life_fnc_injectAction; closeDialog 0;";				
 							_Btn3 ctrlShow false;
@@ -112,7 +112,7 @@ switch (_page) do {
 							
 				//Go back to Page 1
 							_Btn8 ctrlSetText localize "STR_pInAct_ems_main";
-							_Btn8 buttonSetAction "[life_pInact_curTarget, 1] call life_fnc_copInteractionMenu ";	
+							_Btn8 buttonSetAction "[life_pInact_curTarget, 1] call life_fnc_medicInteractionMenu ";	
 					
 					
 
