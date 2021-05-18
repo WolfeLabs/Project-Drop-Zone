@@ -43,7 +43,7 @@ for "_i" from 0 to 1 step 0 do {
         player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
     };
     uiSleep 0.15;
-    _cP = _cP + 0.01;
+    _cP = _cP + 0.01; // add talent to gut faster if wanted
     _progress progressSetPosition _cP;
     _pgText ctrlSetText format ["%3 (%1%2)...",round(_cP * 100),"%",_upp];
     if (_cP >= 1) exitWith {};

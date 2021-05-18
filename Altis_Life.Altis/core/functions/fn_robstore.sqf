@@ -26,7 +26,7 @@ _kassa = 70000 + round(random 40000);
 _shop removeAction _action;
 _shop switchMove "AmovPercMstpSsurWnonDnon";
 _chance = random(100);
-_chanceT = _chance * (missionNamespace getVariable ["mav_ttm_var_robalarm", 1]));
+_chanceT = _chance * (missionNamespace getVariable ["mav_ttm_var_robalarm", 1]);
 if(_chanceT >= 50) then {[1,format["ALARM! - Gas Station: %1 is being robbed!", _shop]] remoteExec ["life_fnc_broadcast",west]; };
 
 _cops = (west countSide playableUnits);
