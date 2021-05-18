@@ -1,4 +1,4 @@
-scriptName "functions_ecstasygoodsincrease_3";
+scriptName "functions_repiarSpeed_2";
 /*--------------------------------------------------------------------------
     Author:		Bytex Digital
     Website:	https://bytex.digital
@@ -8,6 +8,10 @@ scriptName "functions_ecstasygoodsincrease_3";
     FrameWork By : Bytex Digital
     Perks by: WolfeLabs
 ---------------------------------------------------------------------------*/
-#define __filename "functions_ecstasygoodsincrease_3.sqf"
+#define __filename "functions_realestate_2.sqf"
 
-mav_ttm_var_ecstasyMultiplier = random 20;
+_ownsDependency = [life_currentExpPerks, "perk_realestate_3"] call mav_ttm_fnc_hasPerk;
+
+if (!_ownsDependency) then {
+	mav_ttm_var_realestate = 2;
+};

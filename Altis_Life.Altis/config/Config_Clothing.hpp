@@ -336,7 +336,7 @@ class Clothing {
             { "V_Safety_orange_F", "", 10, "" },
             { "V_Safety_blue_F", "", 10, "" },
             { "V_LegStrapBag_black_F", "", 10, "" },
-            { "V_RebreatherB", "", 10, "" },
+            { "V_RebreatherB", "", 10, "" }
             
         };
         backpacks[] = {
@@ -350,7 +350,7 @@ class Clothing {
             { "B_CivilianBackpack_01_Everyday_Vrana_F", "", 3000, "" },
             { "B_Messenger_Black_F", "", 3000, "" },
             { "B_Messenger_Gray_F", "", 3000, "" },
-            { "B_Carryall_cbr", "", 3000, "" },
+            { "B_Carryall_cbr", "", 3000, "" }
 
         };
     };

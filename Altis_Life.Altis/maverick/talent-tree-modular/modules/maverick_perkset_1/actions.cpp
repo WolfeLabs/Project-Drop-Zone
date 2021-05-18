@@ -71,6 +71,31 @@ class robtrue {
     message = "Mugging";
 };
 
+class storerob {
+    expToAdd = 50;
+    message = "Store Robbery";
+};
+
+class doorkick {
+    expToAdd = 25;
+    message = "Breaking & Entering";
+};
+
+class feddoorkick {
+    expToAdd = 50;
+    message = "Federal Reserve Robbery";
+};
+
+class vaultkick {
+    expToAdd = 300;
+    message = "Safe Cracker";
+};
+
+class vaultknock {
+    expToAdd = 50;
+    message = "Do Bomb Dogs See Color";
+};
+
 class civup {
     expToAdd = 4;
     message = "Upstanding Citizen";
@@ -108,20 +133,46 @@ class impound {
 };
 
 class citation {
-    expToAdd = 2;
-    message = "Quota Meet"
+    expToAdd = 10;
+    message = "Quota Meet";
+};
+
+class basicdoor {
+    expToAdd = 25;
+    message = "Resecured Door";
+};
+class feddoor {
+    expToAdd = 50;
+    message = "Resecured Federal Reserve Door";
+};
+class vault {
+    expToAdd = 100;
+    message = "Resecured Vault";
+};
+
+class defuse {
+    expToAdd = 116;
+    message = "Bomb Defused";
 };
 
 
+//EMS Experience actions
+
+class jaws {
+    expToAdd = 15;
+    message = "Patient Access Achieved";
+};
+
+//EXP set to a routine 
 class OfficerDuty {
     expToAdd = 25;
-    message = "On-Duty"
+    message = "On-Duty";
 };
 
 //admin use only
 class PowerLevel {
     expToAdd = 200;
-	message = "Experence Reward";
+	message = "Experience Reward";
 };
 
 class PlayReward {

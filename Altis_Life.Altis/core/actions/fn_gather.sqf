@@ -61,7 +61,7 @@ switch (_requiredItem) do {
     default {[player,"harvest",35,1] remoteExecCall ["life_fnc_say3D",RCLIENT]};
 };
 
-for "_i" from 0 to (6 * (missionNamespace getVariable ["mav_ttm_var_gatheringMultiplier", 1])); do {
+for "_i" from 0 to (6 * (missionNamespace getVariable ["mav_ttm_var_gatheringMultiplier", 1])) do {
     player playMoveNow "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";
     waitUntil{animationState player != "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";};
     sleep 0.5;

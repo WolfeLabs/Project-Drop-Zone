@@ -39,10 +39,10 @@ _progressBar progressSetPosition 0.01;
 _cP = 0.01;
 
 switch (typeOf _building) do {
-    case "Land_Dome_Big_F": {_cpRate = 0.008;};
+    case "Land_Dome_Big_F": {_cpRate = (0.008 * (missionNamespace getVariable ["mav_ttm_var_lockpickMultiplier", 1]))};
     case "Land_Medevac_house_V1_F";
-    case "Land_Research_house_V1_F": {_cpRate = 0.005;};
-    default {_cpRate = 0.08;}
+    case "Land_Research_house_V1_F": {_cpRate = (0.005 * (missionNamespace getVariable ["mav_ttm_var_lockpickMultiplier", 1]))};
+    default {_cpRate = (0.08 * (missionNamespace getVariable ["mav_ttm_var_lockpickMultiplier", 1]))}
 };
 
 for "_i" from 0 to 1 step 0 do {
@@ -72,6 +72,14 @@ life_action_inUse = false;
 
 _building animateSource [format ["Door_%1_source", _door], 0];
 _building setVariable [format ["bis_disabled_Door_%1",_door],1,true]; //Lock the door.
+
+switch (typeOf _building) do {
+    case "Land_Dome_Big_F": {["feddoor"] spawn mav_ttm_fnc_addExp};
+    case "Land_Medevac_house_V1_F";
+    case "Land_Research_house_V1_F": {["vault"] spawn mav_ttm_fnc_addExp};
+    default {["basicdoor"] spawn mav_ttm_fnc_addExp}
+};
+
 
 _locked = true;
 for "_i" from 1 to _doors do {

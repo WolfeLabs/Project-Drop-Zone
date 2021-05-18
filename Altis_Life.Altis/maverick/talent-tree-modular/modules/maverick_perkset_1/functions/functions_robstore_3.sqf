@@ -1,13 +1,10 @@
-scriptName "functions_methgoodsincrease_3";
+scriptName "functions_robstore_3";
 /*--------------------------------------------------------------------------
     Author:		Bytex Digital
     Website:	https://bytex.digital
 
     You're not allowed to use this file without permission from the author!
-
-    FrameWork By : Bytex Digital
-    Perks by: WolfeLabs
 ---------------------------------------------------------------------------*/
-#define __filename "functions_methgoodsincrease_3.sqf"
+#define __filename "functions_robstore_3.sqf"
 
-mav_ttm_var_methMultiplier = random 20;
+mav_ttm_var_robstoretime = 1.65;

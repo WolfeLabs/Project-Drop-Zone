@@ -68,7 +68,7 @@ class Level_9 {
 class Level_10 {
     displayName = "Rank 10";
     expRequired = 8500;
-    perkPointsOnUnlock = 2;
+    perkPointsOnUnlock = 5;
 };
 
 class Level_11 {
@@ -98,7 +98,7 @@ class Level_14 {
 class Level_15 {
     displayName = "Rank 15";
     expRequired = 19125;
-    perkPointsOnUnlock = 2;
+    perkPointsOnUnlock = 5;
 };
 
 class Level_16 {
@@ -128,7 +128,7 @@ class Level_19 {
 class Level_20 {
     displayName = "Rank 20";
     expRequired = 34000;
-    perkPointsOnUnlock = 2;
+    perkPointsOnUnlock = 5;
 };
 
 class Level_21 {
@@ -158,7 +158,7 @@ class Level_24 {
 class Level_25 {
     displayName = "Rank 25";
     expRequired = 53125;
-    perkPointsOnUnlock = 2;
+    perkPointsOnUnlock = 5;
 };
 
 class Level_26 {
@@ -188,7 +188,7 @@ class Level_29 {
 class Level_30 {
     displayName = "Rank 30";
     expRequired = 76500;
-    perkPointsOnUnlock = 2;
+    perkPointsOnUnlock = 20;
 };
 
 class Level_31 {
@@ -218,7 +218,7 @@ class Level_34 {
 class Level_35 {
     displayName = "Rank 35";
     expRequired = 104125;
-    perkPointsOnUnlock = 2;
+    perkPointsOnUnlock = 5;
 };
 
 class Level_36 {
@@ -248,7 +248,7 @@ class Level_39 {
 class Level_40 {
     displayName = "Rank 40";
     expRequired = 136000;
-    perkPointsOnUnlock = 2;
+    perkPointsOnUnlock = 10;
 };
 
 class Level_41 {
@@ -278,7 +278,7 @@ class Level_44 {
 class Level_45 {
     displayName = "Rank 45";
     expRequired = 172125;
-    perkPointsOnUnlock = 2;
+    perkPointsOnUnlock = 5;
 };
 
 class Level_46 {
@@ -308,5 +308,5 @@ class Level_49 {
 class Level_50 {
     displayName = "Rank 50";
     expRequired = 212500;
-    perkPointsOnUnlock = 2;
+    perkPointsOnUnlock = 50;
 };

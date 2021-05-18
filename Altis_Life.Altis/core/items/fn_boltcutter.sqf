@@ -52,10 +52,10 @@ _progressBar progressSetPosition 0.01;
 _cP = 0.01;
 
 switch (typeOf _building) do {
-    case "Land_Dome_Big_F": {_cpRate = 0.003;};
+    case "Land_Dome_Big_F": {_cpRate = 0.003;};//fed door
     case "Land_Medevac_house_V1_F";
-    case "Land_Research_house_V1_F": {_cpRate = 0.0015;};
-    default {_cpRate = 0.08;}
+    case "Land_Research_house_V1_F": {_cpRate = 0.0015;};//vault door
+    default {_cpRate = 0.08;}// deafult door
 };
 
 for "_i" from 0 to 1 step 0 do {
@@ -96,6 +96,13 @@ if (life_boltcutter_uses >= 5) then {
 
 _building setVariable [format ["bis_disabled_Door_%1",_door],0,true]; //Unlock the door.
 _building setVariable ["locked",false,true];
+
+switch (typeOf _building) do {
+    case "Land_Dome_Big_F": {["feddoorkick"] spawn mav_ttm_fnc_addExp;};//fed door //exp 50
+    case "Land_Medevac_house_V1_F";
+    case "Land_Research_house_V1_F": {["vaultkick"] spawn mav_ttm_fnc_addExp;};//vault door // exp 300
+    default {["doorkick"] spawn mav_ttm_fnc_addExp}// deafult door //exp 25
+};
 
 if (life_HC_isActive) then {
     [getPlayerUID player,profileName,"459"] remoteExecCall ["HC_fnc_wantedAdd",HC_Life];
