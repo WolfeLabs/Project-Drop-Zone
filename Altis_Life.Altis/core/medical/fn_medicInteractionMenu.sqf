@@ -47,129 +47,83 @@ life_pInact_curTarget = _curTarget;
 { _x ctrlShow true; } forEach [_Btn1,_Btn2,_Btn3,_Btn4,_Btn5,_Btn6,_Btn7,_Btn8];
 { _x ctrlEnable true; } forEach [_Btn1,_Btn2,_Btn3,_Btn4,_Btn5,_Btn6,_Btn7,_Btn8];
 
+//Page 1 is Main Menu
+//Page 2 is Medication
+
 switch (_page) do {
 			case 1: {
 
 				if (player getVariable ["isEscorting",false]) then {
-					{ _x ctrlShow false; } forEach [_Btn1,_Btn2,_Btn3,_Btn5,_Btn6,_Btn7,_Btn8];
+					{ _x ctrlShow false; } forEach [_Btn1,_Btn2,_Btn4,_Btn5,_Btn6,_Btn7,_Btn8];
 				};
 				
 					if ((_curTarget getVariable ["tied",false]) OR (_curTarget getVariable ["restrained", false])) then {
 								
 								_Btn1 ctrlEnable true;
-								_Btn4 ctrlEnable true;
-								_Btn7 ctrlEnable true;
+								_Btn3 ctrlEnable true;
 
 							} else {
 
-								_Btn1 ctrlEnable false;
-								_Btn4 ctrlEnable false;
-								_Btn7 ctrlEnable false;
+								_Btn1 ctrlShow false;
 							};
 				//Set Unrestrain Button
 					_Btn1 ctrlSetText localize "STR_pInAct_Unrestrain";
 					_Btn1 buttonSetAction "[life_pInact_curTarget] call life_fnc_unrestrain; closeDialog 0;";
 
-		
-					_Btn2 ctrlShow false;
-					_Btn3 ctrlShow false;
-				
+                    _Btn2 ctrlSetText localize "STR_pInAct_PutInCar";
+					_Btn2 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar; closeDialog 0;";
 
 				//Set Escort Button
 
 					if (player getVariable ["isEscorting",false]) then {
-						_Btn4 ctrlSetText localize "STR_pInAct_StopEscort";
-						_Btn4 buttonSetAction "[] call life_fnc_stopEscorting; closeDialog 0;";
-						_Btn4 ctrlEnable true;
+						_Btn3 ctrlSetText localize "STR_pInAct_StopEscort";
+						_Btn3 buttonSetAction "[] call life_fnc_stopEscorting; closeDialog 0;";
+						_Btn3 ctrlEnable true;
 					} else {
-						_Btn4 ctrlSetText localize "STR_pInAct_Escort";
-						_Btn4 buttonSetAction "[life_pInact_curTarget] call life_fnc_escortAction; closeDialog 0;";
+						_Btn3 ctrlSetText localize "STR_pInAct_Escort";
+						_Btn3 buttonSetAction "[life_pInact_curTarget] call life_fnc_escortAction; closeDialog 0;";
 					};
-
+                    _Btn4 ctrlShow false;
 					_Btn5 ctrlShow false;							
 					_Btn6 ctrlShow false;
-					
+					_Btn7 ctrlShow false;
 
-					_Btn7 ctrlSetText localize "STR_pInAct_PutInCar";
-					_Btn7 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar; closeDialog 0;";
-						
-					_Btn8 ctrlSetText localize "STR_pInAct_nxtpg";
+					_Btn8 ctrlSetText localize "STR_pInAct_ems_Meds";
 					_Btn8 buttonSetAction "[life_pInact_curTarget, 2] call life_fnc_medicInteractionMenu ";	
 						
 					
 
 			};
 			case 2:{
-						if ((_curTarget getVariable ["ziptied",false]) OR (_curTarget getVariable ["restrained", false])) then {
-								
-								_Btn1 ctrlEnable true;
-								_Btn2 ctrlEnable true;
-
-							} else {
-								
-								_Btn1 ctrlEnable false;
-								_Btn2 ctrlEnable false;
-
-							};
-
+						
 						if (player getVariable ["isEscorting",false]) then {
 							{ _x ctrlShow false; } forEach [_Btn1,_Btn2,_Btn3,_Btn4,_Btn5,_Btn6,_Btn7];
 						};
 				
-				// Gag player to stop them from talking
 
 						
-							_Btn2 ctrlSetText "Gag Person";
-							_Btn2 buttonSetAction "[] call zipties_fnc_zip_gagAction; closeDialog 0;";
-						
+							_Btn2 ctrlSetText localize "STR_pAct_Inject";
+                            _Btn2 buttonSetAction "[life_pInact_curTarget] call life_fnc_injectAction; closeDialog 0;";				
 							_Btn3 ctrlShow false;
 							_Btn4 ctrlShow false;
 							_Btn5 ctrlShow false;
 							_Btn6 ctrlShow false;
-							_Btn7 ctrlSetText localize "STR_pAct_Inject";
-                            _Btn7 buttonSetAction "[life_pInact_curTarget] call life_fnc_injectAction; closeDialog 0;";
+                            _Btn7 ctrlShow false;
+							
 				//Go back to Page 1
-							_Btn8 ctrlSetText localize "STR_pInAct_nxtpg";
+							_Btn8 ctrlSetText localize "STR_pInAct_ems_main";
 							_Btn8 buttonSetAction "[life_pInact_curTarget, 1] call life_fnc_copInteractionMenu ";	
 					
 					
 
 			};
+
+
+
+
+
+
+            //EOF
 };	
 
 
-/* 
-
-if (player getVariable ["isEscorting",false]) then {
-    { _x ctrlShow false; } forEach [_Btn1,_Btn3,_Btn5,_Btn6,_Btn7,_Btn8];
-};
-
-//Set Unrestrain Button
-_Btn1 ctrlSetText localize "STR_pInAct_Unrestrain";
-_Btn1 buttonSetAction "[life_pInact_curTarget] call life_fnc_unrestrain; closeDialog 0;";
-
-//Set Escort Button
-if (player getVariable ["isEscorting",false]) then {
-    _Btn2 ctrlSetText localize "STR_pInAct_StopEscort";
-    _Btn2 buttonSetAction "[] call life_fnc_stopEscorting; closeDialog 0;";
-} else {
-    _Btn2 ctrlSetText localize "STR_pInAct_Escort";
-    _Btn2 buttonSetAction "[life_pInact_curTarget] call life_fnc_escortAction; closeDialog 0;";
-};
-
-
-_Btn4 ctrlSetText localize "STR_pInAct_PutInCar";
-_Btn4 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar; closeDialog 0;";
-
-_Btn7 ctrlSetText localize "STR_pAct_Inject";
-_Btn7 buttonSetAction "[life_pInact_curTarget] call life_fnc_injectAction; closeDialog 0;";
-
-
-
-/*
-have button to check health of target to see what there over all state is
-have button to check in depth the injuries to determin the medication
-have button to admin certain drugs 
-
-
-*/ 

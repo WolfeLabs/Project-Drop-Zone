@@ -47,7 +47,7 @@ life_firstSpawn = true;
 
 //Settings
 life_settings_enableNewsBroadcast = profileNamespace getVariable ["life_enableNewsBroadcast", true];
-life_settings_enableSidechannel = profileNamespace getVariable ["life_enableSidechannel", true];
+life_settings_enableSidechannel = profileNamespace getVariable ["life_enableSidechannel", false];
 life_settings_tagson = profileNamespace getVariable ["life_settings_tagson", true];
 life_settings_revealObjects = profileNamespace getVariable ["life_settings_revealObjects", true];
 life_settings_viewDistanceFoot = profileNamespace getVariable ["life_viewDistanceFoot", 1250];

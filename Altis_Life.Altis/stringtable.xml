@@ -9022,6 +9022,9 @@
             <Polish>Menu Interakcji</Polish>
 			<Chinesesimp>玩家互动菜单</Chinesesimp>
         </Key>
+         <Key ID="STR_pInAct_nxtpg">
+            <Original>Next Page</Original>
+        </Key>
         <Key ID="STR_pInAct_PutInCar">
             <Original>Put in vehicle</Original>
             <Czech>Vložíme do vozidla</Czech>
