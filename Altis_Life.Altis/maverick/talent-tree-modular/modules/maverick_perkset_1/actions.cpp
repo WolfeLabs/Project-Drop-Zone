@@ -134,7 +134,7 @@ class impound {
 
 class citation {
     expToAdd = 10;
-    message = "Quota Meet";
+    message = "Quota Met";
 };
 
 class basicdoor {
@@ -169,16 +169,18 @@ class OfficerDuty {
     message = "On-Duty";
 };
 
+class PlayReward {
+    expToAdd = 50;
+    message = "Thanks For Playing Project Drop Zone!";
+};
+
 //admin use only
 class PowerLevel {
     expToAdd = 200;
 	message = "Experience Reward";
 };
 
-class PlayReward {
-    expToAdd = 50;
-    message = "Thanks For Playing Project Drop Zone!";
-};
+
 
 class Example {
     expToAdd = 100;

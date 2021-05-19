@@ -58,8 +58,7 @@ switch (_page) do {
 				};
 				
 					if ((_curTarget getVariable ["tied",false]) OR (_curTarget getVariable ["restrained", false])) then {
-								
-								_Btn1 ctrlEnable true;
+							
 								_Btn3 ctrlEnable true;
 
 							} else {
@@ -67,8 +66,7 @@ switch (_page) do {
 								_Btn1 ctrlShow false;
 							};
 				//Set Unrestrain Button
-					_Btn1 ctrlSetText localize "STR_pInAct_Unrestrain";
-					_Btn1 buttonSetAction "[life_pInact_curTarget] call life_fnc_unrestrain; closeDialog 0;";
+					_Btn1 ctrlShow false;
 
                     _Btn2 ctrlSetText localize "STR_pInAct_PutInCar";
 					_Btn2 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar; closeDialog 0;";
@@ -99,11 +97,12 @@ switch (_page) do {
 						if (player getVariable ["isEscorting",false]) then {
 							{ _x ctrlShow false; } forEach [_Btn1,_Btn2,_Btn3,_Btn4,_Btn5,_Btn6,_Btn7];
 						};
-				
+							//morphine is item 1
+							//adrenaline is item 2
 
                             _Btn1 ctrlShow false;
-							_Btn2 ctrlSetText localize "STR_pAct_Inject";
-                            _Btn2 buttonSetAction "[life_pInact_curTarget] call life_fnc_injectAction; closeDialog 0;";				
+							_Btn2 ctrlSetText localize "STR_pAct_InjectM";
+                            _Btn2 buttonSetAction "[life_pInact_curTarget, 1] call life_fnc_injectAction; closeDialog 0;";				
 							_Btn3 ctrlShow false;
 							_Btn4 ctrlShow false;
 							_Btn5 ctrlShow false;
