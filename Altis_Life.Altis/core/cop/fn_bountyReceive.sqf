@@ -16,5 +16,5 @@ if (_val == _total) then {
     titleText[format [localize "STR_Cop_BountyKill",[_val] call life_fnc_numberText,[_total] call life_fnc_numberText],"PLAIN"];
 };
 
-BANK = BANK + _val;
+BANK = BANK + (_val * (missionNamespace getVariable ["mav_ttm_var_pdbountyMultiplier", 1]));
 [1] call SOCK_fnc_updatePartial;

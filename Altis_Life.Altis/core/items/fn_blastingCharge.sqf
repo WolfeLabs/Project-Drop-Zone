@@ -29,5 +29,6 @@ _vault setVariable ["chargeplaced",true,true];
 [0,"STR_ISTR_Blast_Placed",true,[]] remoteExecCall ["life_fnc_broadcast",west];
 hint localize "STR_ISTR_Blast_KeepOff";
 
+["vaultknock"] spawn mav_ttm_fnc_addExp;
 [] remoteExec ["life_fnc_demoChargeTimer",[west,player]];
 [] remoteExec ["TON_fnc_handleBlastingCharge",2];

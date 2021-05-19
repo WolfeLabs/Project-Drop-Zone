@@ -22,4 +22,6 @@ if(life_inv_morphine != 0) then {
 	[] remoteExec ["life_fnc_morphine",_target];
 	[false,"morphine",1] call life_fnc_handleinv;
 	player playMoveNow "AmovPercMstpSnonWnonDnon";
+	sleep 2;
+	player playActionNow "stop";
 };

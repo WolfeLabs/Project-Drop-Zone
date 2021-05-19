@@ -1,4 +1,4 @@
-scriptName "functions_heroingoodsincrease_1";
+scriptName "functions_realestate_1";
 /*--------------------------------------------------------------------------
     Author:		Bytex Digital
     Website:	https://bytex.digital
@@ -8,11 +8,11 @@ scriptName "functions_heroingoodsincrease_1";
     FrameWork By : Bytex Digital
     Perks by: WolfeLabs
 ---------------------------------------------------------------------------*/
-#define __filename "functions_heroingoodsincrease_1.sqf"
+#define __filename "functions_realestate_1.sqf"
 
-_ownsDependency1 = [life_currentExpPerks, "perk_heroingoodsincrease_2"] call mav_ttm_fnc_hasPerk;
-_ownsDependency2 = [life_currentExpPerks, "perk_heroingoodsincrease_3"] call mav_ttm_fnc_hasPerk;
+_ownsDependency1 = [life_currentExpPerks, "perk_realestate_2"] call mav_ttm_fnc_hasPerk;
+_ownsDependency2 = [life_currentExpPerks, "perk_realestate_3"] call mav_ttm_fnc_hasPerk;
 
 if (!_ownsDependency1 && !_ownsDependency2) then {
-	mav_ttm_var_heroinMultiplier = random 5;
+	mav_ttm_var_realestate = 1;
 };

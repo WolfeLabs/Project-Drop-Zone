@@ -7757,7 +7757,7 @@
             <Portuguese>Treinamento de Ecstasy</Portuguese>
             <Polish>Ecstasy Training</Polish>
         </Key>
-        <Key ID="STR_License_Marijuana">
+        <Key ID="STR_License_MedMarijuana">
             <Original>Medical Marijuana License</Original>
         </Key>	
         <Key ID="STR_License_Oil">
@@ -9021,6 +9021,15 @@
             <Portuguese>Menu de Interação do Jogador</Portuguese>
             <Polish>Menu Interakcji</Polish>
 			<Chinesesimp>玩家互动菜单</Chinesesimp>
+        </Key>
+         <Key ID="STR_pInAct_nxtpg">
+            <Original>Next Page</Original>
+        </Key>
+        <Key ID="STR_pInAct_ems_Meds">
+            <Original>Medication</Original>
+        </Key>
+        <Key ID="STR_pInAct_ems_main">
+            <Original>Main Menu</Original>
         </Key>
         <Key ID="STR_pInAct_PutInCar">
             <Original>Put in vehicle</Original>

@@ -33,7 +33,7 @@ _cP = 0.01;
 
 for "_i" from 0 to 1 step 0 do {
     uiSleep 0.09;
-    _cP = _cP + 0.01;
+    _cP = _cP + (0.01 * (missionNamespace getVariable ["mav_ttm_var_lockpickMultiplier", 1]));
     _progress progressSetPosition _cP;
     _pgText ctrlSetText format ["%3 (%1%2)...",round(_cP * 100),"%",_upp];
     if (_cP >= 1) exitWith {};
